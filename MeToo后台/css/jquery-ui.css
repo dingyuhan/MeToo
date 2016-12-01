@@ -1,0 +1,249 @@
+/*! jQuery UI - v1.11.1 - 2014-09-25
+* http://jqueryui.com
+* Includes: core.css, draggable.css, resizable.css, selectable.css, sortable.css, accordion.css, theme.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=%234a8bc1&bgTextureHeader=dots_medium&bgImgOpacityHeader=75&borderColorHeader=%23aaaaaa&fcHeader=%23222222&iconColorHeader=%23222222&bgColorContent=%23346c9b&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=%232b5c84&fcContent=%23ffffff&iconColorContent=%23ffffff&bgColorDefault=%234a8bc1&bgTextureDefault=flat&bgImgOpacityDefault=75&borderColorDefault=%234a8bc1&fcDefault=%23ffffff&iconColorDefault=%23ffffff&bgColorHover=%23346c9b&bgTextureHover=flat&bgImgOpacityHover=75&borderColorHover=%232b5c84&fcHover=%23ffffff&iconColorHover=%23ffffff&bgColorActive=%23346c9b&bgTextureActive=flat&bgImgOpacityActive=65&borderColorActive=%232b5c84&fcActive=%23ffffff&iconColorActive=%23ffffff&bgColorHighlight=%23fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=%23fcefa1&fcHighlight=%23363636&iconColorHighlight=%232e83ff&bgColorError=%23fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=%23cd0a0a&fcError=%23cd0a0a&iconColorError=%23cd0a0a&bgColorOverlay=%23aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=%23aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+* Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
+.sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #20bdf0;
+	
+    border-right: 1px solid #eee;
+	font-size:12px;
+		
+  }
+
+
+
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-draggable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+
+.ui-sortable-handle {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 2px 0 0 0;
+	padding: .5em .5em .5em .5em;
+	min-height: 0; /* support: IE7 */
+	font-size: 100%;
+	text-align:center;
+}
+.ui-accordion .ui-accordion-icons {
+	
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 0;
+	border-top: 0;
+	overflow: auto;
+}
+#accordion ul{
+	margin:0;
+	text-align:center;
+	
+	}
+#accordion li{
+	line-height:30px;
+	list-style:none;	
+	}
+
+#accordion ul a{
+	display:block;
+	height:30px;
+	color:#fff;
+	}
+#accordion ul a:hover{
+	background-color:#89dcf8;
+	color:#19466f
+	}
+
+#accordion li#active a{
+	background-color:#89dcf8;	
+	color:#056585
+}
+#accordion span{
+	margin:0 8px;
+	}
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #058bb7;
+	background: #03a4d9 ;
+	color: #ffffff;
+}
+.ui-widget-content a {
+	color: #ffffff;
+}
+.ui-widget-header {
+	border: 1px solid #aaaaaa;
+	background: #20bdf0 ;
+	color: #222222;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #222222;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #20bdf0;
+	background: #20bdf0 ;
+	font-weight: normal;
+	color: #ffffff;
+	height:35px
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+	border: 1px solid #058bb7;
+	background: #03a4d9 ;
+	font-weight: normal;
+	color: #ffffff;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+	
+	color: #ffffff;
+	text-decoration: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #058bb7;
+	background: #03a4d9 ;
+	font-weight: normal;
+	color: #ffffff;
+	height:35px
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+
+
+
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+
+
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 4px;
+}
+
+
