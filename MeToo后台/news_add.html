@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>北京国际数学研究中心数学数字化图书馆</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="css/mystyle.css" rel="stylesheet">
+<script src="js/jquery.js"></script>    
+<script src="js/bootstrap.min.js"></script>
+<script charset="utf-8" src="js/editor/kindeditor.js"></script>
+<script charset="utf-8" src="js/editor/lang/zh_CN.js"></script>
+<script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>
+
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+   
+    <span class="navbar-logo" > 北京国际数学研究中心数学数字化图书馆</span>
+   </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+    
+    <ul class="nav navbar-nav navbar-right mr">
+      <li><a href="#" class="navbar-brand"><span class="glyphicon glyphicon-star"></span>欢迎：Administrator</a></li>
+      <li><a href="#" class="navbar-brand"><span class="glyphicon glyphicon-log-out"></span>退出系统</a></li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
+</nav> 
+
+	<div class="row">
+    	<div class=" col-md-2 sidebar">
+    	  <div id="accordion">
+    	    <h3><a href="#"><span class="glyphicon glyphicon-lock"></span>账户管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li  ><a href="user_list.html">用户管理</a></li>
+               <li  ><a href="user_add.html">添加管理员</a></li>
+            <li ><a href="user_pass.html">修改个人密码</a></li>
+            <li ><a href="user_edit.html">修改个人信息</a></li>
+          </ul>
+          <h3><a href="#"><span class="glyphicon glyphicon-file"></span>新闻管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li><a href="news_add.html">添加新闻</a></li>
+            <li><a href="news_list.html">管理新闻</a></li>
+          </ul>
+          <h3><a href="#"><span class="glyphicon glyphicon-book"></span>图书管理<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li ><a href="book_add.html">添加图书</a></li>
+            <li><a href="book_list.html">列表图书</a></li>
+          </ul>
+          <h3><a href="#"><span class="glyphicon glyphicon-tags"></span>标签/关键字<span class="glyphicon glyphicon-chevron-down"></span></a></h3>
+          <ul>
+            <li ><a href="tag_list.html" >标签管理</a></li>
+            <li ><a href="key_list.html">关键字管理</a></li>
+          </ul>
+  	    </div>
+    	</div>
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">新闻管理</a></li>
+    	    <li class="active">添加新闻</li>
+  	    </ol>
+    	  <h3 class="down">添加新闻 <small>News Add</small></h3>
+    	  <div class="list-group form">
+    	    <form enctype="multipart/form-data" class="form-horizontal" role="form">
+    	      <div class="list-group-item">
+    	        <label for="inputEmail3" class="col-sm-2 control-label">新闻标题</label>
+    	        <div class="col-sm-10">
+    	          <input type="input" class="form-control" id="inputEmail3" placeholder="">
+  	          </div>
+  	        </div>
+    	      <div class="list-group-item">
+    	        <label for="inputEmail3" class="col-sm-2 control-label">发布时间</label>
+    	        <div class="col-sm-10"><input type="input" class="form-control" id="inputEmail3" placeholder="2014-12-22" ></div>
+  	        </div>
+    	     
+    	      <div class="list-group-item">
+    	        <label for="inputEmail3" class="col-sm-2 control-label">发布人/作者</label>
+    	        <div class="col-sm-10">
+    	          <input type="input" class="form-control" id="inputEmail3" placeholder="张明亮">
+  	          </div>
+  	        </div>
+    	     
+    	    
+    	      <div class="list-group-item">
+               <label for="inputEmail3" class="col-sm-2 control-label">内容</label>
+    	        <div class="col-sm-10">
+    	          
+    	          <textarea id="editor_id" name="content" style="width:90%;height:300px;">
+&lt;strong&gt;HTML内容&lt;/strong&gt;
+</textarea>
+    	        </div>
+  	        </div>
+    	      <div class="list-group-item">
+              <div class="col-sm-offset-2 col-sm-5">
+              <div class="row">
+    	        <div class=" col-sm-5">
+    	          <button type="submit" class="btn btn-primary">添 加 新 闻</button>
+  	          </div>
+              <div class=" col-sm-5">
+   	            <button type="submit" class="btn btn-warning">重 置 内 容</button>
+  	          </div>
+              </div>
+              </div>
+  	        </div>
+  	      </form>
+  	    </div>
+  	  </div>
+	</div>
+        	
+	
+<script src="js/jquery-ui.js"></script>
+<script>
+$( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+</script>
+</body>
+</html>
