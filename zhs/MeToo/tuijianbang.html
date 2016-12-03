@@ -1,0 +1,153 @@
+
+
+<html> 
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/tuijianbang.css">
+<body>
+ 
+    <div class="header">
+        <div class="mybody1">
+        <div class="logo"><img src="images/me too.png" height="50px" alt="logo"/></div>
+        
+            <div class="nav">
+                <ul>
+                <li><a href="#">首  页</a></li>
+                <li><a href="#">推荐榜</a>
+                    <ul>
+                        <li><a href="#">景&nbsp;&nbsp;&nbsp;&nbsp;点</a></li>
+                        <li><a href="#">旅&nbsp;&nbsp;&nbsp;&nbsp;店</a></li>
+                        <li><a href="#">美&nbsp;&nbsp;&nbsp;&nbsp;食</a></li>
+                        <li><a href="#">购&nbsp;&nbsp;&nbsp;&nbsp;物</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">攻  略</a>
+                    <ul>
+                        <li><a href="#">游&nbsp;&nbsp;&nbsp;&nbsp;记</a></li>
+                        <li><a href="#">你问我答</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">迷途动态</a>
+                    <ul>
+                        <li><a href="#">至美一拍</a></li>
+                        <li><a href="#">猜&nbsp;猜&nbsp;看</a></li>                
+                    </ul>
+                </li>
+                <li><a href="#">个人中心</a>
+                    <ul>
+                        <li><a href="#">积分兑换</a></li>
+                        <li><a href="#">足&nbsp;&nbsp;&nbsp;&nbsp;迹</a></li>
+                        <li><a href="#">我参与的</a></li>               
+                    </ul>
+                </li>
+
+            </ul>
+            </div> 
+
+            <div class="b_nav">
+                <div class="register">
+                    <img src="images/register.png" width="25" height="25"/><br/><a href="#">登录</a>
+                </div>
+                <div class="login">
+                    <img src="images/login.png" width="25" height="25"/><br/><a href="#">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="mybody">
+             
+            <center>
+                <div class="demo">
+                <a class="control prev"></a><a class="control next abs"></a><!--自定义按钮，移动端可不写-->
+                <div class="search">     
+                <form class="form" role="form">              
+                <input type="text" class="input" placeholder="请输入搜索内容">
+                <button type="button" class="button">搜索</button>
+                </form>
+                </div>
+                    <div class="slider"><!--主体结构，请用此类名调用插件，此类名可自定义-->
+                    <ul>
+                    <li><a href=""><img src="images/raw_1477992267.jpeg" alt="心较比干多一窍，病如西子胜三分"></a></li>
+                    <li><a href=""><img src="images/raw_1478048967.jpeg" alt="态生两靥之愁，娇袭一身之病。"></a></li>
+                    <li><a href=""><img src="images/raw_1478162056.jpeg" alt="泪光点点，娇喘微微。"></a></li>
+                    <li><a href=""><img src="images/raw_1478162066.jpeg" alt="闲静似娇花照水，行动如弱柳扶风。"></a></li>
+                    </ul>
+                    </div>
+                </div>       
+            </center>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/YuxiSlider.jQuery.min.js"></script>
+                <script>
+                    $(".slider").YuxiSlider({
+                    width:1360, //容器宽度
+                    height:400, //容器高度
+                    control:$('.control'), //绑定控制按钮
+                    during:4000, //间隔4秒自动滑动
+                    speed:800, //移动速度0.8秒
+                    mousewheel:true, //是否开启鼠标滚轮控制
+                    direkey:true //是否开启左右箭头方向控制
+                    });
+                </script>
+                <div class="aside_middle">
+                    <button type="button" class="btn btn2" style="background-color:#f28d0a;">美<br/><br/><br/>食</button><br/><br/>
+                    <button type="button" class="btn btn1" style="background-color:#f2b00a;">购<br/><br/><br/>物</button><br/><br/>
+                    <button type="button" class="btn btn1" style="background-color:#f28d0a;">景<br/><br/><br/>点</button><br/><br/><br/>
+                    <button type="button" class="btn btn3" style="background-color:#f7d031;">旅<br/><br/><br/>店</button><br/>
+                </div>
+                <div class="aside-right">
+                    <a href="#">更多美食推荐>></a>
+                    <ul>
+                       <li><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/>
+                        <div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text2"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text3"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text4"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                    </ul>
+                    <br/>
+                    <a href="#">更多购物推荐>></a>
+                    <ul class="right2">
+                       <li><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/>
+                        <div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text2"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text3"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text4"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                    </ul>
+                    <br/>
+                    <a href="#">更多景点推荐>></a>
+                    <ul class="right2">
+                       <li><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/>
+                        <div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text2"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text3"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text4"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                    </ul>
+                    <br/>
+                    <a href="#">更多旅店推荐>></a>
+                    <ul class="right2">
+                       <li><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/>
+                        <div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text2"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text3"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                        <li class="text4"><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div><br/><div><img src="images/7.jpg"/><div class="text">&nbsp;赞数：<br/>&nbsp;地点：</div></div></li>
+                    </ul>
+
+                    
+                </div>
+        </div>
+    </div>
+        
+       
+           
+        <div class="footer">
+            <div class="mybody2">
+                <p>Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：冀A2-20050130</p>
+                <p>网备31010502000018号</p>
+                <p>旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨石家庄市旅游网站落实诚信建设主体责任承诺书</p>
+            </div>
+        </div>
+
+</body>
+</html>
