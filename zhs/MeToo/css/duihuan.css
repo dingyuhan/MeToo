@@ -22,18 +22,18 @@ html{padding:0px;margin:0px;border:0px;overflow-x:auto;}
         .login{float:right;width:40px;margin-left:10px;margin-top: -40px;} 
         .body1{margin-left: 60px; }
         .top1{position: absolute; margin-top: -120px;margin-left: 150px;}
-        .top1 img{margin-top: -130px;}
-        .top2{position: absolute;margin-left:300px;}
-        .top3{position: absolute;margin-left:610px;}
-        .top4{position: absolute;margin-left:905px;}
+        .top1 img{margin-top: -130px;width: 140px;height: 140px;}
+        .top2{position: absolute;margin-left:300px; }
+        .top3{position: absolute;margin-left:605px; }
+        .top4{position: absolute;margin-left:905px; }
         .duihuan{margin-left: 60px;}
         .jifen1{margin-top: -200px; margin-left: 50px; font-weight: bold;font-size: 30px;}
         #touxiang{margin-left:50px;width:110px;height:110px;border-radius:60px;}
         .jifen2{margin-left: 300px;margin-top: -80px;font-weight: bold;font-size: 20px;}
         .jifen3{margin-left: 450px;font-weight: bold;font-size: 20px;}
-        .jiangpin2{margin-top: -293px;margin-left: 390px;}
-        .jiangpin3{margin-top: -295px;margin-left: 690px;}
-        .jiangpin4{margin-top: -295px;margin-left: 990px;}
+        .ct-pageWrapper{margin-top: 60px;background-color: #fade98;}
+        .container{background-color: #fade98;}
+        .main{background-color: #fade98;}
         .footer{background-color:#ffb61e; padding-left:100px;margin-top:0px;margin-bottom:0px;} 
         .footer p{
                 height: 30px;   
