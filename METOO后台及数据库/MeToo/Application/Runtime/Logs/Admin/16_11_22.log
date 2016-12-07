@@ -1,0 +1,54 @@
+[ 2016-11-22T08:45:34+08:00 ] 127.0.0.1 /MeToo/index.php/Admin/Admin/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.091090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009976s ]
+ERR: 非法操作:admin
+
+[ 2016-11-22T08:45:42+08:00 ] 127.0.0.1 /MeToo/index.php/Admin/Personal/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002708s ]
+SQL: SHOW COLUMNS FROM `personal` [ RunTime:0.6446s ]
+SQL: SELECT * FROM `personal`  [ RunTime:0.1533s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.017355s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.017586s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.478893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.479167s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.037929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.038091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009337s ]
+
+[ 2016-11-22T08:45:46+08:00 ] 127.0.0.1 /MeToo/index.php/Admin/Admin/modi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002546s ]
+NOTIC: [8] Undefined index: id D:\WebSever\Apache2.2\htdocs\MeToo\Application\Admin\Controller\AdminController.class.php 第 71 行.
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0524s ]
+SQL: SELECT * FROM `admin_user` LIMIT 1   [ RunTime:0.0178s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042895s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002469s ]
+

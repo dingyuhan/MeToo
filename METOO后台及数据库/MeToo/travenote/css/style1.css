@@ -1,0 +1,393 @@
+/*body {
+  font-family: arial;
+  background: #333;
+  font-size: 18px;
+  -webkit-backface-visibility: hidden;
+}*/
+/*
+h2 {
+  margin: 0;
+  padding-bottom: 15px;
+  color: #fff;
+  border-bottom: 1px dotted #444;
+}
+*/
+/*.container {
+  width: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -51%);
+  transform: translate(-50%, -51%);
+  -webkit-backface-visibility: hidden;
+}
+*/
+.input-element {
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+  overflow: visible;
+}
+.input-element:last-child {
+  margin-bottom: 0;
+}
+.input-element:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: yellow;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+.input-element:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #FFC200;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  z-index: 20;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.input-element label {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  color: #fff;
+  top: 42px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.input-element label:hover {
+  cursor: pointer;
+  color: #efefef;
+}
+.input-element input {
+  width: 100%;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  -webkit-backface-visibility: hidden;
+}
+.input-element.active label {
+  top: 15px;
+  color: #FFC200;
+  font-size: 12px;
+}
+.input-element.active:before {
+  width: 100%;
+}
+
+/*1*/
+.input-element1 {
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+  overflow: visible;
+}
+.input-element1:last-child {
+  margin-bottom: 0;
+}
+.input-element1:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: yellow;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+.input-element1:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #FFC200;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  z-index: 20;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.input-element1 label {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  color: #fff;
+  top: 42px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.input-element1 label:hover {
+  cursor: pointer;
+  color: #efefef;
+}
+.input-element1 input {
+  width: 100%;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  -webkit-backface-visibility: hidden;
+}
+.input-element1.active label {
+  top: 15px;
+  color: #FFC200;
+  font-size: 12px;
+}
+.input-element1.active:before {
+  width: 100%;
+}
+
+/*2*/
+.input-element2 {
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+  overflow: visible;
+}
+.input-element2:last-child {
+  margin-bottom: 0;
+}
+.input-element2:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: yellow;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+.input-element2:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #FFC200;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  z-index: 20;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.input-element2 label {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  color: #fff;
+  top: 42px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.input-element2 label:hover {
+  cursor: pointer;
+  color: #efefef;
+}
+.input-element2 input {
+  width: 100%;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  -webkit-backface-visibility: hidden;
+}
+.input-element2.active label {
+  top: 15px;
+  color: #FFC200;
+  font-size: 12px;
+}
+.input-element2.active:before {
+  width: 100%;
+}
+
+/*3*/
+.input-element3 {
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+  overflow: visible;
+}
+.input-element3:last-child {
+  margin-bottom: 0;
+}
+.input-element3:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: yellow;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+.input-element3:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #FFC200;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  z-index: 20;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.input-element3 label {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  color: #fff;
+  top: 42px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.input-element3 label:hover {
+  cursor: pointer;
+  color: #efefef;
+}
+.input-element3 input {
+  width: 100%;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  -webkit-backface-visibility: hidden;
+}
+.input-element3.active label {
+  top: 15px;
+  color: #FFC200;
+  font-size: 12px;
+}
+.input-element3.active:before {
+  width: 100%;
+}
+
+/*4*/
+.input-element4 {
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+  overflow: visible;
+}
+.input-element4:last-child {
+  margin-bottom: 0;
+}
+.input-element4:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: yellow;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+.input-element4:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: #FFC200;
+  -webkit-transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  z-index: 20;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.input-element4 label {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  color: #fff;
+  top: 42px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+}
+.input-element4 label:hover {
+  cursor: pointer;
+  color: #efefef;
+}
+.input-element4 input {
+  width: 100%;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  -webkit-backface-visibility: hidden;
+}
+.input-element4.active label {
+  top: 15px;
+  color: #FFC200;
+  font-size: 12px;
+}
+.input-element4.active:before {
+  width: 100%;
+}

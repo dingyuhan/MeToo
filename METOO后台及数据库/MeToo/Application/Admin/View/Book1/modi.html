@@ -1,0 +1,78 @@
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">图书管理</a></li>
+    	    <li class="active">添加图书</li>
+  	    </ol>
+    	  <h3 class="down">添加图书 <small>Books Add</small></h3>
+    	 
+    	    <div class="list-group form">
+          <form enctype="multipart/form-data" class="form-horizontal" role="form" method="post" action="__MODULE__/Book/doModi">
+          <input type="hidden" name="books_id" value="{$books.books_id}" />
+            <div class="list-group-item">
+              <label for="inputEmail3" class="col-sm-2 control-label">图书名称</label>
+              <div class="col-sm-10">
+                <input type="input" class="form-control" id="inputEmail3" placeholder="" name="title" value="{$books.title}">
+              </div>
+            </div>
+            <div class="list-group-item">
+              <label for="inputEmail3" class="col-sm-2 control-label">出版日期</label>
+              <div class="col-sm-10">
+              <input type="input" class="form-control" id="inputEmail3" placeholder="" name="publishtime" value="{$books.publishtime}"></div>
+            </div>
+           
+            <div class="list-group-item">
+              <label for="inputEmail3" class="col-sm-2 control-label">作者</label>
+              <div class="col-sm-10">
+                <input type="input" class="form-control" id="inputEmail3" placeholder="" name="author" value="{$books.author}">
+              </div>
+            </div>
+
+            <div class="list-group-item">
+              <label for="inputEmail3" class="col-sm-2 control-label">出版社</label>
+              <div class="col-sm-10">
+                <input type="input" class="form-control" id="inputEmail3" placeholder="" name="publisher" value="{$books.publisher}">
+              </div>
+            </div>
+           
+            <div class="list-group-item">
+              <label for="inputEmail3" class="col-sm-2 control-label">ISBN</label>
+              <div class="col-sm-10">
+                <input type="input" class="form-control" id="inputEmail3" placeholder="" name="ISBN" value="{$books.isbn}">
+              </div>
+            </div>
+
+            <div class="list-group-item">
+              <label for="inputEmail3" class="col-sm-2 control-label">ISSN</label>
+              <div class="col-sm-10">
+                <input type="input" class="form-control" id="inputEmail3" placeholder="" name="ISSN" value="{$books.issn}">
+              </div>
+            </div>
+          
+            <div class="list-group-item">
+               <label for="inputEmail3" class="col-sm-2 control-label">摘要</label>
+              <div class="col-sm-10">
+                
+                <textarea id="editor_id" name="content" style="width:90%;height:300px;" value="{$books.summary}">
+&lt;strong&gt;HTML内容&lt;/strong&gt;
+</textarea>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="col-sm-offset-2 col-sm-5">
+              <div class="row">
+              <div class=" col-sm-5">
+                <button type="submit" class="btn btn-primary">确 认 修 改</button>
+              </div>
+              <div class=" col-sm-5">
+                <button type="submit" class="btn btn-warning">重 置 内 容</button>
+              </div>
+              </div>
+              </div>
+            </div>
+          </form>
+  	  </div>
+  
+    </div>
+
+	

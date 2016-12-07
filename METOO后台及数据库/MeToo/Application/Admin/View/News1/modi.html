@@ -1,0 +1,63 @@
+
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="__ROOT__/index.php/Admin/Index/index.html">首页</a></li>
+    	    <li><a href="#">新闻管理</a></li>
+    	    <li class="active">添加新闻</li>
+  	    </ol>''
+    	  <h3 class="down">添加新闻 <small>News Add</small></h3>
+    	  <div class="list-group form">
+    	    <form enctype="multipart/form-data" class="form-horizontal" role="form" method="post" action="__MODULE__/News/doModi">
+            <input type="hidden" name="news_id" value="{$news.news_id}" />
+    	      <div class="list-group-item">
+    	        <label for="inputEmail3" class="col-sm-2 control-label">新闻标题</label>
+    	        <div class="col-sm-10">
+    	          <input type="input" class="form-control" id="inputEmail3" placeholder="" name="title" value="{$news.title}">
+  	          </div>
+  	        </div>
+    	      <div class="list-group-item">
+    	        <label for="inputEmail3" class="col-sm-2 control-label">发布时间</label>
+    	        <div class="col-sm-10">
+                <input type="input" class="form-control" id="inputEmail3" placeholder="" name="posttime" value="{$news.posttime}">
+              </div>
+  	        </div>
+    	     
+    	      <div class="list-group-item">
+    	        <label for="inputEmail3" class="col-sm-2 control-label">发布人/作者</label>
+    	        <div class="col-sm-10">
+    	          <input type="input" class="form-control" id="inputEmail3" placeholder="" name="author" value="{$news.author}">
+  	          </div>
+  	        </div>
+    	     
+    	    
+    	      <div class="list-group-item">
+               <label for="inputEmail3" class="col-sm-2 control-label">内容</label>
+    	        <div class="col-sm-10">
+    	          
+    	          <textarea id="editor_id" name="content" style="width:90%;height:300px; value="{$news.content}"">
+&lt;strong&gt;HTML内容&lt;/strong&gt;
+</textarea>
+    	        </div>
+  	        </div>
+    	      <div class="list-group-item">
+              <div class="col-sm-offset-2 col-sm-5">
+              <div class="row">
+    	        <div class=" col-sm-5">
+    	          <button type="submit" class="btn btn-primary">确 认 修 改</button>
+  	          </div>
+              <div class=" col-sm-5">
+   	            <button type="submit" class="btn btn-warning">重 置 内 容</button>
+  	          </div>
+              </div>
+              </div>
+  	        </div>
+  	      </form>
+  	    </div>
+  	  </div>
+	<script charset="utf-8" src="__PUBLIC__/end/js/editor/kindeditor.js"></script>
+  <script charset="utf-8" src="__PUBLIC__/end/js/editor/lang/zh_CN.js"></script>
+  <script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>

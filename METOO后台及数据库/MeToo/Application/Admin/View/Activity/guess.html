@@ -1,0 +1,79 @@
+
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">动态管理</a></li>
+    	    <li class="active">猜猜看</li>
+  	    </ol>
+    	  <div class="table-responsive ">
+    	    <h3 style="display:inline;">猜猜看</h3>
+          <form action="__MODULE__/Activity/addguess" method="post" style="display:inline; margin-left:1100px;">
+            <button type="submit" class="btn btn-warning">添加猜猜看</button>
+          </form>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table  table-striped table-hover " style="margin-top:20px;">
+    	      <tr>
+              	<th width="5%"> i d</th>
+    	        <th width="10%">美照</th>
+                <th width="15%">问题</th>
+                 <th width="10%">上传时间</th>
+    	        <th width="8%">操作</th>
+  	        </tr>
+            <volist name="guess" id="guess">
+    	      <tr>
+    	        <td>{$guess.id}</td>
+     			<td><img src="images/head.gif" style="height:30px;width:60px"></td>
+                <td>{$guess.question}</td>
+                <td>{$guess.time}</td>
+    	        <td><a href="deleteguess/id/{$guess.id}">删除</a> <a href="modiguess/id/{$guess.id}">修改</a></td>
+  	        </tr>
+            </volist>   	     
+  	      </table>
+  	    </div>
+    	  <div class="input-group pull-left form">  
+  	    </div>
+    	  <ul class="pagination pull-right" >
+    	    <li class="disabled"><a href="#">&laquo;</a></li>
+    	    <li class="active"><a href="#">1</a></li>
+    	    <li><a href="#">2</a></li>
+    	    <li><a href="#">3</a></li>
+    	    <li><a href="#">4</a></li>
+    	    <li><a href="#">&raquo;</a></li>
+  	    </ul>
+        <div style="float:right; width:100%;">
+        	<div class="table-responsive ">
+    	    <h3>猜答案</h3>
+    	    <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table  table-striped table-hover ">
+    	      <tr>	
+    	       <th width="5%"> i d</th>
+    	        <th width="5%">图片id</th>
+    	        <th width="10%">评论</th>
+                <th width="5%">用户id</th>
+                 <th width="10%">发表时间</th>
+    	        <th width="8%">操作</th>
+  	        </tr>
+            <volist name="guess_part" id="guess_part">
+    	      <tr>
+              	
+    	        <td>{$guess_part.id}</td>
+                <td>{$guess_part.guessid}</td>
+                <td>{$guess_part.comment}</td>
+    	        <td>{$guess_part.userid}</td>
+              <td>{$guess_part.time}</td>
+    	        <td><a href="deleteguess_part/id/{$guess_part.id}">删除</a></td>
+  	        </tr>
+            </volist>	     
+  	      </table>
+  	    </div>
+        <div class="input-group pull-left form">  
+  	    </div>
+    	  <ul class="pagination pull-right" >
+    	    <li class="disabled"><a href="#">&laquo;</a></li>
+    	    <li class="active"><a href="#">1</a></li>
+    	    <li><a href="#">2</a></li>
+    	    <li><a href="#">3</a></li>
+    	    <li><a href="#">4</a></li>
+    	    <li><a href="#">&raquo;</a></li>
+  	    </ul>
+        </div>
+  	  </div>  
+	</div>

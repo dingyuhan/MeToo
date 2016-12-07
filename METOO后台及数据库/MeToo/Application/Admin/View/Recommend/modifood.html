@@ -1,0 +1,36 @@
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">推荐管理</a></li>
+    	    <li class="active">美食修改</li>
+  	    </ol>
+    	  <div class="table-responsive ">
+    	    <h3>信息修改 <small>User Modify</small></h3>
+    	    <div class="list-group ">
+    	      <div class="list-group-item">
+    	        <form role="form" method="post" action="__MODULE__/Recommend/doModifood">
+                <input type="hidden" name="id" value="{$food.id}" />
+    	          <div class="input-group"> <span class="input-group-addon">美<img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20"><img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20">食：</span>
+    	            <input type="text" class="form-control" value="{$food.food}" name="food">
+  	            </div>
+    	          <div class="input-group "> <span class="input-group-addon" for="inputWarning1">美食图片：</span>
+                  <input name="thumb" id="" type="file" style="margin-left:20px;">
+    	            <!-- <input type="text" class="form-control" value="{$exchange.gnum}" name="gnum"> -->
+  	            </div>
+                <div class="input-group"> <span class="input-group-addon">推荐时间：</span>
+                  <input type="text" class="form-control" value="{$food.foodtime}" name="foodtime">
+                </div>
+    	          <div class="input-group"> <span class="input-group-addon">美食地点：</span>
+    	            <input type="text" class="form-control" value="{$food.site}" name="site">
+  	            </div>
+                <div class="input-group"> <span class="input-group-addon">推荐理由：</span>
+                  <input type="text" class="form-control" value="{$food.reason}" name="reason">
+                </div>
+    	          <div class="input-group">
+    	            <button type="submit" class="btn btn-primary "> &nbsp;&nbsp;保<img src="__PUBLIC__/end/images/em.png" alt="" width="20" height="20">存&nbsp;&nbsp;</button>
+  	            </div>
+  	          </form>
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>

@@ -1,0 +1,32 @@
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">个人中心</a></li>
+    	    <li class="active">兑换记录修改</li>
+  	    </ol>
+    	  <div class="table-responsive ">
+    	    <h3>信息修改 <small>User Modify</small></h3>
+    	    <div class="list-group ">
+    	      <div class="list-group-item">
+    	        <form role="form" method="post" action="__MODULE__/Personal/doModirecord">
+                <input type="hidden" name="id" value="{$record.id}" />
+    	          <div class="input-group"> <span class="input-group-addon">用<img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20"><img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20">户：</span>
+    	            <input type="text" class="form-control" value="{$record.userid}" name="userid">
+  	            </div>
+    	          <div class="input-group "> <span class="input-group-addon" for="inputWarning1">兑换物品：</span>
+    	            <input type="text" class="form-control" value="{$record.goodsid}" name="goodsid">
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">兑换时间：</span>
+    	            <input type="text" class="form-control" value="{$record.time}" name="time">
+  	            </div>
+                <div class="input-group"> <span class="input-group-addon">剩余积分：</span>
+                  <input type="text" class="form-control" value="{$record.remainmark}" name="remainmark">
+                </div>
+    	          <div class="input-group">
+    	            <button type="submit" class="btn btn-primary "> &nbsp;&nbsp;保<img src="__PUBLIC__/end/images/em.png" alt="" width="20" height="20">存&nbsp;&nbsp;</button>
+  	            </div>
+  	          </form>
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>

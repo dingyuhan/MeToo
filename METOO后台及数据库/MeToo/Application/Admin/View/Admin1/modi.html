@@ -1,0 +1,44 @@
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">帐户管理</a></li>
+    	    <li class="active">添加管理员</li>
+  	    </ol>
+    	  <div class="table-responsive ">
+    	    <h3>添加管理员 <small>User Add</small></h3>
+    	    <div class="list-group ">
+    	      <div class="list-group-item">
+    	        <form role="form" method="post" action="__MODULE__/Admin/doModi">
+              <input type="hidden" name="user_id" value="{$admin.user_id}" />
+    	          <div class="input-group"> <span class="input-group-addon">用<img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20">户<img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20">名：</span>
+    	            <input type="text" class="form-control" placeholder=""  name="username" value="{$admin.username}">
+  	            </div>
+    	          <div class="input-group "> <span class="input-group-addon" for="inputWarning1">真实姓名：</span>
+    	            <input type="text" class="form-control" placeholder="" id="input" name="realname" value="{$admin.realname}">
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">手机号码：</span>
+    	            <input type="text" class="form-control" placeholder=""  name="phonenum" value="{$admin.phonenum}">
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">电子邮箱：</span>
+    	            <input type="text" class="form-control" placeholder=""  name="email" value="{$admin.email}">
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">添加时间：</span>
+    	            <input type="text" class="form-control" placeholder=""  name="time" value="{$admin.time}">
+  	            </div>
+                <div class="input-group"> <span class="input-group-addon">设置密码：</span>
+    	            <input type="text" class="form-control" placeholder="123456"  name="password" value="{$admin.password}">
+  	            </div>
+                <div class="input-group"> <span class="input-group-addon">确认密码：</span>
+    	            <input type="text" class="form-control" placeholder="123456"  name="repassword" value="{$admin.password}">
+  	            </div>
+    	          <div class="input-group">
+    	            <button type="submit" class="btn btn-primary "> &nbsp;&nbsp;确认修改&nbsp;&nbsp;</button>
+  	            </div>
+  	          </form>
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>
+
+        	
+	
