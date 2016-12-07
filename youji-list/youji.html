@@ -1,0 +1,286 @@
+<html> 
+<head>
+    <title>游记列表页</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <script src="js/jquery.js"></script> 
+
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="css/youji1.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="css/youji.css" />   
+<body>
+ 
+    <div class="header">
+        <div class="mybody1">
+        <div class="logo"><img src="images/me too.png" height="50px" alt="logo"/></div>
+        
+            <div class="nav">
+                <ul>
+			    <li><a href="#">首  页</a></li>
+                <li><a href="#">推荐榜</a>
+                    <ul>
+ 					    <li><a href="#">景&nbsp;&nbsp;点</a></li>
+ 					    <li><a href="#">旅&nbsp;&nbsp;店</a></li>
+ 					    <li><a href="#">美&nbsp;&nbsp;食</a></li>
+ 					    <li><a href="#">购&nbsp;&nbsp;物</a></li>
+ 				    </ul>
+ 			    </li>
+                <li><a href="#">攻  略</a>
+                    <ul>
+ 					    <li><a href="#">游&nbsp;&nbsp;记</a></li>
+ 					    <li><a href="#">你问我答</a></li>
+ 				    </ul>
+ 			    </li>
+                <li><a href="#">迷途动态</a>
+           	        <ul>
+ 					    <li><a href="#">至美一拍</a></li>
+ 					    <li><a href="#">猜猜看</a></li>				
+ 				    </ul>
+ 			    </li>
+ 			    <li><a href="#">个人中心</a>
+           	        <ul>
+ 					    <li><a href="#">积分兑换</a></li>
+ 					    <li><a href="#">足&nbsp;&nbsp;迹</a></li>
+ 					    <li><a href="#">我参与的</a></li>				
+ 				    </ul>
+ 			    </li>
+
+ 		    </ul>
+            </div> 
+
+            <div class="b_nav">
+                <div class="register">
+                    <img src="images/register.png" width="25" height="25"/><br/><a href="#">登录</a>
+                </div>
+                <div class="login">
+                    <img src="images/login.png" width="25" height="25"/><br/><a href="#">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" style="border:0px;padding:0px;margin:0px;">
+
+    <div class="container" style="width:100%;" id="banner">
+    <div class="row">
+        <div class="col-md-12 col-lg-12" style="margin-top:-10px;">
+            <div class="carousel slide" id="carousel-650791">
+                <ol class="carousel-indicators">
+                    <li class="active" data-slide-to="0" data-target="#carousel-650791">
+                    </li>
+                    <li data-slide-to="1" data-target="#carousel-650791">
+                    </li>
+                    <li data-slide-to="2" data-target="#carousel-650791">
+                    </li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img alt="" src="images/banner1.jpg"  class="img-responsive" id="pic1">
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="images/banner2.jpg"  class="img-responsive" id="pic1"/>
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img alt="" src="images/banner3.jpg"  class="img-responsive" id="pic1"/>
+                        <div class="carousel-caption">
+                            
+                        </div>
+                    </div>
+                </div> <a class="left carousel-control" href="#carousel-650791" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-650791" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+    </div>
+    </div>  
+
+
+    <div class="container" style="width:100%;">
+        <div class="row">
+        <div class="col-md-1 col-lg-1">
+            <img src="images/travel.png" id="diandian" >
+        </div>
+        
+        <div class="col-md-11 col-lg-10">
+            <h1 >游记篇----------前言</h1>
+            <p id="qianyan">旅行的美好，宽稳如镜面似的高山湖，只有你自己记得哪些刹那让你感到莫名的幸福，秘不可说、不立文字的感觉才真切，如初落便化作无形的苍山暮雪。万里觅知音，却与自己——因被冷落与忘怀而悲从中来的，终生相伴又不得谋面的自己，擦肩而过。</p>
+            <P id="qianyanjiewei">-----------------------《最好的时光在路上》</p>
+            <h1 class="title1">最新游记</h1>
+
+            <div class="row1">
+                <div class="col-md-1 col-lg-1">
+                    <img src="images/touxiang5.jpg" alt="用户头像" class="img-responsive" id="touxiang">
+                </div>
+                <div class="col-md-11 col-lg-11">
+                    <h3>此篇游记的名字</h3>
+                    <p><a href="#">迷途网用户的名字</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<a href="#">2016-11-12</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布地点：<a href="#">哪哪哪</a></p>                  
+              
+                    <div class="col-md-3 col-lg-3 col-sm-6">
+                    <img src="images/8.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6">
+                    <img src="images/11.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6">
+                    <img src="images/10.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6">
+                    <img src="images/7.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+              
+                </div>        
+                    
+            </div>
+
+            <div class="row2">
+                <div class="col-md-1 col-lg-1">
+                    <img src="images/touxiang4.jpg" alt="用户头像" class="img-responsive" id="touxiang">
+                </div>
+                <div class="col-md-11 col-lg-11">
+                    <h3>此篇游记的名字</h3>
+                    <p><a href="#">迷途网用户的名字</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<a href="#">2016-11-12</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布地点：<a href="#">哪哪哪</a></p>
+                
+                    <div class="col-md-3 col-lg-3 col-sm-6">
+                    <img src="images/8.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6">
+                    <img src="images/11.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6">
+                    <img src="images/10.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6">
+                    <img src="images/7.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+               
+                 </div>
+            </div>
+
+
+
+
+
+            <h1 class="title2">热门游记</h1>
+            <div class="row3" >
+                <div class="col-md-1 col-lg-1">
+                    <img src="images/touxiang3.jpg" alt="用户头像" class="img-responsive" id="touxiang">
+                </div>
+                <div class="col-md-11 col-lg-11">
+                    <h3>此篇游记的名字</h3>
+                    <p><a href="#">迷途网用户的名字</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<a href="#">2016-11-12</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布地点：<a href="#">哪哪哪</a></p>
+
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/8.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/7.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/11.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/9.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row4">
+                <div class="col-md-1 col-lg-1">
+                    <img src="images/touxiang2.jpg" alt="用户头像" class="img-responsive" id="touxiang">
+                </div>
+                <div class="col-md-11 col-lg-11">
+                    <h3>此篇游记的名字</h3>
+                    <p><a href="#">迷途网用户的名字</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<a href="#">2016-11-12</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布地点：<a href="#">哪哪哪</a></p>
+
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/10.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/6.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/7.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/9.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                </div>
+            </div><!--row4-->
+
+
+            <h1 class="title3">推荐游记</h1>
+
+
+            <div class="row5">
+              <!--推荐游记-->
+                <div class="col-md-1 col-lg-1">
+                    <img src="images/touxiang.jpg" alt="用户头像" class="img-responsive" id="touxiang">
+                </div>
+                <div class="col-md-11 col-lg-11">
+                    <h3>此篇游记的名字</h3>
+                    <p><a href="#">迷途网用户的名字</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<a href="#">2016-11-12</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布地点：<a href="#">哪哪哪</a></p>
+
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/8.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/11.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/10.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/7.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row6">
+                <div class="col-md-1 col-lg-1">
+                    <img src="images/touxiang2.jpg" alt="用户头像" class="img-responsive" id="touxiang">
+                </div>
+                <div class="col-md-11 col-lg-11">
+                    <h3>此篇游记的名字</h3>
+                    <p><a href="#">迷途网用户的名字</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<a href="#">2016-11-12</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发布地点：<a href="#">哪哪哪</a></p>
+
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/8.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/11.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/7.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                    <div class="col-md-3 col-lg-3">
+                    <img src="images/10.jpg" alt="游记图片" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-lg-1">
+        </div> 
+    </div>
+</div>
+
+  
+	       
+	    <div class="footer">
+	        <div class="mybody2">
+                <p>Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：冀A2-20050130</p>
+                <p>网备31010502000018号</p>
+                <p>旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨石家庄市旅游网站落实诚信建设主体责任承诺书</p>
+	        </div>
+        </div>
+
+<script src="js/jquery.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
