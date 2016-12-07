@@ -1,0 +1,76 @@
+
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">活动管理</a></li>
+    	    <li class="active">至美一拍</li>
+  	    </ol>
+    	  <div class="table-responsive ">
+    	    <h3 style="display:inline;">至美一拍</h3>
+          <form action="__MODULE__/Activity/addpk" method="post" style="display:inline; margin-left:1100px;">
+            <button type="submit" class="btn btn-warning">添加至美一拍</button>
+          </form>
+          <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table  table-striped table-hover " style="margin-top:20px;">
+    	      <tr>
+    	        <th width="5%"> i d</th>
+    	        <th width="20%">主题</th>
+              <th width="20%">时间</th>
+    	        <th width="8%">操作</th>
+  	        </tr>
+            <volist name="pk" id="pk">
+    	      <tr>	
+    	        <td>{$pk.id}</td>
+              <td>{$pk.theme}</td>
+              <td>{$pk.time}</td>
+    	        <td><a href="deletepk/id/{$pk.id}">删除</a> <a href="modipk/id/{$pk.id}">修改</a></td>
+  	        </tr>
+            </volist> 	     
+  	      </table>
+  	    </div>
+    	  <div class="input-group pull-left form">  
+  	    </div>
+    	  <ul class="pagination pull-right" >
+    	    <li class="disabled"><a href="#">&laquo;</a></li>
+    	    <li class="active"><a href="#">1</a></li>
+    	    <li><a href="#">2</a></li>
+    	    <li><a href="#">3</a></li>
+    	    <li><a href="#">4</a></li>
+    	    <li><a href="#">&raquo;</a></li>
+  	    </ul>
+        <div style="float:right">
+        	<div class="table-responsive ">
+    	    <h3>发表至美一拍</h3>
+    	    <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table  table-striped table-hover ">
+    	      <tr>
+    	       <th width="5%"> i d</th>
+    	        <th width="5%">主题id</th>
+    	        <th width="10%">美照</th>
+                <th width="5%">用户id</th>
+                 <th width="10%">发表时间</th>
+    	        <th width="8%">操作</th>
+  	        </tr>
+            <volist name="pk_part" id="pk_part">
+    	      <tr>
+    	          <td>{$pk_part.id}</td>
+                <td>{$pk_part.themeid}</td>
+                <td><img src="images/head.gif" style="height:30px;width:60px"></td>
+    	          <td>{$pk_part.userid}</td>
+                <td>{$pk_part.pktime}</td>
+    	        <td><a href="deletepk_part/id/{$pk_part.id}">删除</a></td>
+  	        </tr> 
+            </volist>  	     
+  	      </table>
+  	    </div>
+        <div class="input-group pull-left form">  
+  	    </div>
+    	  <ul class="pagination pull-right" >
+    	    <li class="disabled"><a href="#">&laquo;</a></li>
+    	    <li class="active"><a href="#">1</a></li>
+    	    <li><a href="#">2</a></li>
+    	    <li><a href="#">3</a></li>
+    	    <li><a href="#">4</a></li>
+    	    <li><a href="#">&raquo;</a></li>
+  	    </ul>
+        </div>
+  	  </div>  
+	</div>

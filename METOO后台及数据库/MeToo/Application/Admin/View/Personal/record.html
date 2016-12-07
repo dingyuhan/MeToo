@@ -1,0 +1,46 @@
+<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">个人中心</a></li>
+    	    <li class="active">兑换记录</li>
+  	    </ol>
+    	  <div class="table-responsive ">
+    	    <h3>兑换记录</h3>
+    	    <table width="100%" border="0" cellspacing="0" cellpadding="0"  class="table  table-striped table-hover ">
+    	      <tr>
+              <th width="4%"><input type="checkbox" name="checkbox10" id="checkbox10"></th>
+    	        <th width="10%"> id</th>
+    	        <th width="20%">用户id</th>
+    	        <th width="20%">兑换时间</th>
+                <th width="10%">兑换物品</th>
+                <th width="10%">剩余积分</th>
+    	        <th width="10%">操作</th>
+  	        </tr>
+            <volist name="record" id="record">
+    	      <tr>
+              <th width="4%"><input type="checkbox" name="checkbox10" id="checkbox10"></th>
+    	        <td>{$record.id}</td>
+              <td>{$record.userid}</td>
+    	        <td>{$record.goodsid}</td>
+    	        <td>{$record.time}</td>
+              <td>{$record.remainmark}</td>
+    	        <td><a href="deleterecord/id/{$record.id}">删除</a><a href="modirecord/id/{$record.id}">修改</a></td>
+  	        </tr>
+            </volist>
+  	      </table>
+  	    </div>
+        <div class="input-group pull-left form">
+          <button type="submit" class="btn btn-danger "> 删 除</button>
+        </div>
+    	  <div class="input-group pull-left form">
+    	    
+  	    </div>
+    	  <ul class="pagination pull-right" >
+    	    <li class="disabled"><a href="#">&laquo;</a></li>
+    	    <li class="active"><a href="#">1</a></li>
+    	    <li><a href="#">2</a></li>
+    	    <li><a href="#">3</a></li>
+    	    <li><a href="#">4</a></li>
+    	    <li><a href="#">&raquo;</a></li>
+  	    </ul>
+  	  </div>

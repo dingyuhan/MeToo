@@ -1,0 +1,41 @@
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">帐户管理</a></li>
+    	    <li class="active">信息修改</li>
+  	    </ol>
+    	  <div class="table-responsive ">
+    	    <h3>信息修改 <small>User Modify</small></h3>
+    	    <div class="list-group ">
+    	      <div class="list-group-item">
+    	        <form role="form" method="post" action="__MODULE__/Admin/doModi">
+                <input type="hidden" name="id" value="{$admin.id}" />
+    	          <div class="input-group"> <span class="input-group-addon">用<img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20">户<img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20">名：</span>
+    	            <input type="text" class="form-control" value="{$admin.username}" name="username">
+  	            </div>
+    	          <div class="input-group "> <span class="input-group-addon" for="inputWarning1">真实姓名：</span>
+    	            <input type="text" class="form-control" value="{$admin.realname}" name="realname">
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">手机号码：</span>
+    	            <input type="text" class="form-control" value="{$admin.phonenum}" name="phonenum">
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">电子邮箱：</span>
+    	            <input type="text" class="form-control" value="{$admin.email}" name="email">
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">注册时间：</span>
+    	            <input type="text" class="form-control" value="{$admin.time}" readonly>
+  	            </div>
+                <div class="input-group"> <span class="input-group-addon">设置密码：</span>
+    	            <input type="text" class="form-control" value="{$admin.password}" name="password">
+  	            </div>
+                <div class="input-group"> <span class="input-group-addon">确认密码：</span>
+    	            <input type="text" class="form-control" value="{$admin.password}" name="password">
+  	            </div>
+    	          <div class="input-group">
+    	            <button type="submit" class="btn btn-primary "> &nbsp;&nbsp;保<img src="__PUBLIC__/end/images/em.png" alt="" width="20" height="20">存&nbsp;&nbsp;</button>
+  	            </div>
+  	          </form>
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>

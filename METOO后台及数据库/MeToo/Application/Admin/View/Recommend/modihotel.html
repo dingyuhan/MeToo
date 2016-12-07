@@ -1,0 +1,36 @@
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">推荐管理</a></li>
+    	    <li class="active">旅店修改</li>
+  	    </ol>
+    	  <div class="table-responsive ">
+    	    <h3>信息修改 <small>User Modify</small></h3>
+    	    <div class="list-group ">
+    	      <div class="list-group-item">
+    	        <form role="form" method="post" action="__MODULE__/Recommend/doModihotel">
+                <input type="hidden" name="id" value="{$hotel.id}" />
+    	          <div class="input-group"> <span class="input-group-addon">旅<img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20"><img src="__PUBLIC__/end/images/em.png" alt="" width="6" height="20">店：</span>
+    	            <input type="text" class="form-control" value="{$hotel.hotel}" name="hotel">
+  	            </div>
+    	          <div class="input-group "> <span class="input-group-addon" for="inputWarning1">旅店图片：</span>
+                  <input name="thumb" id="" type="file" style="margin-left:20px;">
+    	            <!-- <input type="text" class="form-control" value="{$exchange.gnum}" name="gnum"> -->
+  	            </div>
+                <div class="input-group"> <span class="input-group-addon">添加时间：</span>
+                  <input type="text" class="form-control" value="{$hotel.hoteltime}" name="hoteltime">
+                </div>
+    	          <div class="input-group"> <span class="input-group-addon">旅店位置：</span>
+    	            <input type="text" class="form-control" value="{$hotel.site}" name="site">
+  	            </div>
+                <div class="input-group"> <span class="input-group-addon">推荐理由：</span>
+                  <input type="text" class="form-control" value="{$hotel.reason}" name="reason">
+                </div>
+    	          <div class="input-group">
+    	            <button type="submit" class="btn btn-primary "> &nbsp;&nbsp;保<img src="__PUBLIC__/end/images/em.png" alt="" width="20" height="20">存&nbsp;&nbsp;</button>
+  	            </div>
+  	          </form>
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>

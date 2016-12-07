@@ -1,0 +1,35 @@
+    	<div class="col-md-10 col-md-offset-2 ">
+    	  <ol class="breadcrumb">
+    	    <li><a href="#">首页</a></li>
+    	    <li><a href="#">帐户管理</a></li>
+    	    <li class="active">个人密码修改</li>
+  	    </ol>
+    	  <div class="table-responsive ">
+    	    <h3>个人密码修改 <small>Password Modify</small></h3>
+    	    <div class="list-group ">
+    	      <div class="list-group-item">
+    	        <form role="form" method="post" action="__MODULE__/Admin/doPass">
+    	          <div class="input-group"> <span class="input-group-addon">用户名：</span>
+    	            <input type="text" class="form-control" placeholder="administrator" value="{$users.username}" name="username" readonly>
+  	            </div>
+    	          <div class="input-group "> <span class="input-group-addon" for="inputWarning1">真实姓名：</span>
+    	            <input type="text" class="form-control" placeholder="张黎明" id="input" name="realname" value="{$users.realname}" readonly>
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">旧密码：</span>
+    	            <input type="text" class="form-control" placeholder="">
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">新密码：</span>
+    	            <input type="text" class="form-control" placeholder="" name="password">
+  	            </div>
+    	          <div class="input-group"> <span class="input-group-addon">确认新密码：</span>
+    	            <input type="text" class="form-control" placeholder="" >
+  	            </div>
+    	          <div class="input-group">
+    	            <button type="submit" class="btn btn-primary "> &nbsp;&nbsp;保<img src="__PUBLIC__/end/images/em.png" alt="" width="20" height="20">存&nbsp;&nbsp;</button>
+  	            </div>
+  	          </form>
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>
+
