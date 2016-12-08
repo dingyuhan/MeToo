@@ -1,0 +1,149 @@
+﻿
+a{
+	text-decoration: none;
+}
+
+
+#wrap{
+	width: 1008px;
+	height: 574px;
+	margin: 100px auto;
+margin-top:30px;}
+
+
+#wrap ul li .a1 img{
+	width: 320px;
+	height: 227px;
+}
+
+
+#wrap ul li{
+	width: 320px;
+	height: 350px;
+	list-style: none;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 5px;
+}
+
+ 
+#wrap ul li .a1 .divA{
+	bottom: 0;
+	left: 0;
+	width: 474px;
+	height: 76px;
+	padding: 10px 20px;
+	background: #fafafa;
+}
+
+
+#wrap ul li .a1 .divA>.p8{
+	width: 190px;
+	height: 25px;
+	font-size: 18px;
+    line-height: 20px;
+    color: #666;font-family:'微软雅黑';
+}
+
+
+#wrap ul li .a1 .divA>.p9{
+	width: 190px;
+	height: 21px;
+    font-size: 15px;
+    color: #b4b4b4;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#wrap ul li .a1 .divA>.p10{
+	position: absolute;right: 0;
+bottom: 12px;
+	width: 108px;
+	height: 28px;
+	color: #f60;
+}
+
+
+#wrap ul li .a1 .divA>.p10>span{
+	font-size: 24px;
+	font-weight:800;
+}
+
+
+/*遮罩*/
+
+#wrap ul li .a2{
+	position: absolute;
+	top: 0;
+	left:-320px;
+	width: 320px;
+	height: 227px;
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.5);
+	transition: all 0.2s;  
+} 
+
+
+#wrap ul li .a2 .p4{
+	width: 320px;
+	text-align: center;
+	position: absolute;
+	top: 34px;
+	left: -474px;
+	color: #ffe605;
+	font-size: 24px;
+    font-weight: bold;
+    transition: all 0.2s 0.1s ease-out ;  
+}
+
+
+#wrap ul li .a2 .p5{
+	width: 320px;
+	text-align: center;
+	line-height:20px ;
+	position: absolute;
+	top: 65px;
+	left: -474px;
+	margin: 30px  0 10px;
+	font-size: 15px;
+    color: white;
+    transition: all 0.2s 0.2s ease-out ;  
+}
+
+
+#wrap ul li .a2 .p6{
+	position: absolute;
+	top: 140px;
+	left: 175px;
+	transform: scale(1.4);
+	transition: all 0.3s 0.2s ;
+}
+
+
+#wrap ul li .a2 .p6 span{
+	font-family: Arial;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+
+#wrap ul li .a2 .p7{
+	position: absolute;
+	bottom:-50px;
+	left: 80px;
+	width: 160px;
+	height: 38px;
+	line-height: 38px;
+	border-radius: 20px;
+	margin: 10px auto;
+	border: 1px solid;
+	transition: all 0.2s 0.5s ;
+}
+    
+

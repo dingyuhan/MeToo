@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
  html{padding-bottom:0px;margin:0px;border:0px;}
         body{padding-bottom:0px;padding:0px;margin:0px;border:0px;background-color:#fade98}
         a{color:#000;text-decoration:none;}      
@@ -23,7 +23,7 @@
         .register{float:left;width:50px;border-right:1px solid #FFF;}
         .login{float:right;width:40px;margin-left:10px;}
 
-		.pag{float:left;position:relative;margin-top:40px;margin-left:700px;}
+		.pag{float:left;position:relative;margin-top:10px;margin-left:700px;}
         .pages {float:right;padding:10px 0 10px;font-family:'微软雅黑';text-decoration: none;}
         .pages a {display:inline-block;width: 50px;line-height:20px; background:white; border:0px; text-align:center; color:#ff7043; padding:10 10px;opacity:0.6;text-decoration: none;border-radius:6px;}
         .pages a.a1 {display:inline-block; width: 80px;line-height:20px; background:white; border:0px; color:#ff7043; text-align:center;padding:10 10px;opacity:0.6;border-radius:6px; }
@@ -84,15 +84,7 @@
 		
 		border:solid 1px #0e509e
 		}
-		.box1{margin:30px 30px 0 160px;width:280px;float:left;}
-		.box2{margin:30px;width:280px;float:left}
-		.box3{margin:30px;width:280px;float:left}
-		.box4{margin:0px 30px 0 160px;width:280px;float:left}
-		.box5{margin:0 30px 0 30px;width:280px;float:left}
-		.box6{margin:0 30px 0 30px;width:280px;float:left}
-		.bbox{zoom:1;overflow:hidden;background-color:#f7e8d0;width:260px;}
-		.bbbox{float:left;padding-left:10px;}
-		.imge{width:260px;height:220px;border:3px solid #f7e8d0;}
+		
 		.likeCount {font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 32px;margin:-30px 0 0 72px;font-size: 25px;color: #000}
 		.likerCount{font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 32px;margin:-30px 0 0 72px;font-size: 25px;color: #000}
 		.loveCount {font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 32px;margin:-30px 0 0 72px;font-size: 25px;color: #000}
@@ -103,18 +95,18 @@
 		.loverrrCount{font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 32px;margin:-30px 0 0 72px;font-size: 25px;color: #000}
 		.llloverCount {font-family: 'Georgia', Times, Times New Roman, serif; margin-top: 32px;margin:-30px 0 0 72px;font-size: 25px;color: #000}
 		
-		#like2{margin:-20px 0 0 380px}
-		#liker2{margin:-20px 0 0 720px}
-		#love2{margin:-20px 0 0 1060px}
-		#lover2{margin:-20px 0 0 380px}
-		#loverr2{margin:-20px 0 0 720px}
-		#llover2{margin:-20px 0 0 1060px}
-		#loover2{}
-		#loverrr2{}
-		#lllover2{}
+		#like2{margin:-90px 0 0 250px}
+		#liker2{margin:-90px 0 0 250px}
+		#love2{margin:-90px 0 0 250px}
+		#lover2{margin:-90px 0 0 250px}
+		#loverr2{margin:-90px 0 0 250px}
+		#llover2{margin:-90px 0 0 250px}
+		#loover2{margin:-90px 0 0 250px}
+		#loverrr2{margin:-90px 0 0 250px}
+		#lllover2{margin:-90px 0 0 250px}
 		.content{background-color:#fade98;width:100%}
-		.line1{float:left;height:135%;width:30px}
-		.line2{float:right;height:135%;width:30px}
+		.line1{float:left;height:204%;width:30px}
+		.line2{float:right;height:204%;width:30px}
 		.line3{float:top; background-repeat:repeat-x; position:absolute; width:100%;height:45px;margin-left:-30px}
 		.line4{float:top; background-repeat:repeat-x; position:absolute; width:100%;height:45px;margin-left:-30px}
 		.line5{width:65%; float:right;margin-right:70px;}
@@ -128,6 +120,6 @@
 		.place{padding:50px 50px 0px 90px;}
 		.h31{margin-left:20px}
 		.main{margin:-35px 0 0 -30px}
-		.footer{margin-top:750px;height:120px;background-color:#ffb61e;}/* CSS Document */
+		.footer{margin-top:600px;height:120px;background-color:#ffb61e;}/* CSS Document */
 		.footer1{text-align:center; color:white;float:left;width:800px;margin:20px 0 0 250px}
 

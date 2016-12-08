@@ -84,12 +84,8 @@
 		
 		border:solid 1px #0e509e
 		}
-		.box1{margin:30px 20px 0 40px;width:260px;float:left;}
-		.box2{margin:30px 20px 0 20px;width:260px;float:left}
-		.box3{margin:30px 20px 0 20px;width:260px;float:left}
-		.box4{margin:10px 20px 0 70px;width:260px;float:left}
-		.box5{margin:10px 20px 0 20px;width:260px;float:left}
-		.box6{margin:10px 20px 0 20px;width:260px;float:left}
+		.box{margin-left: 30px;margin-top: 50px;}
+		.box1{float: left;margin-left: 40px;margin-top: 10px;}
 		.bbox{zoom:1;overflow:hidden;background-color:#f7e8d0;width:260px;}
 		.bbbox{float:left;padding-left:10px;}
 		.imge{width:260px;height:220px;border:3px solid #f7e8d0;}

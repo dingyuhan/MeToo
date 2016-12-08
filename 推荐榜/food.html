@@ -8,247 +8,23 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/default.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/bootstrap.js" type="text/javascript"></script>
+
     <script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/area.js"></script>
     <script type="text/javascript" src="js/location.js"></script>
     <script type="text/javascript" src="js/select2.js"></script>
     <script type="text/javascript" src="js/select2_locale_zh-CN.js"></script>
-    
-    <script>
-		$(document).ready(function()
-	{
-    
-	$('body').on("click",'.heart',function()
-    {
-    	
-    	var A=$(this).attr("id");
-		if(A==='like2'){
-			console.log(A);
-			var B=A.split("like");
-			console.log(B);
-			var messageID=B[1];
-			var C=parseInt($("#likeCount"+messageID).html());
-			console.log(C);
-			console.log($("#likeCount"+messageID).html());
-			$(this).css("background-position","");
-			var D=$(this).attr("rel");
-			console.log(D);
-			if(D === 'like') 
-			{      
-			$("#likeCount"+messageID).html(C+1);
-			$(this).addClass("heartAnimation").attr("rel","unlike");
-			
-			}
-			else
-			{
-			$("#likeCount"+messageID).html(C-1);
-			$(this).removeClass("heartAnimation").attr("rel","like");
-			$(this).css("background-position","left");
-			}
-		}
-		if(A==='liker2'){
-			console.log(A);
-			var B=A.split("liker");
-			console.log(B);
-			var messageID=B[1];
-			var C=parseInt($("#likerCount"+messageID).html());
-			console.log(C);
-			console.log($("#likerCount"+messageID).html());
-			$(this).css("background-position","");
-			var D=$(this).attr("rel");
-			console.log(D);
-			if(D === 'liker') 
-			{      
-			$("#likerCount"+messageID).html(C+1);
-			$(this).addClass("heartAnimation").attr("rel","unliker");
-			
-			}
-			else
-			{
-			$("#likerCount"+messageID).html(C-1);
-			$(this).removeClass("heartAnimation").attr("rel","liker");
-			$(this).css("background-position","left");
-			}
-		}
-		if(A==='love2'){
-			console.log(A);
-			var B=A.split("love");
-			console.log(B);
-			var messageID=B[1];
-			var C=parseInt($("#loveCount"+messageID).html());
-			console.log(C);
-			console.log($("#loveCount"+messageID).html());
-			$(this).css("background-position","");
-			var D=$(this).attr("rel");
-			console.log(D);
-			if(D === 'love') 
-			{      
-			$("#loveCount"+messageID).html(C+1);
-			$(this).addClass("heartAnimation").attr("rel","unlove");
-			
-			}
-			else
-			{
-			$("#loveCount"+messageID).html(C-1);
-			$(this).removeClass("heartAnimation").attr("rel","love");
-			$(this).css("background-position","left");
-			}
-		}
-		if(A==='lover2'){
-			console.log(A);
-			var B=A.split("lover");
-			console.log(B);
-			var messageID=B[1];
-			var C=parseInt($("#loverCount"+messageID).html());
-			console.log(C);
-			console.log($("#loverCount"+messageID).html());
-			$(this).css("background-position","");
-			var D=$(this).attr("rel");
-			console.log(D);
-			if(D === 'lover') 
-			{      
-			$("#loverCount"+messageID).html(C+1);
-			$(this).addClass("heartAnimation").attr("rel","unlover");
-			
-			}
-			else
-			{
-			$("#loverCount"+messageID).html(C-1);
-			$(this).removeClass("heartAnimation").attr("rel","lover");
-			$(this).css("background-position","left");
-			}
-		}
-		if(A==='loverr2'){
-			console.log(A);
-			var B=A.split("loverr");
-			console.log(B);
-			var messageID=B[1];
-			var C=parseInt($("#loverrCount"+messageID).html());
-			console.log(C);
-			console.log($("#loverrCount"+messageID).html());
-			$(this).css("background-position","");
-			var D=$(this).attr("rel");
-			console.log(D);
-			if(D === 'loverr') 
-			{      
-			$("#loverrCount"+messageID).html(C+1);
-			$(this).addClass("heartAnimation").attr("rel","unloverr");
-			
-			}
-			else
-			{
-			$("#loverrCount"+messageID).html(C-1);
-			$(this).removeClass("heartAnimation").attr("rel","loverr");
-			$(this).css("background-position","left");
-			}
-		}
-		if(A==='llover2'){
-			console.log(A);
-			var B=A.split("llover");
-			console.log(B);
-			var messageID=B[1];
-			var C=parseInt($("#lloverCount"+messageID).html());
-			console.log(C);
-			console.log($("#lloverCount"+messageID).html());
-			$(this).css("background-position","");
-			var D=$(this).attr("rel");
-			console.log(D);
-			if(D === 'llover') 
-			{      
-			$("#lloverCount"+messageID).html(C+1);
-			$(this).addClass("heartAnimation").attr("rel","unllover");
-			
-			}
-			else
-			{
-			$("#lloverCount"+messageID).html(C-1);
-			$(this).removeClass("heartAnimation").attr("rel","llover");
-			$(this).css("background-position","left");
-			}
-		}
-		if(A==='loover2'){
-			console.log(A);
-			var B=A.split("loover");
-			console.log(B);
-			var messageID=B[1];
-			var C=parseInt($("#looverCount"+messageID).html());
-			console.log(C);
-			console.log($("#looverCount"+messageID).html());
-			$(this).css("background-position","");
-			var D=$(this).attr("rel");
-			console.log(D);
-			if(D === 'loover') 
-			{      
-			$("#looverCount"+messageID).html(C+1);
-			$(this).addClass("heartAnimation").attr("rel","unloover");
-			
-			}
-			else
-			{
-			$("#looverCount"+messageID).html(C-1);
-			$(this).removeClass("heartAnimation").attr("rel","loover");
-			$(this).css("background-position","left");
-			}
-		}
-		if(A==='loverrr2'){
-			console.log(A);
-			var B=A.split("loverrr");
-			console.log(B);
-			var messageID=B[1];
-			var C=parseInt($("#loverrrCount"+messageID).html());
-			console.log(C);
-			console.log($("#loverrrCount"+messageID).html());
-			$(this).css("background-position","");
-			var D=$(this).attr("rel");
-			console.log(D);
-			if(D === 'loverrr') 
-			{      
-			$("#loverrrCount"+messageID).html(C+1);
-			$(this).addClass("heartAnimation").attr("rel","unloverrr");
-			
-			}
-			else
-			{
-			$("#loverrrCount"+messageID).html(C-1);
-			$(this).removeClass("heartAnimation").attr("rel","loverrr");
-			$(this).css("background-position","left");
-			}
-		}
-		if(A==='lllover2'){
-			console.log(A);
-			var B=A.split("lllover");
-			console.log(B);
-			var messageID=B[1];
-			var C=parseInt($("#llloverCount"+messageID).html());
-			console.log(C);
-			console.log($("#llloverCount"+messageID).html());
-			$(this).css("background-position","");
-			var D=$(this).attr("rel");
-			console.log(D);
-			if(D === 'lllover') 
-			{      
-			$("#llloverCount"+messageID).html(C+1);
-			$(this).addClass("heartAnimation").attr("rel","unlllover");
-			
-			}
-			else
-			{
-			$("#llloverCount"+messageID).html(C-1);
-			$(this).removeClass("heartAnimation").attr("rel","lllover");
-			$(this).css("background-position","left");
-			}
-		}
+    <script type="text/javascript" src="js/recommend_praise.js"></script>
+
+   
+    <link rel="stylesheet" type="text/css" href="css/lefttoright.css">
+   
 
 
-    });
-
-
-	});
-	</script>
     <link href="css/common.css" rel="stylesheet"/>
+
     <link href="css/select2.css" rel="stylesheet"/>
+
    	<link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="css/meishi1.css" />
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="css/meishi.css" />
 
@@ -301,14 +77,14 @@
             </div> 
         </div>
     </div>
-    <div class="content" style="">
+    <div class="content">
     	<img src="images/line1.png" class="line1" style="">
         <img src="images/line2.png" class="line2" style="">
         <img src="images/line4.png" class="line4" style="">
 
-        <div  class="meishi" style="">
+        <div  class="meishi">
             <img src="images/icon1.png" class="icon1" >
-            <p class="p1">推荐榜&nbsp;/&nbsp;旅店介绍</p>
+            <p class="p1">推荐榜&nbsp;/&nbsp;美食介绍</p>
             <img src="images/line5.png"  class="line5" >
         </div>
             <!-- <p style="margin:50px; font-family:'黑体'; font-size:15px">&nbsp;&nbsp;&nbsp;&nbsp;       所谓"靠山吃山，靠水吃水"。"一方水土养一方人"，讲的是适应。中国幅员辽阔，自然条件千差万别。生活在中国大地上的56个民族，在不同自然环境中，各自形成了富有特色的丰富的饮食习俗。如生活在大草原上的蒙古、藏、哈萨克等族的牧民，食肉饮乳;赫哲族生活在黑龙江三江水乡，鱼是最主要的食物;而生活在兴安岭密林中的鄂伦春人，食必鸟兽肉……这在交通运输不发达的时代，更是不可改变的饮食模式。南方适于种水稻，故南方人民普遍以大米为主食;北方多种小麦、杂粮，故北方人民以面、杂粮为主食;青藏高原宜种青棵，故生活在这里的各族农民主食青稞。蜀湘湿气重，人多食辣;晋、陕、甘、湘、贵及许多山区，或因水土矣系，或因历史上长期缺盐，人喜食酸……饮食上的这些地方特色使中国饮食文化展现出异彩纷呈的局面。</p> -->
@@ -323,8 +99,8 @@
         </div>
         </div>
         <div class="place">
-        	<h3 class="h31" style="">选择地点&nbsp;:</h3>	
-        	<div class="main" style="">
+        	<h3 class="h31">选择地点&nbsp;:</h3>	
+        	<div class="main">
               <center>
                 <select id="loc_province" style="width:120px;margin-left:-100px;">
                 </select>
@@ -333,79 +109,114 @@
               </center>
             </div>
         </div>
-        <div>
+       				
 
-        	<div class="box1">
-            	 <img src="images/image1.jpg" class="imge">
-             <div class="bbox">
-                    <div class="bbbox">
-                        <p>美食：XXX</p>
-                        <p style="width:180px">推荐理由：XXX</p>
-                        <p style="width:180px">人气指数：<div class="likeCount" id="likeCount2">10</div></p>
-      				</div>
-                    <div class="heart" id="like2" rel="like" style=""></div>
-                </div>
-            </div>
 
-            <div class="box2">
-            	 <img src="images/image1.jpg" class="imge">
-              <div class="bbox">
-                    <div class="bbbox">
-                        <p>美食：XXX</p>
-                        <p style="width:180px">推荐理由：XXX</p>
-                        <p style="width:180px">人气指数：<div class="likerCount" id="likerCount2">10</div></p>
-      				</div>
-                    <div class="heart" id="liker2" rel="liker"></div>
-                </div>
-            </div>
+<div id="wrap">
+	<ul>
+		<li>
+			<a href="" class="a1">
+				<img src="images/food1.jpg">
+				<div class="divA">
+					<p class="p8">美食：八大碗</p>
+					<p class="p9">推荐时间：2011-9-17</p>
+					<p class="p11">人气指数：<div class="likeCount" id="likeCount2">10</div></p>
+				</div>
+			</a>
+			<div class="heart" id="like2" rel="like"></div>
+			<a href="" class="a2">
+					<p class="p4">推荐理由</p>
+					<p class="p5">唯美食与爱不可辜负</p>
+					<p class="p7">迷途推荐</p>
+			</a>
+		</li>
+		<li>
+			<a href="" class="a1">
+				<img src="images/food2.jpg">
+				<div class="divA">
+					<p class="p8">美食：八大碗</p>
+					<p class="p9">推荐时间：2011-9-18</p>
+					<p class="p11">人气指数：<div class="likerCount" id="likerCount2">10</div></p>
 
-            <div class="box3">
-            	 <img src="images/image1.jpg" class="imge">
-               <div class="bbox">
-                    <div class="bbbox">
-                        <p>美食：XXX</p>
-                        <p style="width:180px">推荐理由：XXX</p>
-                        <p style="width:180px">人气指数：<div class="loveCount" id="loveCount2" >10</div></p>
-      				</div>
-                    <div class="heart" id="love2" rel="love"></div>
-                </div>
-            </div>
-            <div class="box4">
-            	 <img src="images/image1.jpg" class="imge">
-                <div class="bbox">
-                    <div class="bbbox">
-                        <p>美食：XXX</p>
-                        <p style="width:180px">推荐理由：XXX</p>
-                        <p style="width:180px">人气指数：<div class="loverCount" id="loverCount2" >10</div></p>
-      				</div>
-                    <div class="heart" id="lover2" rel="lover" ></div>
-                </div>
-                
-            </div>
-            <div class="box5">
-            	 <img src="images/image1.jpg"  class="imge">
-                <div class="bbox">
-                    <div class="bbbox">
-                        <p>美食：XXX</p>
-                        <p style="width:180px">推荐理由：XXX</p>
-                        <p style="width:180px">人气指数：<div class="loverrCount" id="loverrCount2" >10</div></p>
-      				</div>
-                    <div class="heart" id="loverr2" rel="loverr" ></div>
-                </div>
-                
-            </div>
-            <div class="box6">
-            	 <img src="images/image1.jpg" class="imge">
-               <div class="bbox">
-                    <div class="bbbox">
-                        <p>美食：XXX</p>
-                        <p style="width:180px">推荐理由：XXX</p>
-                        <p style="width:180px">人气指数：<div class="lloverCount" id="lloverCount2" >10</div></p>
-      				</div>
-                    <div class="heart" id="llover2" rel="llover"></div>
-                </div>
-            </div>
-        </div>
+				</div>
+			</a>
+			<div class="heart" id="liker2" rel="liker"></div>
+			
+			<a href="" class="a2">
+					<p class="p4">推荐理由</p>
+					<p class="p5">唯美食与爱不可辜负</p>
+					<p class="p7">迷途推荐</p>
+			</a>
+		</li>
+		<li>
+			<a href="" class="a1">
+				<img src="images/food3.jpg">
+				<div class="divA">
+					<p class="p8">美食：八大碗</p>
+					<p class="p9">推荐时间：2011-9-16</p>
+					<p class="p11">人气指数：<div class="loveCount" id="loveCount2">10</div></p>			</div>
+			</a>
+			<div class="heart" id="love2" rel="love"></div>
+			<a href="" class="a2">
+					<p class="p4">推荐理由</p>
+					<p class="p5">唯美食与爱不可辜负</p>
+					<p class="p7">迷途推荐</p>
+			</a>
+		</li>
+		<li>
+			<a href="" class="a1">
+				<img src="images/food4.jpg">
+				<div class="divA">
+					<p class="p8">美食：八大碗</p>
+					<p class="p9">推荐时间：2011-9-16</p>
+					<p class="p11">人气指数：<div class="loverCount" id="loverCount2">10</div></p>
+					
+				</div>
+			</a>
+			<div class="heart" id="lover2" rel="lover"></div>
+			<a href="" class="a2">
+					<p class="p4">推荐理由</p>
+					<p class="p5">唯美食与爱不可辜负</p>
+					<p class="p7">迷途推荐</p>
+			</a>
+		</li>
+		<li>
+			<a href="" class="a1">
+				<img src="images/food1.jpg">
+				<div class="divA">
+					<p class="p8">美食：八大碗</p>
+					<p class="p9">推荐时间：2011-9-16</p>
+					<p class="p11">人气指数：<div class="loverrCount" id="loverrCount2">10</div></p>
+					
+				</div>
+			</a>
+			<div class="heart" id="loverr2" rel="loverr"></div>
+			<a href="" class="a2">
+					<p class="p4">推荐理由</p>
+					<p class="p5">唯美食与爱不可辜负</p>
+					<p class="p7">迷途推荐</p>
+			</a>
+		</li>
+		<li>
+			<a href="" class="a1">
+				<img src="images/food2.jpg">
+				<div class="divA">
+					<p class="p8">美食：八大碗</p>
+					<p class="p9">推荐时间：2011-9-16</p>
+					<p class="p11">人气指数：<div class="lloverCount" id="lloverCount2">10</div></p>		
+				</div>
+			</a>
+			<div class="heart" id="llover2" rel="llover"></div>
+			<a href="" class="a2">
+					<p class="p4">推荐理由</p>
+					<p class="p5">唯美食与爱不可辜负</p>
+					<p class="p7">迷途推荐</p>
+			</a>
+		</li>
+	</ul>
+</div>
+
+
         <div class="pag">   
                     <div class="pages" class="text-c">
                         <a href="#" class="a1">上一页</a> 
@@ -428,6 +239,23 @@
         </div>  
     </div>
     
-    
+ <script type="text/javascript">
+$('li').mouseenter(function(){
+	$(this).find('.divA').stop().animate({bottom:'0px'});
+	$(this).find('.a2').css({left:'0'})
+	$(this).children('.a2').find('.p4').css({left:'0'})
+	$(this).children('.a2').find('.p5').css({left:'0'})
+	$(this).children('.a2').find('.p6').css({transform:'scale(1)'})
+	$(this).children('.a2').find('.p7').css({bottom:'25px'})
+})
+$('li').mouseleave(function(){
+	$(this).find('.divA').stop().animate({bottom:'0px'});
+	$(this).find('.a2').css({left:-$(this).width()})
+	$(this).children('.a2').find('.p4').css({left:-$(this).width()})
+	$(this).children('.a2').find('.p5').css({left:-$(this).width()})
+	$(this).children('.a2').find('.p6').css({transform:'scale(1.3)'})
+	$(this).children('.a2').find('.p7').css({bottom:'-50px'})
+})
+</script>
 </body>
 </html>
