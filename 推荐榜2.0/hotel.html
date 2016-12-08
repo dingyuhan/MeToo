@@ -1,0 +1,295 @@
+<html> 
+<head>
+    <title>旅店</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/area.js"></script>
+    <script type="text/javascript" src="js/location.js"></script>
+    <script type="text/javascript" src="js/select2.js"></script>
+    <script type="text/javascript" src="js/select2_locale_zh-CN.js"></script>
+    <script type="text/javascript" src="js/recommend_praise.js"></script>
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/lefttoright.css">
+
+
+
+    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/select2.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="css/hotel1.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="css/hotel.css" />
+<body>
+ 
+    <div class="header">
+        <div class="mybody">
+        <div class="logo"><img src="images/me too.png" height="50px" alt="logo"/></div>
+            <div class="nav">
+                <ul>
+			    <li><a href="#">首  页</a></li>
+                <li><a href="#">推荐榜</a>
+                    <ul>
+ 					    <li><a href="#">景&nbsp;&nbsp;&nbsp;&nbsp;点</a></li>
+ 					    <li><a href="#">旅&nbsp;&nbsp;&nbsp;&nbsp;店</a></li>
+ 					    <li><a href="#">美&nbsp;&nbsp;&nbsp;&nbsp;食</a></li>
+ 					    <li><a href="#">购&nbsp;&nbsp;&nbsp;&nbsp;物</a></li>
+ 				    </ul>
+ 			    </li>
+                <li><a href="#">攻  略</a>
+                    <ul>
+ 					    <li><a href="#">游&nbsp;&nbsp;&nbsp;&nbsp;记</a></li>
+ 					    <li><a href="#">你问我答</a></li>
+ 				    </ul>
+ 			    </li>
+                <li><a href="#">迷途动态</a>
+           	        <ul>
+ 					    <li><a href="#">至美一拍</a></li>
+ 					    <li><a href="#">猜&nbsp;猜&nbsp;看</a></li>				
+ 				    </ul>
+ 			    </li>
+ 			    <li><a href="#">个人中心</a>
+           	        <ul>
+ 					    <li><a href="#">积分兑换</a></li>
+ 					    <li><a href="#">足&nbsp;&nbsp;&nbsp;&nbsp;迹</a></li>
+ 					    <li><a href="#">我参与的</a></li>				
+ 				    </ul>
+ 			    </li>
+
+ 		    </ul>
+            </div>
+            <div class="b_nav">
+                <div class="register">
+                    <img src="images/register.png" width="25" height="25"/><br/><a href="#">登录</a>
+                </div>
+                <div class="login">
+                    <img src="images/login.png" width="25" height="25"/><br/><a href="#">注册</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+
+    <div class="content" style="background-color:#fade98;zoom:1;overflow:auto;margin-bottom:30px;">
+    	<img src="images/line1.png" class="line1" style="">
+        <img src="images/line2.png" class="line2" style="">
+        <img src="images/line4.png" class="line4" style="">
+       	<div class="lvdian" style="">
+            <img src="images/icon1.png" class="icon1" style="" >
+            <p class="p1">推荐榜&nbsp;/&nbsp;旅店介绍</p>
+        	<img class="line5" src="images/line5.png" style="">
+        </div>
+        <div class="place" >
+        	<h3 class="h31">选择地点&nbsp;:</h3>	
+        	<div class="main" >
+              <center>
+                <select id="loc_province" style="width:120px;">
+                </select>
+                <select id="loc_city" style="width:120px; margin-left: 10px">
+                </select>           
+              </center>
+            </div>
+        </div>
+
+<div id="wrap">
+    <ul>
+        <li>
+            <a href="" class="a1">
+                <img src="images/food1.jpg">
+                <div class="divA">
+                    <p class="p8">住宿：民宿</p>
+                    <p class="p9">推荐时间：2011-9-17</p>
+                    <p class="p11">人气指数：<div class="likeCount" id="likeCount2">11</div></p>
+                </div>
+            </a>
+            <div class="heart" id="like2" rel="like"></div>
+            <a href="" class="a2">
+                    <p class="p4">推荐理由</p>
+                    <p class="p5">唯住宿与爱不可辜负</p>
+                    <p class="p7">迷途推荐</p>
+            </a>
+        </li>
+        
+        <li>
+            <a href="" class="a1">
+                <img src="images/food2.jpg">
+                <div class="divA">
+                    <p class="p8">住宿：民宿</p>
+                    <p class="p9">推荐时间：2011-9-18</p>
+                    <p class="p11">人气指数：<div class="likerCount" id="likerCount2">10</div></p>
+
+                </div>
+            </a>
+            <div class="heart" id="liker2" rel="liker"></div>
+            
+            <a href="" class="a2">
+                    <p class="p4">推荐理由</p>
+                    <p class="p5">唯住宿与爱不可辜负</p>
+                    <p class="p7">迷途推荐</p>
+            </a>
+        </li>
+        <li>
+            <a href="" class="a1">
+                <img src="images/food3.jpg">
+                <div class="divA">
+                    <p class="p8">住宿：民宿</p>
+                    <p class="p9">推荐时间：2011-9-16</p>
+                    <p class="p11">人气指数：<div class="loveCount" id="loveCount2">10</div></p>         </div>
+            </a>
+            <div class="heart" id="love2" rel="love"></div>
+            <a href="" class="a2">
+                    <p class="p4">推荐理由</p>
+                    <p class="p5">唯住宿与爱不可辜负</p>
+                    <p class="p7">迷途推荐</p>
+            </a>
+        </li>
+        <li>
+            <a href="" class="a1">
+                <img src="images/food4.jpg">
+                <div class="divA">
+                    <p class="p8">住宿：民宿</p>
+                    <p class="p9">推荐时间：2011-9-16</p>
+                    <p class="p11">人气指数：<div class="loverCount" id="loverCount2">10</div></p>
+                    
+                </div>
+            </a>
+            <div class="heart" id="lover2" rel="lover"></div>
+            <a href="" class="a2">
+                    <p class="p4">推荐理由</p>
+                    <p class="p5">唯住宿与爱不可辜负</p>
+                    <p class="p7">迷途推荐</p>
+            </a>
+        </li>
+        <li>
+            <a href="" class="a1">
+                <img src="images/food1.jpg">
+                <div class="divA">
+                    <p class="p8">住宿：民宿</p>
+                    <p class="p9">推荐时间：2011-9-16</p>
+                    <p class="p11">人气指数：<div class="loverrCount" id="loverrCount2">10</div></p>
+                    
+                </div>
+            </a>
+            <div class="heart" id="loverr2" rel="loverr"></div>
+            <a href="" class="a2">
+                    <p class="p4">推荐理由</p>
+                    <p class="p5">唯住宿与爱不可辜负</p>
+                    <p class="p7">迷途推荐</p>
+            </a>
+        </li>
+        <li>
+            <a href="" class="a1">
+                <img src="images/food2.jpg">
+                <div class="divA">
+                    <p class="p8">住宿：民宿</p>
+                    <p class="p9">推荐时间：2011-9-16</p>
+                    <p class="p11">人气指数：<div class="lloverCount" id="lloverCount2">10</div></p>     
+                </div>
+            </a>
+            <div class="heart" id="llover2" rel="llover"></div>
+            <a href="" class="a2">
+                    <p class="p4">推荐理由</p>
+                    <p class="p5">唯住宿与爱不可辜负</p>
+                    <p class="p7">迷途推荐</p>
+            </a>
+        </li>
+        <li>
+            <a href="" class="a1">
+                <img src="images/food1.jpg">
+                <div class="divA">
+                    <p class="p8">住宿：民宿</p>
+                    <p class="p9">推荐时间：2011-9-16</p>
+                    <p class="p11">人气指数：<div class="looverCount" id="looverCount2">10</div></p>     
+                </div>
+            </a>
+            <div class="heart" id="loover2" rel="loover"></div>
+            <a href="" class="a2">
+                    <p class="p4">推荐理由</p>
+                    <p class="p5">唯住宿与爱不可辜负</p>
+                    <p class="p7">迷途推荐</p>
+            </a>
+        </li>
+        <li>
+            <a href="" class="a1">
+                <img src="images/food4.jpg">
+                <div class="divA">
+                    <p class="p8">住宿：民宿</p>
+                    <p class="p9">推荐时间：2011-9-16</p>
+                    <p class="p11">人气指数：<div class="loverrrCount" id="loverrrCount2">10</div></p>     
+                </div>
+            </a>
+            <div class="heart" id="loverrr2" rel="loverrr"></div>
+            <a href="" class="a2">
+                    <p class="p4">推荐理由</p>
+                    <p class="p5">唯住宿与爱不可辜负</p>
+                    <p class="p7">迷途推荐</p>
+            </a>
+        </li>
+        <li>
+            <a href="" class="a1">
+                <img src="images/food3.jpg">
+                <div class="divA">
+                    <p class="p8">住宿：民宿</p>
+                    <p class="p9">推荐时间：2011-9-16</p>
+                    <p class="p11">人气指数：<div class="llloverCount" id="llloverCount2">10</div></p>     
+                </div>
+            </a>
+            <div class="heart" id="lllover2" rel="lllover"></div>
+            <a href="" class="a2">
+                    <p class="p4">推荐理由</p>
+                    <p class="p5">唯住宿与爱不可辜负</p>
+                    <p class="p7">迷途推荐</p>
+            </a>
+        </li>
+    </ul>
+
+
+        </div>
+
+
+
+        <div class="pag">   
+                    <div class="pages" class="text-c">
+                        <a href="#" class="a1">上一页</a> 
+                        <span>1</span> 
+                        <a href="#">2</a> 
+                        <a href="#">3</a> 
+                        <a href="#">4</a> 
+                        <a href="#">5</a>
+                        <a href="#">...</a>
+                        <a href="#" class="a1">下一页</a>
+                    </div>   
+            </div> 
+    </div>
+
+    <div class="footer">
+        <div class="footer1">
+            <p style="font-size:1.1em;font-family:'微软雅黑';">Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：冀B2-20050130</p>
+            <p style="font-size:1.1em;font-family:'微软雅黑';padding-top:10px;">网备31010502000018号</p>
+            <p style="font-size:1.1em;font-family:'微软雅黑';padding-top:10px;">旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨石家庄市旅游网站落实诚信建设主体责任承诺书</p>
+        </div>  
+    </div>
+
+<script type="text/javascript">
+$('li').mouseenter(function(){
+    $(this).find('.divA').stop().animate({bottom:'0px'});
+    $(this).find('.a2').css({left:'0'})
+    $(this).children('.a2').find('.p4').css({left:'0'})
+    $(this).children('.a2').find('.p5').css({left:'0'})
+    $(this).children('.a2').find('.p6').css({transform:'scale(1)'})
+    $(this).children('.a2').find('.p7').css({bottom:'25px'})
+})
+$('li').mouseleave(function(){
+    $(this).find('.divA').stop().animate({bottom:'0px'});
+    $(this).find('.a2').css({left:-$(this).width()})
+    $(this).children('.a2').find('.p4').css({left:-$(this).width()})
+    $(this).children('.a2').find('.p5').css({left:-$(this).width()})
+    $(this).children('.a2').find('.p6').css({transform:'scale(1.3)'})
+    $(this).children('.a2').find('.p7').css({bottom:'-50px'})
+})
+</script>
+</body>
+</html>
