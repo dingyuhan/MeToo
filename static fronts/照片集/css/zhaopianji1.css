@@ -1,0 +1,141 @@
+﻿        html{padding:0px;margin:0px;border:0px;overflow-x:hidden;}
+        body{padding-bottom:0px;padding:0px;margin:0px;border:0px;}
+        a{color:#000;text-decoration:none;}      
+        .content{zoom:1;background-color:#fade98;margin-left: -10px;}
+        .mybody1{zoom:1;width:1024px;}
+        
+        .mybody{overflow:hidden;zoom:1;width:1000px;margin-left:10px;background-color:#fade98;}
+        
+.header{zoom:1;background-color:#ffb61e;margin-top:0px;height:70px;padding-left:50px;}
+        .logo{float:left;padding-top:10px;padding-left:20px;height:70px;}
+        .nav{float:left;zoom:1;margin-top:0px;margin-left:50px;width:600px;z-index:1;}
+        .nav ul{zoom:1;padding-left:0px;padding-top:20px;}
+        .nav ul li{width:120px;float:left;text-align:center;list-style-type:none;}
+        .nav ul li a{font-size:20px;text-decoration:none;color:#fff;font-weight:bold;display:block;font-family: '微软雅黑';}
+        .nav ul li a:hover{text-decoration:none;color:#ff7043;}
+        .nav li ul li{width:110px;background-color:#ffb61e ;text-decoration:none; margin-left: 20px;color:white; font-weight:bold; font-size:15px;opacity:0.8;}
+        .nav li ul{width:153px;text-align:left;position:absolute;display:none;z-index: 1;} 
+        .nav li:hover ul{display: block;margin-left: -22px;}
+        .nav li ul a{font-family: '微软雅黑';margin-top:6px;font-size: 15px;height:23px;width:108px;padding:0px 20px 0px 20px;display: block;}
+        .b_nav{float:left;width:100px;height:60px;margin-top:15px;margin-right:15px;}
+        .b_nav a{color:#FFF;text-decoration:none;font-size: 14px;}
+        .register{float:left;width:50px;border-right:1px solid #FFF;margin-left: 50px }
+        .login{width:40px;margin-left: 110px;} 
+          h1{
+            color: #555555;
+            text-align:center;
+            margin-top: 40px;
+        }
+
+        .footer{background-color:#ffb61e; padding-left:0px;margin-top:0px;margin-bottom:0px;}
+        .mybody2{overflow:hidden;zoom:1;width:1024px;background-color:#ffb61e;}
+        .introduction{
+            width:1200px;
+        } 
+        .int1{
+              float: left;
+              margin-left: -20px;
+              width:200px;
+              height:200px;
+              border-right: 1px dotted white;
+              text-align: center;
+              color: white;
+        }
+        .int1 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int1 p a{
+            color: white;
+        }
+        .int1 a:hover{
+            color: red;
+        }
+        .int2{
+            float: left;
+            width:200px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int2 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int2 p a{
+            color: white;
+        }
+        .int2 a:hover{
+            color: red;
+        }
+        .int3{
+            float: left;
+            width: 200px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int3 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int3 p a{
+            color: white;
+        }
+        .int3 a:hover{
+            color: red;
+        }
+        .int4{
+            float: left;
+            width: 200px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int4 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int4 p a{
+            color: white;
+        }
+        .int4 a:hover{
+            color: red;
+        }
+        .weixin{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .friend{
+            padding:30px;
+            border-top: 1px solid white;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            border-bottom:1px solid white;
+        }
+        .friend a{
+            color: white;
+            line-height: 25px;
+        }
+        .friend a:hover{
+            color: red;
+        }
+
+        .page-header{width: 1150px;}
+        .page{zoom:1;overflow:hidden;position:relative;margin-top:20px;margin-right:150px;}
+        .pages {float:right;padding:10px 0 10px;font-family:'微软雅黑';text-decoration: none;text-align:center;margin-bottom: 30px;}
+        .pages a {display:inline-block;height:30px; width: 50px;line-height:29px; background:white; border:0px; text-align:center; color:#ff7043; padding:10 10px;opacity:0.6;text-decoration: none;border-radius:6px;}
+        .pages a.a1 {display:inline-block; height:30px; width: 50px;line-height:29px; background:white; border:0px; color:#ff7043; text-align:center;padding:10 10px;opacity:0.6;border-radius:6px; }
+        .pages a:hover {background:#ff7043; color:white; text-decoration:none;}
+        .pages span {display:inline-block; height:30px; width: 50px;line-height:29px; background:#ff7043; border:0px; color:white; text-align:center;padding:10 10px;opacity:0.6;border-radius:6px;}
+        .page .noPage {display:inline-block; height:20px; width: 50px;line-height:20px; background:white; border:0px; color:#ff7043; text-align:center;padding:8 8px;opacity:0.6;border-radius:6px; }
+        .btn{font-family:'微软雅黑';color:#ff7043; padding:10 10px;background:white;opacity:0.6;margin-bottom: 25px;}
+        .button{text-align:right;margin-right: 30px;}
+        .btn:hover {background:#ff7043; color:white; text-decoration:none;}
+        .return{padding-bottom: 0px;color:#ff7043;padding-top: 10px;margin-left:30px;}
+        .return a{color:#ff7043;text-decoration: none;font-weight: bold;}
+        .page-header{margin-top:10px;font-weight: bold;color:#ff7043;width:1000px;margin-right:30px;}
+.docs-pictures{margin-left:90px;}

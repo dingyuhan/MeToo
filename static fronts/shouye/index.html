@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/apple_icons_57x57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple_icons_72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple_icons_114x114.png">
+<title>首页</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/theme.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/revslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/custom.css" type="text/css" media="all" />
+<style type="text/css">
+
+        .mybody1{overflow:hidden;zoom:1;width:1200px;margin-left:-130px;height:70px;background-color:#fad870;}
+        .header{zoom:1;background-color:#fad870;padding-left:100px;margin-top:0px;height:70px;}
+        .logo{float:left;padding-top:0px;margin-top:-20px;padding-left:30px;height:70px;}
+        .nav{float:left;overflow:hidden;zoom:1;margin-top:25px;margin-left:50px;width:800px;z-index:1;}
+        .nav ul{overflow:hidden;zoom:1;padding-left:0px;padding-top:5px;}
+        .nav ul li{width:148px;float:left;text-align:center;list-style-type:none;}
+        .nav ul li a{font-size:20px;text-decoration:none;color:#fff;font-weight:bold;display:block;font-family: '微软雅黑';}
+        .nav ul li a:hover{text-decoration:none;color:#ff7043;}
+        .nav li ul li{width:110px;background-color:#fad870;text-decoration:none; margin-left: 40px;color:white; font-weight:bold; font-size:15px;opacity:0.8;}
+        .nav li ul{width:153px;text-align:left;position:absolute;display:none;z-index: 1;} 
+        .nav li:hover ul{display: block;margin-left: -22px;}
+        .nav li ul a{font-weight:bold;font-family: '微软雅黑';margin-left:-8px;margin-top:25px;font-size: 15px;height:23px;width:108px;padding:0px 15px 15px 30px;display: block;}
+</style>
+</head>
+<body>
+	<div class="main_header type1">
+        <div class="tagline">
+            <div class="container">
+                <div class="fright">
+                	<div class="tagline_items">
+                    	<div class="language_select">
+                            <div class="selectBox">
+                                <span class="selected"></span>
+                                <span class="selectArrow"></span>
+                                <!-- <div class="selectOptions" >
+                                    <span class="selectOption" data-value="english"><img src="img/imgs/uk_flag.png" alt="" />English</span>
+                                    <span class="selectOption" data-value="germany"><img src="img/imgs/germany_flag.png" alt="" />Germany</span>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="log_in_out"><a href="javascript:void(0);" data-toggle="modal" data-target=".login_popup"><i class="icon-sign-in"></i> 登录</a></div>
+                        <div class="modal fade login_popup" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <h3>请登录</h3>
+                                    <form action="javascript:void(0);" method="post">
+                                        <input type="text" placeholder="用户名*" value="" name="name">
+                                        <input type="password" placeholder="密码*" value="" name="password">
+                                        <input type="submit" value="Log In"> 
+                                        <div class="remember_me"><label><input name="remember" type="checkbox" value="remember">记住密码</label></div>
+                                    </form>
+                                    <div class="forgot_password"><a href="javascript:void(0);">忘记密码</a></div>
+                                    <button type="button" class="close_popup" data-dismiss="modal"><i class="icon-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart_btn">
+                        	<a href="shop_cart.html" class="view_cart_btn"><i class="icon-shopping-cart"></i> 兑换框</a>
+                            <!-- Cart submenu -->
+                            <div class="cart_submenu">
+                            	<div class="cart_wrap">
+                                	<a href="javascript:void(0);" class="remove_products"><i class="icon-times-circle"></i></a>
+                                	<ul class="product_posts">                                    
+                                        <li>
+                                            <img src="img/shop/1.jpg" alt="" />
+                                            <a href="shop_product.html" class="title">野营帐篷</a>
+                                            <div class="price">1<span>x</span>500积分</div>
+                                        </li>
+                                    </ul>
+                                    <div class="subtotal">积分总计: <span>500</span></div>
+                                    <a href="shop_cart.html" class=" shortcode_button btn_small btn_type5 mr15">清空兑换框</a>
+                                    <a href="javascript:void(0);" class=" shortcode_button btn_small btn_type1 mr0">结算</a>
+                                </div>
+                            </div>
+                            <!-- //Cart submenu -->
+                        </div>
+                    </div>
+                    <div class="top_search" id="top_search">
+                        <form action="#" method="get" name="search_form">
+                            <input type="text" class="ct-search-input" value="" name="s" placeholder="搜索...">
+                            <input type="submit" value="Search" class="s_submit">
+                            <span class="top-icon-search">
+                            	<i class="icon-search"></i>
+                            </span>                                
+                        </form>                            
+                    </div>                   
+                </div>
+                <div class="fleft">
+                    <div class="phone"><i class="icon-phone"></i> +1 800 245 39 25</div>
+                    <div class="email"><a href="mailto:#"><i class="icon-envelope"></i> MeToo@metoo.com</a></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="header_parent_wrap">
+            <header>
+                <div class="container">
+                    <div class="header">
+        <div class="mybody1">
+        <div class="logo"><img src="img/logo.png" height="120px" width="200px" alt="logo"/></div>
+        
+            <div class="nav">
+                <ul>
+                <li><a href="#">首  页</a></li>
+                <li><a href="#">推荐榜</a>
+                    <ul>
+                        <li><a href="#">景&nbsp;&nbsp;点</a></li>
+                        <li><a href="#">旅&nbsp;&nbsp;店</a></li>
+                        <li><a href="#">美&nbsp;&nbsp;食</a></li>
+                        <li><a href="#">购&nbsp;&nbsp;物</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">攻  略</a>
+                    <ul>
+                        <li><a href="#">游&nbsp;&nbsp;记</a></li>
+                        <li><a href="#">你问我答</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">迷途动态</a>
+                    <ul>
+                        <li><a href="#">至美一拍</a></li>
+                        <li><a href="#">猜猜看</a></li>                
+                    </ul>
+                </li>
+                <li><a href="#">个人中心</a>
+                    <ul>
+                        <li><a href="#">积分兑换</a></li>
+                        <li><a href="#">足&nbsp;&nbsp;迹</a></li>
+                        <li><a href="#">我参与的</a></li>               
+                    </ul>
+                </li>
+
+            </ul>
+            </div> 
+        </div>
+    </div>
+
+
+                    <div class="clear"></div>
+                </div>
+            </header>
+        </div>
+    </div>
+    
+    <div class="wrapper" style="background: #fade98;">
+    	<div class="container">
+        	<div class="content_block row no-sidebar">
+            	<div class="fl-container">
+                	<div class="posts-block">
+                        <div class="contentarea">  
+                        	<!-- Slider -->                                        
+                            <div class="fw_block bg_start wall_wrap" style="height:800px; margin-top:-80px; background-image:url('img/slider/278616.jpg');">
+                            	<div class="tp-caption lft ltt tp-resizeme slide_title slide_info_center"
+                                    data-easing="Power4.easeOut"
+                                    data-endspeed="300"
+                                    data-endeasing="Power4.easeIn">To The Heart Of The Trip
+                            </div>
+                            <div class="tp-caption lft ltt tp-resizeme slide_descr slide_info_center"
+                                 data-easing="Power4.easeOut"
+                                 data-endspeed="600"
+                                 data-endeasing="Power4.easeIn">Life can be likened to a journey with an unknown destination.  
+                            </div>
+                            </div>  
+                            <!-- //Slider -->
+                            
+                            <div class="row">
+                             	<div class="col-sm-12 module_cont pb0">
+                                	<div class="bg_title">
+                                    	<h2 style="font-family:'微软雅黑';">推荐榜</h2>
+                                    </div>                                  
+                                </div>
+                             </div>
+                             
+                            <div class="row">
+								<div class="col-sm-6 module_cont pb30">
+                                    <div class="module_content shortcode_iconbox type5 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <a href="javascript:void(0);">			
+                                            <div class="iconbox_wrapper">
+                                            	<div class="icon_title_wrap">
+                                                    <div class="ico">
+                                                    	<h1 style="color:#ff5722; font-family:'微软雅黑';">吃</h1>
+                                                    </div>
+                                                    <h5 class="iconbox_title" style="font-family:'微软雅黑';">美食推荐</h5>
+                                                </div>
+                                                <div class="iconbox_body">						
+                                                    <p style="font-family:'微软雅黑';">时绕麦田求野荠,强为僧舍煮山羹。食为天性，静静地咀嚼，轻轻地回味，非比寻常的韵致。</p>
+                                                </div>					
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="module_content shortcode_iconbox type5 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <a href="javascript:void(0);">			
+                                            <div class="iconbox_wrapper">
+                                            	<div class="icon_title_wrap">
+                                                    <div class="ico">
+                                                    	<h1 style="color:#ff5722; font-family:'微软雅黑';">购</h1>
+                                                    </div>
+                                                    <h5 class="iconbox_title" style="font-family:'微软雅黑';">美食推荐</h5>
+                                                </div>
+                                                <div class="iconbox_body">						
+                                                    <p style="font-family:'微软雅黑';">时绕麦田求野荠,强为僧舍煮山羹。食为天性，静静地咀嚼，轻轻地回味，非比寻常的韵致。</p>
+                                                </div>					
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="module_content shortcode_iconbox type5 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <a href="javascript:void(0);">			
+                                            <div class="iconbox_wrapper">
+                                            	<div class="icon_title_wrap">
+                                                    <div class="ico">
+                                                    	<h1 style="color:#ff5722; font-family:'微软雅黑';">行</h1>
+                                                    </div>
+                                                    <h5 class="iconbox_title" style="font-family:'微软雅黑';">美食推荐</h5>
+                                                </div>
+                                                <div class="iconbox_body">						
+                                                    <p style="font-family:'微软雅黑';">时绕麦田求野荠,强为僧舍煮山羹。食为天性，静静地咀嚼，轻轻地回味，非比寻常的韵致。</p>
+                                                </div>					
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="module_content shortcode_iconbox type5 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <a href="javascript:void(0);">			
+                                            <div class="iconbox_wrapper">
+                                            	<div class="icon_title_wrap">
+                                                    <div class="ico">
+                                                    	<h1 style="color:#ff5722; font-family:'微软雅黑';">住</h1>
+                                                    </div>
+                                                    <h5 class="iconbox_title" style="font-family:'微软雅黑';">美食推荐</h5>
+                                                </div>
+                                                <div class="iconbox_body">						
+                                                    <p style="font-family:'微软雅黑';">时绕麦田求野荠,强为僧舍煮山羹。食为天性，静静地咀嚼，轻轻地回味，非比寻常的韵致。</p>
+                                                </div>					
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-6 module_cont pb74 animate" data-anim-type="fadeInRight" data-anim-delay="300">
+                                	<div class="mr_220">
+                                		<img src="img/266521.jpg" alt="" width="400px;" /><img src="img/266521.jpg" alt="" width="400px;" style="margin-top:30px;"/>
+                                    </div>
+                                </div>        	
+                            </div>
+                             
+                            <div class="row">
+                                <div class="col-sm-12 animate" data-anim-type="fadeInUp" data-anim-delay="300">
+                                	<div class="fw_block bg_start highlighted_colored">
+                                        <div class="shortcode_promoblock">
+                                            <div class="promoblock_wrapper">
+                                                <div class="promo_text_block">
+                                                    <div class="promo_text_block_wrapper">
+                                                        <h2 class="promo_text_main_title">为你们的出行提供最全面的服务</h2>
+                                                        <h6 class="promo_text_additional_title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiardo.</h6>
+                                                    </div>
+                                                </div>        
+                                                <div class="promo_button_block"><a class="shortcode_button btn_large btn_type5" href="javascript:void(0);">联系我们</a></div>
+                                                <div class="clear"></div>                                    
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>                             	
+                            </div>
+
+							<div class="row">
+                             	<div class="col-sm-12 module_cont pb5">
+                                	<div class="bg_title">
+                                    	<h2 style="font-family:'微软雅黑';">你问我答 · 常见问题</h2>
+                                    </div>                               
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-sm-12 module_cont pb74 module_price_table items3">
+                                    <div class="price_table_wrapper">
+                                        <div class="price_item animate" data-anim-type="fadeInLeft" data-anim-delay="300">                                        
+                                            <div class="price_item_wrapper">
+                                            	<div class="price_item_wrap">     
+
+                                                    <div class="price_item_title">
+                                                    	<h5>如何获得积分</h5>
+                                                    </div>
+                                                    <div class="item_cost_wrapper">
+                                                        <!-- <div class="price_item_cost">
+                                                            <h1>49<span>$</span></h1>
+                                                        </div> -->                                                        
+                                                    </div>                                                     
+                                                    <div class="price_item_body">                                                        
+                                                        <div class="price_item_text">回答问题</div>
+                                                        <div class="price_item_text">发布游记</div>
+                                                        <div class="price_item_text">参与至美一拍</div>
+                                                        <div class="price_item_text">猜猜看</div>
+                                                        <div class="price_item_btn"><a class="shortcode_button btn_large btn_type1" href="javascript:void(0);">查看更多答案</a></div>
+                                                    </div>                                         
+                                            	</div>   			
+                                            </div>
+                                        </div>
+                                        <div class="price_item most_popular animate" data-anim-type="fadeIn" data-anim-delay="500">                                        
+                                            <div class="price_item_wrapper">
+                                            	<div class="price_item_wrap">     
+
+                                                    <div class="price_item_title">
+                                                    	<h5>如何获得积分</h5>
+                                                    </div>
+                                                    <div class="item_cost_wrapper">
+                                                        <!-- <div class="price_item_cost">
+                                                            <h1>49<span>$</span></h1>
+                                                        </div> -->                                                        
+                                                    </div>                                                     
+                                                    <div class="price_item_body">                                                        
+                                                        <div class="price_item_text">回答问题</div>
+                                                        <div class="price_item_text">发布游记</div>
+                                                        <div class="price_item_text">参与至美一拍</div>
+                                                        <div class="price_item_text">猜猜看</div>
+                                                        <div class="price_item_btn"><a class="shortcode_button btn_large btn_type1" href="javascript:void(0);">查看更多答案</a></div>
+                                                    </div>                                         
+                                            	</div>   			
+                                            </div>
+                                        </div>
+                                        <div class="price_item most_popular animate" data-anim-type="fadeIn" data-anim-delay="500">                                        
+                                            <div class="price_item_wrapper">
+                                            	<div class="price_item_wrap">     
+
+                                                    <div class="price_item_title">
+                                                    	<h5>如何获得积分</h5>
+                                                    </div>
+                                                    <div class="item_cost_wrapper">
+                                                        <!-- <div class="price_item_cost">
+                                                            <h1>49<span>$</span></h1>
+                                                        </div> -->                                                        
+                                                    </div>                                                     
+                                                    <div class="price_item_body">                                                        
+                                                        <div class="price_item_text">回答问题</div>
+                                                        <div class="price_item_text">发布游记</div>
+                                                        <div class="price_item_text">参与至美一拍</div>
+                                                        <div class="price_item_text">猜猜看</div>
+                                                        <div class="price_item_btn"><a class="shortcode_button btn_large btn_type1" href="javascript:void(0);">查看更多答案</a></div>
+                                                    </div>                                         
+                                            	</div>   			
+                                            </div>
+                                        </div>                                                                               
+                                    </div>
+                                </div>                                    
+                             </div>    
+                             
+                            <div class="fw_block bg_start pt74 pb30 grey_bg mb0">
+                            	<div class="row">
+                                    <div class="col-sm-12 module_cont pb0">
+                                        <div class="bg_title">
+                                            <h2 style="font-family:'微软雅黑';">如何兑换礼品</h2>
+                                        </div>                                   
+                                    </div>
+                                </div> 
+                                <div class="row step_by_step">
+                                    <div class="col-sm-3 module_cont module_iconboxes pb30 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <div class="module_content shortcode_iconbox">
+                                            <a href="javascript:void(0);">			
+                                                <div class="iconbox_wrapper">
+                                                    <div class="icon_title_wrap">
+                                                        <div class="ico"><img src="img/icons/icon21.png" class="icon_def" width="80" height="80" alt="" /><img src="img/retina/icons/icon21.png" class="icon_retina" width="80" height="80" alt="" /></div>
+                                                        <h5 class="iconbox_title">1. 注册账号</h5>
+                                                    </div>				
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 module_cont module_iconboxes pb30 animate" data-anim-type="fadeInUp" data-anim-delay="350">
+                                        <div class="module_content shortcode_iconbox">
+                                            <a href="javascript:void(0);">			
+                                                <div class="iconbox_wrapper">
+                                                    <div class="icon_title_wrap">
+                                                        <div class="ico"><img src="img/icons/icon22.png" class="icon_def" width="80" height="80" alt="" /><img src="img/retina/icons/icon22.png" class="icon_retina" width="80" height="80" alt="" /></div>
+                                                        <h5 class="iconbox_title">2. 登录账号</h5>
+                                                    </div>				
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 module_cont module_iconboxes pb30 animate" data-anim-type="fadeInUp" data-anim-delay="350">
+                                        <div class="module_content shortcode_iconbox">
+                                            <a href="javascript:void(0);">			
+                                                <div class="iconbox_wrapper">
+                                                    <div class="icon_title_wrap">
+                                                        <div class="ico"><img src="img/icons/icon23.png" class="icon_def" width="80" height="80" alt="" /><img src="img/retina/icons/icon23.png" class="icon_retina" width="80" height="80" alt="" /></div>
+                                                        <h5 class="iconbox_title">3. 打开个人中心</h5>
+                                                    </div>				
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 module_cont module_iconboxes pb30 animate" data-anim-type="fadeInRight" data-anim-delay="300">
+                                        <div class="module_content shortcode_iconbox">
+                                            <a href="javascript:void(0);">			
+                                                <div class="iconbox_wrapper">
+                                                    <div class="icon_title_wrap">
+                                                        <div class="ico"><img src="img/icons/icon24.png" class="icon_def" width="80" height="80" alt="" /><img src="img/retina/icons/icon24.png" class="icon_retina" width="80" height="80" alt="" /></div>
+                                                        <h5 class="iconbox_title">4. 积分兑换奖品</h5>
+                                                    </div>				
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>                             	
+                                 </div>
+							</div>       
+                            
+                            <div class="fw_block bg_start block_plus type2">
+                                <div class="item bg_color1 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                    <h2 class="item_title">猜猜这是哪里</h2>
+                                    <p><img src="img/tu.jpg"/></p>
+                                    <a href="javascript:void(0);" class="shortcode_button btn_normal btn_type5">猜答案</a>
+                                </div>
+                                <div class="item bg_color2 animate" data-anim-type="fadeIn" data-anim-delay="500">
+                                    <h2 class="item_title">猜猜这是哪里</h2>
+                                    <p><img src="img/tu.jpg"/></p>
+                                    <a href="javascript:void(0);" class="shortcode_button btn_normal btn_type5">猜答案</a>
+                                </div>
+                                <div class="item bg_color3 animate" data-anim-type="fadeInRight" data-anim-delay="300">
+                                    <h2 class="item_title">猜猜这是哪里</h2>
+                                    <p><img src="img/tu.jpg"/></p>
+                                    <a href="javascript:void(0);" class="shortcode_button btn_normal btn_type5">猜答案</a>
+                                </div>
+                            </div>  
+                            
+                            <div class="row">
+                             	<div class="col-sm-12 module_cont pb0">
+                                	<div class="bg_title">
+                                    	<h2 style="font-family:'微软雅黑';">游记</h2>
+                                    </div>                                  
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-sm-12 module_cont pb60 module_feature_posts">
+                                    <div class="featured_items">
+                                        <div class="items4 featured_posts">
+                                            <ul class="item_list">                                                
+                                                <li class="animate" data-anim-type="fadeInUp" data-anim-delay="300">
+                                                    <div class="item">
+                                                        <div class="item_wrapper">                                  
+                                                            <div class="img_block wrapped_img">
+                                                                <img alt="" src="img/266521.jpg" />
+                                                                <span class="block_fade"></span>
+                                                                <div class="post_hover_info">
+                                                                	<a class="featured_ico_link view_link" href="post_fullwidth.html"><i class="icon-link"></i></a>
+                                                                </div>                                                               
+                                                            </div>                                                   
+                                                            <div class="featured_items_body">
+                                                                <div class="featured_items_title">
+                                                                    <h5><a href="post_fullwidth.html">呼伦贝尔，幸福了这个季节</a></h5>
+                                                                </div>
+                                                                <div class="featured_item_content">你问我呼伦贝尔到底玩点什么，我也说不上来，可能并不怎么好玩，也就是美味的牛羊肉，香喷喷的锅茶，一望无际的大草原，漫山遍野的金黄，神秘的大兴安岭，光影斑驳的白桦林，草原上可爱的动物们，以及美到哭的日出日落。很美，一路都很美，所以一定要看看。</div>
+                                                                <div class="featured_meta">
+                                                                    <div class="date">
+                                                                    	<i class="icon-calendar"></i>28 October, 2015
+                                                                    </div>
+                                                                    <div class="comments">
+                                                                    	<a href="javascript:void(0);">
+                                                                        	<i class="icon-comments"></i>15
+                                                                        </a>
+                                                                    </div>
+                                                                </div>                            
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="animate" data-anim-type="fadeInUp" data-anim-delay="350">
+                                                    <div class="item">
+                                                        <div class="item_wrapper">                                  
+                                                            <div class="img_block wrapped_img">
+                                                                <img alt="" src="img/266521.jpg" />
+                                                                <span class="block_fade"></span>
+                                                                <div class="post_hover_info">
+                                                                	<a class="featured_ico_link view_link" href="post_fullwidth.html"><i class="icon-link"></i></a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="featured_items_body">
+                                                                <div class="featured_items_title">
+                                                                    <h5><a href="post_fullwidth.html">呼伦贝尔，幸福了这个季节</a></h5>
+                                                                </div>
+                                                                <div class="featured_item_content">你问我呼伦贝尔到底玩点什么，我也说不上来，可能并不怎么好玩，也就是美味的牛羊肉，香喷喷的锅茶，一望无际的大草原，漫山遍野的金黄，神秘的大兴安岭，光影斑驳的白桦林，草原上可爱的动物们，以及美到哭的日出日落。很美，一路都很美，所以一定要看看。</div>
+                                                                <div class="featured_meta">
+                                                                    <div class="date">
+                                                                    	<i class="icon-calendar"></i>28 October, 2015
+                                                                    </div>
+                                                                    <div class="comments">
+                                                                    	<a href="javascript:void(0);">
+                                                                        	<i class="icon-comments"></i>15
+                                                                        </a>
+                                                                    </div>
+                                                                </div>                            
+                                                            </div>                                                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="animate" data-anim-type="fadeInUp" data-anim-delay="400">
+                                                    <div class="item">
+                                                        <div class="item_wrapper">                                  
+                                                            <div class="img_block wrapped_img">
+                                                                <img alt="" src="img/266521.jpg" />
+                                                                <span class="block_fade"></span>
+                                                                <div class="post_hover_info">
+                                                                	<a class="featured_ico_link view_link" href="post_fullwidth.html"><i class="icon-link"></i></a>
+                                                                </div>                                                                  
+                                                            </div>                                                   
+                                                            <div class="featured_items_body">
+                                                                <div class="featured_items_title">
+                                                                    <h5><a href="post_fullwidth.html">呼伦贝尔，幸福了这个季节</a></h5>
+                                                                </div>
+                                                                <div class="featured_item_content">你问我呼伦贝尔到底玩点什么，我也说不上来，可能并不怎么好玩，也就是美味的牛羊肉，香喷喷的锅茶，一望无际的大草原，漫山遍野的金黄，神秘的大兴安岭，光影斑驳的白桦林，草原上可爱的动物们，以及美到哭的日出日落。很美，一路都很美，所以一定要看看。</div>
+                                                                <div class="featured_meta">
+                                                                    <div class="date">
+                                                                    	<i class="icon-calendar"></i>28 October, 2015
+                                                                    </div>
+                                                                    <div class="comments">
+                                                                    	<a href="javascript:void(0);">
+                                                                        	<i class="icon-comments"></i>15
+                                                                        </a>
+                                                                    </div>
+                                                                </div>    
+                                                            </div>          
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="animate" data-anim-type="fadeInUp" data-anim-delay="450">
+                                                    <div class="item">
+                                                        <div class="item_wrapper"> 
+                                                            <div class="img_block wrapped_img">
+                                                                <img alt="" src="img/266521.jpg" />
+                                                                <span class="block_fade"></span>
+                                                                <div class="post_hover_info">
+                                                                	<a class="featured_ico_link view_link" href="post_fullwidth.html"><i class="icon-link"></i></a>
+                                                                </div>      
+                                                            </div>                          
+                                                            <div class="featured_items_body">
+                                                                <div class="featured_items_title">
+                                                                    <h5><a href="post_fullwidth.html">呼伦贝尔，幸福了这个季节</a></h5>
+                                                                </div>
+                                                                <div class="featured_item_content">你问我呼伦贝尔到底玩点什么，我也说不上来，可能并不怎么好玩，也就是美味的牛羊肉，香喷喷的锅茶，一望无际的大草原，漫山遍野的金黄，神秘的大兴安岭，光影斑驳的白桦林，草原上可爱的动物们，以及美到哭的日出日落。很美，一路都很美，所以一定要看看。</div>
+                                                                <div class="featured_meta">
+                                                                    <div class="date">
+                                                                    	<i class="icon-calendar"></i>28 October, 2015
+                                                                    </div>
+                                                                    <div class="comments">
+                                                                    	<a href="javascript:void(0);">
+                                                                        	<i class="icon-comments"></i>15
+                                                                        </a>
+                                                                    </div>
+                                                                </div>        
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>                                      
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <div class="text-center mt40"><a class="shortcode_button btn_normal btn_type5" href="blog_fullwidth.html">更多游记</a></div>
+                             	</div>   
+                             </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="footer">
+    	<div class="container">
+        	<div class="pre_footer">
+            	<div class="row">
+                	<div class="col-sm-3">
+                    	<div class="sidepanel widget_text">
+                        	<h4 class="title">联系我们</h4>
+                        	<p>Maecenas etos sit amet, consectetur adipiscing elit. Terminal volutpat rutrum metro amet sollicitudin interdum.</p>
+                            <p><span>Phone:</span> +1 (800) 456 37 96</p>
+                            <p><span>Office:</span>河北师范大学新校区软件学院</p>
+                            <p><span>Email:</span> <a href="mailto:#">MeToo@gmetoo.com</a></p>
+                            <div class="footer_socials">
+                            	<ul>
+                                	<li><a href="javascript:void(0);" class="soc_fb"><i class="icon-facebook"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="soc_tweet"><i class="icon-twitter"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="soc_google"><i class="icon-google-plus"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="soc_dribbble"><i class="icon-dribbble"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="soc_pinterest"><i class="icon-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>	
+                    </div>
+                    <div class="col-sm-3">
+                    	<div class="sidepanel widget_posts">
+                        	<h4 class="title">最新成就</h4>
+                            <ul class="recent_posts">                                    
+                                <li class="with_img">
+                                    <div class="recent_posts_content">
+                                    	<img src="img/head.jpg" alt="" />
+                                        <a href="javascript:void(0);" class="title">Business Cards Design Trends</a>
+                                        <div class="recent_posts_info">Dec 02, 2020  /  <a href="javascript:void(0);">2 comments</a></div>
+                                    </div>                                    
+                                </li>                                
+                                <li class="with_img">
+                                    <div class="recent_posts_content">
+                                    	<img src="img/head.jpg" alt="" />
+                                        <a href="javascript:void(0);" class="title">This Maravelous App</a>
+                                        <div class="recent_posts_info">Nov 18, 2020  /  <a href="javascript:void(0);">9 comments</a></div>
+                                    </div>                                    
+                                </li>
+                                <li class="with_img">
+                                    <div class="recent_posts_content">
+                                    	<img src="img/head.jpg" alt="" />
+                                        <a href="javascript:void(0);" class="title">Brand Paper Niceties</a>
+                                        <div class="recent_posts_info">Nov 10, 2020  /  <a href="javascript:void(0);">0 comments</a></div>
+                                    </div>                                    
+                                </li>                            
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                    	<div class="sidepanel widget_twitter">
+                        	<h4 class="title">啦啦啦</h4>
+                            <div class="tweet_module"></div>                          
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                    	<div class="sidepanel widget_review">
+                        	<h4 class="title">致用户</h4>
+                            <div class="last_review">
+                            	<p class="review_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="clear"></div>
+                                <div class="last_review_author">
+                                	<h5>MeToooo</h5>
+                                    <h6>开发人员</h6>
+                                    <img src="img/head.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+            	<div class="copyright">Copyright 2016. All Rights Reserved by Groutek, Premium HTML Template.</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="fixed-menu"></div>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>	   
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/modules.js"></script>	
+	<script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/color_panel.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>    
+    <script type="text/javascript">
+		jQuery(document).ready(function() {
+		   "use strict";			   						
+		   jQuery('.fullscreen_slider').show().revolution({
+				delay: 5000,
+				startwidth: 1170,
+				startheight: 765,
+				fullWidth:"off",
+				fullScreen:"on",
+				navigationType:"bullet",
+				fullScreenOffsetContainer: ".main_header",
+				fullScreenOffset: ""
+			});							
+		});
+	</script> 
+</body>
+</html>

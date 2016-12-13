@@ -1,0 +1,156 @@
+﻿.zzsc {
+	margin: 0px auto;
+	width: 250px;
+	height: 180px;
+	background-size:250px 190px;
+	background-image:url(../images/image1.jpg);
+	border-radius: 0px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	position: relative;
+	z-index: 90;
+}
+.zzsc .ribbon-zzsc-green{
+	width: 85px;
+	height: 88px;
+	overflow: hidden;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+}
+.zzsc .ribbon-green{
+	font: bold 15px Sans-Serif;
+	color: #fff;
+	text-align: center;
+	text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+	padding: 7px 0;
+	left: -5px;
+	top: 15px;
+	width: 120px;
+	background-color: #F00;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f7e307), to(#eff707));
+	background-image: -webkit-linear-gradient(top, #f7e307, #eff707);
+	background-image: -moz-linear-gradient(top, #f7e307, #eff707);
+	background-image: -ms-linear-gradient(top, #f7e307, #eff707);
+	background-image: -o-linear-gradient(top, #f7e307, #eff707);
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+.zzsc .ribbon-green:before, .ribbon-green:after {
+	content: "";
+	border-top: 3px solid #6e8900;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	position: absolute;
+	bottom: -3px;
+}
+.zzsc .ribbon-green:before {
+	left: 0;
+}
+.zzsc .ribbon-green:after {
+	right: 0;
+}
+​
+.zzsc .ribbon-zzsc-red{
+	width: 85px;
+	height: 88px;
+	overflow: hidden;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+}
+.zzsc .ribbon-red{
+	font: bold 15px Sans-Serif;
+	color: #fff;
+	text-align: center;
+	text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+	padding: 7px 0;
+	left: -5px;
+	top: 15px;
+	width: 120px;
+	background-color: #F00;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ff3721), to(#ff5722));
+	background-image: -webkit-linear-gradient(top, #ff3721, #ff5722);
+	background-image: -moz-linear-gradient(top, #ff3721, #ff5722);
+	background-image: -ms-linear-gradient(top, #ff3721, #ff5722);
+	background-image: -o-linear-gradient(top, #ff3721, #ff5722);
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+.zzsc .ribbon-red:before, .ribbon-red:after {
+	content: "";
+	border-top: 3px solid #6e8900;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	position: absolute;
+	bottom: -3px;
+}
+.zzsc .ribbon-red:before {
+	left: 0;
+}
+.zzsc .ribbon-red:after {
+	right: 0;
+}
+​.zzsc .ribbon-zzsc-org{
+	width: 85px;
+	height: 88px;
+	overflow: hidden;
+	position: absolute;
+	top: -3px;
+	right: -3px;
+}
+.zzsc .ribbon-org{
+	font: bold 15px Sans-Serif;
+	color: #333;
+	text-align: center;
+	text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	position: relative;
+	padding: 7px 0;
+	left: -5px;
+	top: 15px;
+	width: 120px;
+	background-color: #F00;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(ff7300), to(#ff9800));
+	background-image: -webkit-linear-gradient(top, ff7300, #ff9800);
+	background-image: -moz-linear-gradient(top, ff7300, #ff9800);
+	background-image: -ms-linear-gradient(top, ff7300, #ff9800);
+	background-image: -o-linear-gradient(top, ff7300, #ff9800);
+	color: #fff;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+.zzsc .ribbon-org:before, .ribbon-org:after {
+	content: "";
+	border-top: 3px solid #6e8900;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	position: absolute;
+	bottom: -3px;
+}
+.zzsc .ribbon-org:before {
+	left: 0;
+}
+.zzsc .ribbon-org:after {
+	right: 0;
+}
+​

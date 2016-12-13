@@ -1,0 +1,146 @@
+html{padding:0px;margin:0px;border:0px;overflow-x:hidden;}
+        body{padding-bottom:0px;padding:0px;margin:0px;border:0px;}
+        a{color:#000;text-decoration:none;}      
+        .content{zoom:1;background-color:#fade98;margin-left: -10px;}
+        .mybody1{zoom:1;width:1024px;}
+       
+        .mybody{overflow:hidden;zoom:1;width:1024px;margin-left:-50px;background-color:#fade98;}
+        
+.header{zoom:1;background-color:#ffb61e;margin-top:0px;height:70px;padding-left:50px;}
+        .logo{float:left;padding-top:10px;padding-left:20px;height:70px;}
+        .nav{float:left;zoom:1;margin-top:0px;margin-left:50px;width:600px;z-index:1;}
+        .nav ul li{width:120px;float:left;text-align:center;list-style-type:none;}
+        .nav ul li a{font-size:20px;text-decoration:none;color:#fff;font-weight:bold;display:block;font-family: '微软雅黑';}
+        .nav ul li a:hover{text-decoration:none;color:#ff7043;}
+        .nav li ul li{width:110px;background-color:#ffb61e ;text-decoration:none; margin-left: 40px;color:white; font-weight:bold; font-size:15px;opacity:0.8;}
+        .nav li ul{width:153px;text-align:left;position:absolute;display:none;z-index: 1;} 
+        .nav li:hover ul{display: block;margin-left: -32px;}
+        .nav li ul a{font-weight:bold;font-family: '微软雅黑';margin-left:-8px;margin-top:25px;font-size: 15px;height:23px;width:108px;padding:0px 15px 5px 30px;display: block;}
+        .b_nav{float:left;width:100px;height:60px;margin-top:15px;margin-right:15px;}
+        .b_nav a{color:#FFF;text-decoration:none;font-size: 14px;}
+        .register{float:left;
+                border-right:1px solid #FFF;
+                margin-left: 50px }
+        .login{float:right;margin-right:-60px;} 
+
+
+        .tiao1{margin-top:20px;}
+        .tiao2{margin-top:60px;margin-left: -20px;}
+
+        .bread{position:relative;margin-left:10px;margin-top: 8px;z-index: -1;}
+        .bread a{text-decoration:none;font-size: 14px;color:#607d8b;font-weight:bold;font-family: 'Î¢ÈíÑÅºÚ';}
+
+
+
+
+         .footer{background-color:#ffb61e; padding-left:0px;margin-top:0px;margin-bottom:0px;}
+        .mybody2{overflow:hidden;zoom:1;width:1024px;background-color:#ffb61e;}
+        .introduction{
+            width:1200px;
+        } 
+        .int1{
+              float: left;
+              margin-left: -20px;
+              width:200px;
+              height:200px;
+              border-right: 1px dotted white;
+              text-align: center;
+              color: white;
+        }
+        .int1 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int1 p a{
+            color: white;
+        }
+        .int1 a:hover{
+            color: red;
+        }
+        .int2{
+            float: left;
+            width:200px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int2 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int2 p a{
+            color: white;
+        }
+        .int2 a:hover{
+            color: red;
+        }
+        .int3{
+            float: left;
+            width: 200px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int3 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int3 p a{
+            color: white;
+        }
+        .int3 a:hover{
+            color: red;
+        }
+        .int4{
+            float: left;
+            width: 200px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int4 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int4 p a{
+            color: white;
+        }
+        .int4 a:hover{
+            color: red;
+        }
+        .weixin{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .friend{
+            padding:30px;
+            border-top: 1px solid white;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            border-bottom:1px solid white;
+            font-size: 14px;
+        }
+        .friend a{
+            color: white;
+            line-height: 25px;
+        }
+        .friend a:hover{
+            color: red;
+        }
+        .tiaoc{height:60px; width:1000px;}
+        .tiaod{height:50px; width:1000px;}
+        .all{height:820px; float:left;margin-left: -120px;}
+        .mockup-content{margin-left:-210px; margin-top:10px;}
+        .pic10{height:300px; width:500px; margin-left:-50px;}
+        
+        .caidaanwenzi{margin-top:-11px;}
+        .morph-content{height:250px;}
+        .woyaocaidaanwenzi{text-align:center;}
+        .tijiaodaanwenzi{height:50px; padding:10px;}
+        .mockup-content1{margin-left:610px; margin-top:-100px;}
+        .mockup-content2{margin-left:100px; margin-top:300px;}
+        
+        

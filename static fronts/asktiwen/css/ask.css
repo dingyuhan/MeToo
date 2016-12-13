@@ -1,0 +1,229 @@
+﻿        .search{height:100px;width:800px;padding-top:0px;padding-left: 90px;margin-top:-15px;}
+        .input{text-indent:61px;background:none;background-image:url(../images/search.png);background-repeat:no-repeat;background-position:16px 12px;background-color:#ffebb8;display:block;border:1px solid #ffebb8;width:700px;height:40px;color:gray;line-height:46px;margin-top:9px;float:left;font-size:17px;}
+        .btn1{cursor:pointer;margin-top:9px;float:left;display:block;border:0px solid #FFF;border-left:none;width:100px;height:40px;background-color:#ffbc57;font-size:18px;color:#fff;font-weight:600;font-family: '微软雅黑';}
+        html{padding:0px;margin:0px;border:0px;overflow-x:auto;}
+        body{padding-bottom:0px;padding:0px;margin:0px;border:0px;overflow-x:auto;}
+        a{color:#000;text-decoration:none;}      
+        .content{zoom:1;background-color:#fade98;padding-left:100px;}
+        .mybody1{overflow:hidden;zoom:1;width:1200px;background-color:#ffb61e;}
+        .mybody2{overflow:hidden;zoom:1;width:1200px;background-color:#ffb61e;}
+        .mybody{overflow:hidden;zoom:1;width:1200px;margin-left:10px;background-color:#fade98;}
+        .header{zoom:1;background-color:#ffb61e;padding-left:100px;margin-top:0px;height:70px;}
+        .logo{float:left;padding-top:10px;padding-left:30px;height:70px;}
+        .nav{float:left;overflow:hidden;zoom:1;margin-top:5px;margin-left:50px;width:800px;z-index:1;}
+        .nav ul{overflow:hidden;zoom:1;padding-left:0px;padding-top:5px;}
+        .nav ul li{width:148px;float:left;text-align:center;list-style-type:none;}
+        .nav ul li a{font-size:20px;text-decoration:none;color:#fff;font-weight:bold;display:block;font-family: '微软雅黑';}
+        .nav ul li a:hover{text-decoration:none;color:#ff7043;}
+        .nav li ul li{width:110px;background-color:#ffb61e ;text-decoration:none; margin-left: 40px;color:white; font-weight:bold; font-size:15px;opacity:0.8;}
+        .nav li ul{width:153px;text-align:left;position:absolute;display:none;z-index: 1;} 
+        .nav li:hover ul{display: block;margin-left: -22px;}
+        .nav li ul a{font-weight:bold;font-family: '微软雅黑';margin-left:-28px;margin-top:25px;font-size: 15px;height:23px;width:108px;padding:0px 15px 5px 30px;display: block;}
+        .b_nav{float:right;width:110px;height:60px;margin-top:15px;margin-right:15px;}
+        .b_nav a{float:left;color:#FFF;text-decoration:none;font-size: 14px;}
+        .register{float:left;width:50px;border-right:1px solid #FFF;}
+        .login{float:right;width:40px;margin-left:10px;} 
+        .bread{position:relative;margin-left:10px;margin-top: 8px;}
+        .bread a{text-decoration:none;font-size: 14px;color:#607d8b;font-weight:bold;font-family: '微软雅黑';}
+        .ping1{font-family: '微软雅黑'; margin-top: 30px;color:#ff7043;padding-left: 90px;font-size:1.3em;font-weight:500;}
+        .ping2{font-family: '微软雅黑'; margin-top: -25px;color:#e84e40;padding-left: 90px;font-size:1em;}
+        .ping3{font-family: '微软雅黑'; margin-top: 60px;color:#ff7043;padding-left: 90px;font-size:1.3em;font-weight:500;}
+        .edit{
+            overflow-y:auto;
+            width:860px;
+            height:200px;
+            margin: 30px auto;
+            margin-top:10px;
+            margin-left: 90px;
+            margin-bottom: 10px;
+        }
+
+
+        .footer{background-color:#ffb61e; padding-left:80px;margin-top:0px;margin-bottom:0px;}
+        .mybody2{overflow:hidden;zoom:1;width:1200px;background-color:#ffb61e;}
+        .introduction{
+            width:1200px;
+        } 
+        .int1{
+              float: left;
+              margin-left: -60px;
+              width:250px;
+              height:200px;
+              border-right: 1px dotted white;
+              text-align: center;
+              color: white;
+        }
+        .int1 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+            line-height: 34px;
+        }
+        .int1 p a{
+            color: white;
+        }
+        .int1 a:hover{
+            color: red;
+        }
+        .int2{
+            float: left;
+            width:250px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int2 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+            line-height: 34px;
+        }
+        .int2 p a{
+            color: white;
+        }
+        .int2 a:hover{
+            color: red;
+        }
+        .int3{
+            float: left;
+            width: 250px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int3 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+            line-height: 34px;
+        }
+        .int3 p a{
+            color: white;
+        }
+        .int3 a:hover{
+            color: red;
+        }
+        .int4{
+            float: left;
+            width: 250px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int4 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+            line-height: 34px;
+        }
+        .int4 p a{
+            color: white;
+        }
+        .int4 a:hover{
+            color: red;
+        }
+        .weixin{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .friend{
+            padding:30px;
+            border-top: 1px solid white;
+            margin-top: 55px;
+            margin-bottom: 10px;
+            border-bottom:1px solid white;
+        }
+        .friend a{
+            color: white;
+            line-height: 25px;
+        }
+        .friend a:hover{
+            color: red;
+        }
+
+
+
+
+        .btn2{color:#fff;background-color: #ff7043;width:90px;border-radius:6px;height: 40px;font-size: 16px;font-weight: bold;margin-left: 800px;font-family: '微软雅黑';}
+        .left{
+            margin-left: -80px;
+        }
+        .right{
+            float: left;
+            margin-left:950px;
+            margin-top: -600px;
+            height: 500px;
+            width:250px;
+            border-radius: 10px;
+            background-color: #ffa726;
+        }
+        .right h2{
+            font-family: '微软雅黑';
+            color: #754702;
+            font-weight: bold;
+        }
+        .right ul{
+            margin-left: -10px;
+        }
+        .right ul li{
+            list-style: none;
+            font-weight: 700px;
+            font-family: '微软雅黑';
+            color: #754702;
+            font-size: 16px;
+            line-height: 40px;
+        }
+
+
+
+
+
+         #btn-edge
+        {
+            position: relative;
+            display: inline-block;
+            padding: 0.5rem 2rem;
+            font-family: '微软雅黑' , sans-serif;
+            font-weight:bold;
+            text-decoration: none;
+            font-size: 1em;
+            color: #e84e40;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#e84e40), to(#e84e40)), -webkit-gradient(linear, left top, left bottom, from(#e84e40), to(#e84e40)), -webkit-gradient(linear, left top, left bottom, from(#e84e40), to(#e84e40)), -webkit-gradient(linear, left top, left bottom, from(#e84e40), to(#e84e40)), -webkit-gradient(linear, left top, left bottom, from(#e84e40), to(#e84e40)), -webkit-gradient(linear, left top, left bottom, from(#e84e40), to(#e84e40)), -webkit-gradient(linear, left top, left bottom, from(#e84e40), to(#e84e40)), -webkit-gradient(linear, left top, left bottom, from(#e84e40), to(#e84e40));
+            background-image: -webkit-linear-gradient(#e84e40, #e84e40), -webkit-linear-gradient(#e84e40, #e84e40), -webkit-linear-gradient(#e84e40, #e84e40), -webkit-linear-gradient(#e84e40, #e84e40), -webkit-linear-gradient(#e84e40, #e84e40), -webkit-linear-gradient(#e84e40, #e84e40), -webkit-linear-gradient(#e84e40, #e84e40), -webkit-linear-gradient(#e84e40, #e84e40);
+            background-image: linear-gradient(#e84e40, #e84e40), linear-gradient(#e84e40, #e84e40), linear-gradient(#e84e40, #e84e40), linear-gradient(#e84e40, #e84e40), linear-gradient(#e84e40, #e84e40), linear-gradient(#e84e40, #e84e40), linear-gradient(#e84e40, #e84e40), linear-gradient(#e84e40, #e84e40);
+            background-repeat: no-repeat;
+            -webkit-background-size: 2rem 5px, 2rem 5px, 2rem 5px, 2rem 5px, 5px 2rem, 5px 2rem, 5px 2rem, 5px 2rem;
+            background-size: 2rem 1px, 2rem 1px, 2rem 1px, 2rem 1px, 1px 2rem, 1px 2rem, 1px 2rem, 1px 2rem;
+            background-position: 0 0, 100% 0, 0 100%, 100% 100%;
+            -webkit-box-shadow: inset 0 0 0 5px rgba(255, 99, 71, 0);
+            box-shadow: inset 0 0 0 5px rgba(255, 99, 71, 0);
+            -webkit-transition: background-size 1s .4s, -webkit-box-shadow .4s, color .4s;
+            transition: background-size 1s .4s, box-shadow .4s, color .4s;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+        }
+        #btn-edge:hover
+        {
+            color: orange;
+            -webkit-background-size: 100% 4px, 100% 4px, 100% 4px, 100% 4px, 4px 100%, 4px 100%, 4px 100%, 4px 100%;
+            background-size: 100% 3px, 100% 3px, 100% 3px, 100% 3px, 3px 100%, 3px 100%, 3px 100%, 3px 100%;
+            -webkit-box-shadow: inset 0 0 0 5px tomato;
+            box-shadow: inset 0 0 0 1px white;
+            -webkit-transition: background-size 1s, -webkit-box-shadow .4s .6s, color .4s .6s;
+            transition: background-size 1s, box-shadow .4s .6s, color .4s .6s;
+        }
+        .btn-edge1{
+            
+            
+        }
+        .btn-edge2{
+            
+        }
+        .btn-edge3{
+            
+        }
+        .btn-edge4{
+            
+        }
+        .btn-edge5{
+            
+        }
