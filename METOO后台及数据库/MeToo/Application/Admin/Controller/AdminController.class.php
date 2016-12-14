@@ -44,9 +44,12 @@ class AdminController extends Controller {
         }
     }
 
-    public function lists(){
-        $admin = M("adminUser")->select();
+    public function lists(){       
+        $count = M("adminUser")->count();
+        $p = getpage($count,5);
+        $admin = M("adminUser")->order('id')->limit($p->firstRow, $p->listRows)->select();
         $this->assign('admin',$admin);
+        $this->assign('page', $p->show());
         $this->display();
     }
 
@@ -58,7 +61,7 @@ class AdminController extends Controller {
             {
                 M("adminUser")->delete($value);
             }
-        $this->success("删除成功！");
+            $this->success("删除成功！");
         } 
         else{
             if(M("adminUser")->delete($id)){

@@ -4,30 +4,48 @@ use Think\Controller;
 
 class RecommendController extends Controller {
     public function food(){
-        $food = M("food")->select();
+        $count = M("food")->count();
+        $p = getpage($count,5);
+        $food = M("food")->order('id')->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('food',$food);
+        $this->assign('page', $p->show());
         $this->assign('food',$food);
         $this->display();
     }
 
     public function hotel(){
-        $hotel = M("hotel")->select();
+        $count = M("hotel")->count();
+        $p = getpage($count,5);
+        $hotel = M("hotel")->order('id')->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('hotel',$hotel);
+        $this->assign('page', $p->show());
         $this->assign('hotel',$hotel);
         $this->display();
     }
 
     public function scenery(){
-        $scenery = M("scenery")->select();
+        $count = M("scenery")->count();
+        $p = getpage($count,5);
+        $scenery = M("scenery")->order('id')->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('scenery',$scenery);
+        $this->assign('page', $p->show());
         $this->assign('scenery',$scenery);
         $this->display();
     }
 
     public function shopping(){
-        $shopping = M("shopping")->select();
+        $count = M("shopping")->count();
+        $p = getpage($count,5);
+        $shopping = M("shopping")->order('id')->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('shopping',$shopping);
+        $this->assign('page', $p->show());
         $this->assign('shopping',$shopping);
         $this->display();
     }
 
     public function addfood(){
+        $time = date('Y-m-d');
+        $this->assign('time',$time);
         $this->display();
     }
 
@@ -35,19 +53,34 @@ class RecommendController extends Controller {
         if(!IS_POST){
             exit("bad request");
         }
-        $food = M("food");
-        if(!$food->create()){
-            $this->error($food->getError());          
-        }
-        if($food->add()){
-            $this->success("添加成功",U("food"));
-        }
-        else{
-            $this->error("添加失败");
-        }
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728 ; 
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg'); 
+        $upload->rootPath = THINK_PATH;
+        $upload->savePath = '../Public/uploads/'; 
+        $upload->subName = food;  
+        $info = $upload->upload();
+        if(!$info) {  
+            $this->error($upload->getError());
+        }else{ 
+            $food = M("food");
+            $data = $food->create();
+            if(!$data){
+                $this->error($food->getError());          
+            }
+            $data['foodpic'] = $info['foodpic']['savepath'].$info['foodpic']['savename'];
+            if($food->add($data)){
+                $this->success("添加成功",U("food"));
+            }
+            else{
+                $this->error("添加失败");
+            }
+        }    
     }
 
     public function addhotel(){
+        $time = date('Y-m-d');
+        $this->assign('time',$time);
         $this->display();
     }
 
@@ -55,19 +88,34 @@ class RecommendController extends Controller {
         if(!IS_POST){
             exit("bad request");
         }
-        $hotel = D("hotel");
-        if(!$hotel->create()){
-            $this->error($hotel->getError());          
-        }
-        if($hotel->add()){
-            $this->success("添加成功",U("hotel"));
-        }
-        else{
-            $this->error("添加失败");
-        }
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728 ; 
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg'); 
+        $upload->rootPath = THINK_PATH;
+        $upload->savePath = '../Public/uploads/'; 
+        $upload->subName = hotel;  
+        $info = $upload->upload();
+        if(!$info) {  
+            $this->error($upload->getError());
+        }else{ 
+            $hotel = M("hotel");
+            $data = $hotel->create();
+            if(!$data){
+                $this->error($hotel->getError());          
+            }
+            $data['hotelpic'] = $info['hotelpic']['savepath'].$info['hotelpic']['savename'];
+            if($hotel->add($data)){
+                $this->success("添加成功",U("hotel"));
+            }
+            else{
+                $this->error("添加失败");
+            }
+        }    
     }
 
     public function addshopping(){
+        $time = date('Y-m-d');
+        $this->assign('time',$time);
         $this->display();
     }
 
@@ -75,19 +123,34 @@ class RecommendController extends Controller {
         if(!IS_POST){
             exit("bad request");
         }
-        $shopping = D("shopping");
-        if(!$shopping->create()){
-            $this->error($shopping->getError());          
-        }
-        if($shopping->add()){
-            $this->success("添加成功",U("shopping"));
-        }
-        else{
-            $this->error("添加失败");
-        }
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728 ; 
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg'); 
+        $upload->rootPath = THINK_PATH;
+        $upload->savePath = '../Public/uploads/'; 
+        $upload->subName = shopping;  
+        $info = $upload->upload();
+        if(!$info) {  
+            $this->error($upload->getError());
+        }else{ 
+            $shopping = M("shopping");
+            $data = $shopping->create();
+            if(!$data){
+                $this->error($shopping->getError());          
+            }
+            $data['shoppingpic'] = $info['shoppingpic']['savepath'].$info['shoppingpic']['savename'];
+            if($shopping->add($data)){
+                $this->success("添加成功",U("shopping"));
+            }
+            else{
+                $this->error("添加失败");
+            }
+        }    
     }
 
     public function addscenery(){
+        $time = date('Y-m-d');
+        $this->assign('time',$time);
         $this->display();
     }
 
@@ -95,16 +158,29 @@ class RecommendController extends Controller {
         if(!IS_POST){
             exit("bad request");
         }
-        $scenery = D("scenery");
-        if(!$scenery->create()){
-            $this->error($scenery->getError());          
-        }
-        if($scenery->add()){
-            $this->success("添加成功",U("scenery"));
-        }
-        else{
-            $this->error("添加失败");
-        }
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728 ; 
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg'); 
+        $upload->rootPath = THINK_PATH;
+        $upload->savePath = '../Public/uploads/'; 
+        $upload->subName = scenery;  
+        $info = $upload->upload();
+        if(!$info) {  
+            $this->error($upload->getError());
+        }else{ 
+            $scenery = M("scenery");
+            $data = $scenery->create();
+            if(!$data){
+                $this->error($scenery->getError());          
+            }
+            $data['scenerypic'] = $info['scenerypic']['savepath'].$info['scenerypic']['savename'];
+            if($scenery->add($data)){
+                $this->success("添加成功",U("scenery"));
+            }
+            else{
+                $this->error("添加失败");
+            }
+        }    
     }
 
     public function modifood(){
@@ -118,13 +194,28 @@ class RecommendController extends Controller {
         if (!IS_POST) {
             exit("error param");
         }
-        $food = D('food');
-        if($food->create()&&$food->save())
-        {
-            $this->success("修改成功","food");
-        }
-        else{
-            $this->error($food->getError());
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728 ; 
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg');
+        $upload->rootPath = THINK_PATH; 
+        $upload->savePath = '../Public/uploads/'; 
+        $upload->subName = 'food'; 
+        $info = $upload->upload();
+        if(!$info) { 
+            $this->error($upload->getError());
+        }else{ 
+            $food = M("food");
+            $data = $food->create();
+            if(!$data){
+                $this->error($food->getError());          
+            }
+            $data['foodpic'] = $info['foodpic']['savepath'].$info['foodpic']['savename'];
+            if($food->save($data)){
+                $this->success("修改成功",U("food"));
+            }
+            else{
+                $this->error("修改失败");
+            }
         }
     }
 
@@ -156,13 +247,28 @@ class RecommendController extends Controller {
         if (!IS_POST) {
             exit("error param");
         }
-        $hotel = D('hotel');
-        if($hotel->create()&&$hotel->save())
-        {
-            $this->success("修改成功","hotel");
-        }
-        else{
-            $this->error($hotel->getError());
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728 ; 
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg');
+        $upload->rootPath = THINK_PATH; 
+        $upload->savePath = '../Public/uploads/'; 
+        $upload->subName = 'hotel'; 
+        $info = $upload->upload();
+        if(!$info) { 
+            $this->error($upload->getError());
+        }else{ 
+            $hotel = M("hotel");
+            $data = $hotel->create();
+            if(!$data){
+                $this->error($hotel->getError());          
+            }
+            $data['hotelpic'] = $info['hotelpic']['savepath'].$info['hotelpic']['savename'];
+            if($hotel->save($data)){
+                $this->success("修改成功",U("hotel"));
+            }
+            else{
+                $this->error("修改失败");
+            }
         }
     }
 
@@ -194,13 +300,28 @@ class RecommendController extends Controller {
         if (!IS_POST) {
             exit("error param");
         }
-        $shopping = D('shopping');
-        if($shopping->create()&&$shopping->save())
-        {
-            $this->success("修改成功","shopping");
-        }
-        else{
-            $this->error($shopping->getError());
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728 ; 
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg');
+        $upload->rootPath = THINK_PATH; 
+        $upload->savePath = '../Public/uploads/'; 
+        $upload->subName = 'shopping'; 
+        $info = $upload->upload();
+        if(!$info) { 
+            $this->error($upload->getError());
+        }else{ 
+            $shopping = M("shopping");
+            $data = $shopping->create();
+            if(!$data){
+                $this->error($shopping->getError());          
+            }
+            $data['shoppingpic'] = $info['shoppingpic']['savepath'].$info['shoppingpic']['savename'];
+            if($shopping->save($data)){
+                $this->success("修改成功",U("shopping"));
+            }
+            else{
+                $this->error("修改失败");
+            }
         }
     }
 
@@ -232,13 +353,28 @@ class RecommendController extends Controller {
         if (!IS_POST) {
             exit("error param");
         }
-        $scenery = D('scenery');
-        if($scenery->create()&&$scenery->save())
-        {
-            $this->success("修改成功","scenery");
-        }
-        else{
-            $this->error($scenery->getError());
+        $upload = new \Think\Upload();
+        $upload->maxSize = 3145728 ; 
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg');
+        $upload->rootPath = THINK_PATH; 
+        $upload->savePath = '../Public/uploads/'; 
+        $upload->subName = 'scenery'; 
+        $info = $upload->upload();
+        if(!$info) { 
+            $this->error($upload->getError());
+        }else{ 
+            $scenery = M("scenery");
+            $data = $scenery->create();
+            if(!$data){
+                $this->error($scenery->getError());          
+            }
+            $data['scenerypic'] = $info['scenerypic']['savepath'].$info['scenerypic']['savename'];
+            if($scenery->save($data)){
+                $this->success("修改成功",U("scenery"));
+            }
+            else{
+                $this->error("修改失败");
+            }
         }
     }
 
@@ -256,74 +392,6 @@ class RecommendController extends Controller {
             if(M("scenery")->delete($id)){
                 $this->success("删除成功！");
             }
-        }
-    }
-
-    public function modi(){
-        $id = $_GET['id'];
-        $adminModel = D("adminUser")->find($id);
-        $this->assign("admin",$adminModel);
-        $this->display();
-    }
-
-    public function doModi(){
-        if (!IS_POST) {
-            exit("error param");
-        }
-        $adminModel = D('adminUser');
-        if($adminModel->create()&&$adminModel->save())
-        {
-            $this->success("修改成功","lists");
-        }
-        else{
-            $this->error($adminModel->getError());
-        }
-    }
-
-    public function edits(){
-        $username = I("Session.username");
-        $user = M("adminUser")->where("username='$username'")->find();
-        $this->assign("users",$user);
-        $this->display();
-    }
-
-    public function doEdit(){
-        if(!IS_POST){
-            exit("error param");
-        }
-        $adminUsersModel = D("adminUser");
-        if($adminUsersModel->create() !==false && $adminUsersModel->save()!==false)
-        {
-            //var_dump(a);exit;
-            $this->success("修改成功",U("lists"));
-        }
-        else{
-            //var_dump(b);exit;
-            $this->error($adminUsersModel->getError());
-        }
-    }
-
-    public function pass(){
-        $username = I("Session.username");
-        $user = M("adminUser")->where("username='$username'")->find();
-        $this->assign("users",$user);
-        $this->display();
-    }
-
-    public function doPass(){
-        if(!IS_POST){
-            exit("error param");
-        }
-        $adminModel = D("adminUser");
-        var_dump($_POST);exit;
-        if($adminModel->create()&&$adminModel->save())
-        {
-            //var_dump(a);exit;
-            $this->success("修改成功",U("lists"));
-        }
-        else{
-            //var_dump(b);exit;
-            $this->error($adminModel->getError());
         }
     }
 }
