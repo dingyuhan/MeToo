@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>游记</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/writetravelnote/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/writetravelnote/css/default.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/writetravelnote/css/style.css">
+	<link href="__PUBLIC__/front/writetravelnote/css/mfb.css" rel="stylesheet">
+	
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/writetravelnote/css/style1.css">
+	<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/front/writetravelnote/js/wysiwyg.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/writetravelnote/js/wysiwyg-editor.js"></script>
+    <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/writetravelnote/css/wysiwyg-editor.css" />
+    <script type="text/javascript" src="__PUBLIC__/front/writetravelnote/js/input.js"></script>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/front/writetravelnote/css/input.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 800px) and (max-device-width: 1100px)" href="__PUBLIC__/front/writetravelnote/css/writetravenote1.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="__PUBLIC__/front/writetravelnote/css/writetravenote.css" />
+    <script src="__PUBLIC__/front/writetravelnote/js/mfb.js"></script>
+    <script>window.jQuery || document.write('<script src="__PUBLIC__/front/writetravelnote/js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script type="text/javascript">
+	$(window).load(function(){	
+		$(".done").click(function(){
+			var this_li_ind = $(this).parent().parent("li").index();
+			if($('.payment-wizard li').hasClass("jump-here")){
+				$(this).parent().parent("li").removeClass("active").addClass("completed");
+				$(this).parent(".wizard-content").slideUp();
+				$('.payment-wizard li.jump-here').removeClass("jump-here");
+			}else{
+				$(this).parent().parent("li").removeClass("active").addClass("completed");
+				$(this).parent(".wizard-content").slideUp();
+				$(this).parent().parent("li").next("li:not('.completed')").addClass('active').children('.wizard-content').slideDown();
+			}
+		});
+		
+		$('.payment-wizard li .wizard-heading').click(function(){
+			if($(this).parent().hasClass('completed')){
+				var this_li_ind = $(this).parent("li").index();		
+				var li_ind = $('.payment-wizard li.active').index();
+				if(this_li_ind < li_ind){
+					$('.payment-wizard li.active').addClass("jump-here");
+				}
+				$(this).parent().addClass('active').removeClass('completed');
+				$(this).siblings('.wizard-content').slideDown();
+			}
+		});
+	})
+	</script>
+    </head>
+<body>
+     <div class="header">
+        <div class="mybody">
+        <div class="logo"><img src="__PUBLIC__/front/images/me too.png" height="50px" alt="logo"/></div> 
+            <div class="nav">
+                <ul>
+			    <li><a href="#">首  页</a></li>
+                <li><a href="#">推荐榜</a>
+                    <ul>
+ 					    <li><a href="#">景&nbsp;&nbsp;&nbsp;&nbsp;点</a></li>
+ 					    <li><a href="#">旅&nbsp;&nbsp;&nbsp;&nbsp;店</a></li>
+ 					    <li><a href="#">美&nbsp;&nbsp;&nbsp;&nbsp;食</a></li>
+ 					    <li><a href="#">购&nbsp;&nbsp;&nbsp;&nbsp;物</a></li>
+ 				    </ul>
+ 			    </li>
+                <li><a href="#">攻  略</a>
+                    <ul>
+ 					    <li><a href="#">游&nbsp;&nbsp;&nbsp;&nbsp;记</a></li>
+ 					    <li><a href="#">你问我答</a></li>
+ 				    </ul>
+ 			    </li>
+                <li><a href="#">迷途动态</a>
+           	        <ul>
+ 					    <li><a href="#">至美一拍</a></li>
+ 					    <li><a href="#">猜&nbsp;猜&nbsp;看</a></li>				
+ 				    </ul>
+ 			    </li>
+ 			    <li><a href="#">个人中心</a>
+           	        <ul>
+ 					    <li><a href="#">积分兑换</a></li>
+ 					    <li><a href="#">足&nbsp;&nbsp;&nbsp;&nbsp;迹</a></li>
+ 					    <li><a href="#">我参与的</a></li>				
+ 				    </ul>
+ 			    </li>
+ 		    </ul>
+            </div>
+            <div class="b_nav">
+                <div class="register">
+                    <img src="__PUBLIC__/front/images/register.png" width="25" height="25"/><br/><a href="#">登录</a>
+                </div>
+                <div class="login">
+                    <img src="__PUBLIC__/front/images/login.png" width="25" height="25"/><br/><a href="#">注册</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    
+    <div class="content">
+    <div class="title" style="font-family:'微软雅黑';"><h1>我要写游记</h1></div>
+	<section class="content">    
+		<div class="container1">
+			<section class="jq22-container">
+		<div class="container">
+			<ul class="payment-wizard">
+			    <form action="__MODULE__/Travelnote/dotraveln" method="post">
+		    	<li>
+		        	<div class="wizard-heading">
+		            	1. 游记题目
+		                <span class="icon-user"></span>
+		            </div>
+		            <div class="wizard-content">		            	
+                        <div class="travel">
+                          <textarea id="editor1" name="title" placeholder="写下你的题目吧...">
+                          </textarea>
+                        </div>
+		            	<a class="btn-green done">继续咯</a>
+		            </div>
+		        </li>
+		        
+		        <li>
+		        	<div class="wizard-heading">
+		            	2. 关于旅行的碎碎念
+		                <span class="icon-location"></span>
+		            </div>
+		            <div class="wizard-content">
+			          	 <div class="travel">
+                          <textarea id="editor1" name="first" placeholder="写下你的游记吧...">
+                          </textarea>
+                        </div>
+		            	<a class="btn-green done">继续咯</a>
+		            </div>
+		        </li>
+		        
+		        <li>
+		        	<div class="wizard-heading">
+		            	3. 出行方式及路线
+		                <span class="icon-summary"></span>
+		            </div>
+		            <div class="wizard-content">
+		            	 <div class="travel">
+                          <textarea id="editor1" name="second" placeholder="写下你的游记吧...">
+                          </textarea>
+                        </div>
+		            	<a class="btn-green done">继续咯</a>
+		            </div>
+		        </li>
+		        
+		        <li>
+		        	<div class="wizard-heading">
+		            	4. 写在最后
+		                <span class="icon-mode"></span>
+		            </div>
+		            <div class="wizard-content">
+		            	<div class="travel">
+                          <textarea id="editor1" name="last" placeholder="写下你的游记吧...">
+                          </textarea>
+                        </div>
+		            	<button class="btn-green" type="submit">写完咯</button>
+		            </div>
+		        </li>
+		        </form>
+		    </ul>    
+		</div>
+	</section>
+
+		</div>
+	</section>
+    </div>
+	<ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+      <li class="mfb-component__wrap">
+        <a href="#" class="mfb-component__button--main">
+          <i class="mfb-component__main-icon--resting ion-plus-round"></i>
+          <i class="mfb-component__main-icon--active ion-close-round"></i>
+        </a>
+        <ul class="mfb-component__list">
+          <li>
+            <a href="#" data-mfb-label="我要看游记" class="mfb-component__button--child">
+              <i class="mfb-component__child-icon ion-social-github">返回</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-mfb-label="返回上一页" class="mfb-component__button--child">
+              <i class="mfb-component__child-icon ion-social-octocat">游记</i>
+            </a>
+          </li>   
+        </ul>
+      </li>
+    </ul>     
+	
+	<div class="footer">   
+            <p>Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：冀A2-20050130</p>
+            <p>网备31010502000018号</p>
+            <p>旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨石家庄市旅游网站落实诚信建设主体责任承诺书</p>
+    </div>
+	</body>
+</html>
