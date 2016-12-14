@@ -32,7 +32,7 @@ textarea {
 	color:#ffffff;
 }
 ::-moz-selection {
-	background:#22a1c4;
+	background:#ff7043;
 	color:#ffffff;
 }
 
@@ -63,12 +63,12 @@ header nav ul.sub-menu > li.current-menu-parent > a {
 	color:#22a1c4;
 }
 
-.main_header.type4 header nav ul.menu > li:hover > a,
+/*.main_header.type4 header nav ul.menu > li:hover > a,
 .main_header.type4 header nav ul.menu > li.current-menu-ancestor > a,
 .main_header.type4 header nav ul.menu > li.current-menu-item > a,
 .main_header.type4 header nav ul.menu > li.current-menu-parent > a {
 	color:#22a1c4;
-}
+}*/
 
 .email a:hover {
 	color:#e51c23;
@@ -115,17 +115,17 @@ span.selectOption:hover {
 	color:#22a1c4;
 }
 
-.dropcap.type3 {
+/*.dropcap.type3 {
 	background:#22a1c4;
-}
+}*/
 
 blockquote.type1:before {
 	color:#22a1c4;
 }
 
-.module_content ul.type2 li:before {
+/*.module_content ul.type2 li:before {
     color:#22a1c4;
-}
+}*/
 
 .sidepanel a:hover {
 	color:#22a1c4;
@@ -136,7 +136,7 @@ blockquote.type1:before {
 .pre_footer .recent_posts li a.title:hover,
 .pre_footer .product_posts li a.title:hover,
 .subtotal span {
-	color:#22a1c4;
+	color:#ff7043;
 }
 
 #mc_signup_submit:hover {
@@ -153,9 +153,9 @@ blockquote.type1:before {
 .shortcode_button.btn_type3:hover,
 .shortcode_button.btn_type4:hover,
 .shortcode_button.btn_type4.dark_parent:hover {
-    background: #22a1c4 !important;
+    background: #ff7043 !important;
 	color:#fff;
-	border-color:#22a1c4;
+	border-color:#ff7043;
 }
 
 .shortcode_button.btn_type5 {
@@ -179,15 +179,15 @@ blockquote.type1:before {
 }
 
 .iconbox_wrapper .ico:after {
-	border-color:#22a1c4;
+	border-color:#ff7043;
 }
 
 a:hover .iconbox_title {
-	color:#22a1c4;
+	color:#ff7043;
 }
 
 .promoblock_wrapper {
-	border-left:10px solid #22a1c4;
+	border-left:10px solid #ff7043;
 }
 
 .fw_block .promoblock_wrapper {
@@ -275,17 +275,17 @@ h5.shortcode_toggles_item_title.state-active {
 
 .shortcode_tab_item_title,
 .shortcode_tab_item_title:after {
-	background:#22a1c4;
+	background:#ff7043;
 }
 
-.shortcode_tabs.type3 .shortcode_tab_item_title:hover,
+/*.shortcode_tabs.type3 .shortcode_tab_item_title:hover,
 .shortcode_tabs.type3 .shortcode_tab_item_title.active {
 	color:#22a1c4;
 }
 
 .shortcode_tabs.type3 .shortcode_tab_item_title.active {
 	border:#22a1c4 solid 1px;
-}
+}*/
 
 .shortcode_icons_wrapper a {
 	background: #22a1c4;

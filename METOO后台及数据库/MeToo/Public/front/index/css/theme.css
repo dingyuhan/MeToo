@@ -1363,6 +1363,7 @@ blockquote:before {
 	display:inline-block;
 	vertical-align:top;
 	float:left;
+	text-align: center;
 }
 
 .footer_logo {
@@ -2839,7 +2840,7 @@ a:hover .iconbox_wrapper .ico:after  {
 }
 
 .light a:hover .iconbox_wrapper .ico:before {
-	box-shadow:0 0 0 2px #22a1c4;	
+	box-shadow:0 0 0 2px #ff7043;	
 }
 
 .light .shortcode_iconbox.type2 .iconbox_wrapper .ico:before,
@@ -3277,6 +3278,7 @@ a:hover .iconbox_wrapper .ico .icon_hover.icon_retina {
 .fw_block .promo_text_main_title,
 .fw_block .promo_text_additional_title {
 	color:#fff;
+	font-family: '微软雅黑';
 }
 
 .fw_block .promo_button_block a.shortcode_button {
@@ -4424,11 +4426,11 @@ span.shortcode_social_icon {
 }
 
 .red_icon {
-	color:#22a1c4;
+	color:#ff7043;
 }
 
 .blue_bg {
-	background:#22a1c4;
+	background:#ff7043;
 }
 
 .yellow_bg {
@@ -4946,25 +4948,43 @@ div.images .img_block:hover .block_fade,
 	top:auto;
 	right: auto;
 	bottom:auto;
+	background-color: white;
 }
 
 .featured_item_content {
-	line-height:21px;
+	line-height:17px;
 	color:#666666;
 	font-size:14px;
-	padding:3px 0 17px;
+	margin:3px 0 17px;
 	margin-bottom:17px;
 	position:relative;
+    height: 150px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+    overflow: hidden;
 }
 
-.featured_item_content:before {
-	position:absolute;
+/*.featured_item_content::after {
+    content:"...";
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0 20px 1px 45px;
+    background:url(http://css88.b0.upaiyun.com/css88/2014/09/ellipsis_bg.png) repeat-y;
+}*/
+
+.featured_meta {
+	border-top: 1px dotted lightgray;
+	padding-top: 5px;
+	/*position:absolute;
 	left:0;
 	bottom:-1px;
 	width:100%;
 	height:3px;
 	background:url(../img/double_dotted.png) repeat-x;
-	content:'';	
+	content:'';	*/
 }
 
 
@@ -6630,7 +6650,7 @@ h2.portf_title a {
 	background:#2da6c7;
 }
 .block_plus .item.bg_color2 {
-	background:#22a1c4;
+	background:#ff7043;
 }
 .block_plus .item .item_title {
 	font-size:30px;

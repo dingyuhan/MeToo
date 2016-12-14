@@ -1,26 +1,26 @@
-$(document).ready(function(){
-            //¼ì²âÓÃ»§Ãû
+ï»¿$(document).ready(function(){
+            //æ£€æµ‹ç”¨æˆ·å
             $('input[name="username"]').blur(function(){
-                //1¡¢´´½¨´íÎóĞÅÏ¢½Úµã
-                var $error3 = $('<span class="red">ÓÃ»§Ãû²»ÄÜÎª¿Õ</span>');
-                //2¡¢Á¬½Ó½Úµãµ½DOMÊ÷ÉÏ
+                //1ã€åˆ›å»ºé”™è¯¯ä¿¡æ¯èŠ‚ç‚¹
+                var $error3 = $('<span class="red">ç”¨æˆ·åä¸èƒ½ä¸ºç©º</span>');
+                //2ã€è¿æ¥èŠ‚ç‚¹åˆ°DOMæ ‘ä¸Š
                 if($(this).val() == ''){
-                    //ÏÈÉ¾³ıÔ­ÓĞµÄÌáÊ¾ĞÅÏ¢
+                    //å…ˆåˆ é™¤åŸæœ‰çš„æç¤ºä¿¡æ¯
                     $span = $('td:eq(1) span').remove();
-                    //ÔÚÁ´½Ó½Úµã
+                    //åœ¨é“¾æ¥èŠ‚ç‚¹
                     $('td:eq(1)').append($error3);
                 }else{
                     $span = $('td:eq(1) span').remove();
                 }
             });
 
-            //¼ì²âÃÜÂë
+            //æ£€æµ‹å¯†ç 
             $('input[name="password"]').blur(function(){
                 var tmp=$(this).get(0).value;
                 if(tmp.length==0){
                     //$span = $('tr:eq(1) span').remove();
                     $(this).next().remove();
-                    var error=$("<span>ÃÜÂë²»ÄÜÎª¿Õ</span>");
+                    var error=$("<span>å¯†ç ä¸èƒ½ä¸ºç©º</span>");
                     var pa=$(this).parent();
                     pa.append(error);
                 }else{
@@ -28,12 +28,12 @@ $(document).ready(function(){
                 }
             })
 
-            //¼ì²âÈ·ÈÏÃÜÂë
+            //æ£€æµ‹ç¡®è®¤å¯†ç 
             $('input[name="repassword"]').blur(function(){
                 var pwd=$('input[name="password"]').get(0).value;
                 var repwd=$('input[name="repassword"]').get(0).value;
                 if(pwd!=repwd){
-                    $error2="<span>Á½´ÎÊäÈëµÄÃÜÂë²»Ò»ÖÂ</span>";
+                    $error2="<span>ä¸¤æ¬¡è¾“å…¥çš„å¯†ç ä¸ä¸€è‡´</span>";
                     $(this).parent().append($error2);
                 }else{
                     $(this).next().remove();
