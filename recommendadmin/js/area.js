@@ -33,7 +33,7 @@ function showLocation(province , city , town) {
 		
 		if (city) {
 			loc.fillOption('loc_city' , '0,'+province , city);
-			
+			//
 			if (town) {
 				loc.fillOption('loc_town' , '0,'+province+','+city , town);
 			}
