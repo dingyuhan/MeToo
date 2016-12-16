@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/amazeui.css"/>
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <style type="text/css" media="screen">
+        .header{
+            background-image:url(images/banner.jpeg);
+            height:760px;
+        }
+        .nav{
+            float:right;
+            width:125px;
+            height:170px;}
+        .nav a{
+            float:left;
+            color:#FFF;
+            text-decoration:none;}
+        .logo{float:left;}
+        .register{
+            float:left;
+            width:50px;
+            border-right:1px solid #FFF;
+            margin-top:30px;}
+        .login{
+            float:right;
+            width:50px;
+            margin-top:30px;
+            margin-left:0px;}
+        .search{
+            height:200px;
+            width:400px;
+            margin-left:40%;
+            padding-top:46%;}
+        .b_nav{
+            padding-top:4%;
+            overflow:auto;
+            }
+        .b_nav ul{
+            margin-left:20%;
+            overflow:auto;
+            text-align:center;}
+        .b_nav ul li{
+            width:148px;
+            float:left;
+            text-align:center;
+            list-style-type:none}
+        .b_nav ul li a{
+            font-size:18px;
+            text-decoration:none;
+            color:#fff;font-weight:bold;}
+        .b_nav ul li a:hover{
+            text-decoration:none;
+            color:#f2bb64;}
+        .bnfirst{
+            color:#f2bb64;}
+        .bnfirst2{
+            color:#FFF;}
+        .bnli{
+            border-right:1px solid #FFF;}
+        .content{
+            background-color:#fade98;
+            padding:0px;
+        }
+        .star{width:1100px;text-align:center;margin-left:9%;}
+        .aside_left{float:left;width:8%;background-color:#fade98;}
+        .aside_right{float:right;padding-top:15px;width:92%;background-color:#fade98;height:1655px;}
+        .am-btn.am-radius.btn{font-size:3.5rem;border-radius:15px;color:#fff;font-family:"微软雅黑";font-weight:bold;}
+        .recommend_left{float:left;width:13%;margin-bottom:23px;}
+        .recommend_right{float:right;padding-top:5%;width:87%;}
+        .pic{width:80%;height:60%;}
+        .grid{float:left;width:25%;margin:0px;margin-bottom:15px;}
+        .bg{background-color:#fff;opacity:0.5;width:80%;font-size:16px;}
+        .strategy_left{float:left;width:12%;height:220px;}
+        .strategy_right{float:right;width:88%;margin-bottom:20px;}
+        .footer{background-color:#fade98;}
+        .am-article-meta{font-size:1.5rem;}
+        .head{ width:100px;height:100px;}
+        .am-article-title{display:inline;}
+        .article{margin-bottom:20px;}
+        .b{float:left;padding-right:0px;margin:0px;margin-bottom:15px;width:30%;}
+        .box{float:left;background-color:#fff;opacity:0.3;width:20%;height:192px;font-size:18px;}
+        .btn{width:105px;line-height:1.5em;}
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/amazeui.min.js"></script>
+</head> 
+<body> 
+    <div class="header">   
+        <div class="logo"><img src="images/me too.png" width="210" height="130" alt="logo" /></div>
+        <div class="nav">
+            <div class="register">
+                <img src="images/register.png" width="25" height="25"/><br/><a href="#">登录</a></div>
+            <div class="login">
+                <img src="images/login.png" width="25" height="25"/><br/><a href="#">注册</a>
+            </div>
+        </div> 
+        <div class="am-input-group search">     
+            <form class="am-form-inline" role="form">              
+            <div class="am-form-group"><input type="text" class="am-form-field am-form-inline" placeholder="请输入搜索内容" ></div>
+            <button type="button" class="am-btn am-radius am-btn-inline">搜索</button>
+            </form>
+        </div>        
+        <div class="b_nav">
+            <ul>
+                <li class="bnli"><a href="#" class="bnfirst">主页</a></li>
+                <li class="bnli"><a href="#" class="bnfirst2">推荐表</a></li>
+                <li class="bnli"><a href="#" class="bnfirst2">攻略</a></li>
+                <li class="bnli"><a href="#" class="bnfirst2">迷途动态</a></li>
+                <li class="bnlast"><a href="#" class="bnfirst2">个人中心</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content"> 
+        <div class="star"><img src="images/star.png"/></div>
+        <div class="aside_left"><img src="images/index_aside.png"/></div>
+        <div class="aside_right">
+            <div class="recommend">
+                <div class="recommend_left">      
+                    <h1 style="color:#ff5722;">推荐榜</h1>
+                    <button type="button" class="am-btn am-radius btn" style="background-color:#f7810a;">吃</button><br/><br/>
+                    <button type="button" class="am-btn am-radius btn" style="background-color:#f28d0a;">购</button><br/><br/>
+                    <button type="button" class="am-btn am-radius btn" style="background-color:#f7d031;">住</button><br/><br/>
+                    <button type="button" class="am-btn am-radius btn" style="background-color:#faed5c;">景</button>
+                </div>
+                <div class="recommend_right"> 
+                    <div class="recommend_top"> 
+                    <div class="grid"><img class="pic" src="images/scenery.jpeg" />
+                    <div class="bg">&nbsp;赞数：<br/>&nbsp;地点：</div></div>
+                    <div class="grid"><img class="pic" src="images/scenery.jpeg" />
+                    <div class="bg">&nbsp;赞数：<br/>&nbsp;地点：</div></div>
+                    <div class="grid"><img class="pic" src="images/scenery.jpeg" />
+                    <div class="bg">&nbsp;赞数：<br/>&nbsp;地点：</div></div>
+                    <div class="grid"><img class="pic" src="images/scenery.jpeg" />
+                    <div class="bg">&nbsp;赞数：<br/>&nbsp;地点：</div></div>
+                    </div>
+                    <div class="recommend_bottom"> 
+                    <div class="grid"><img class="pic" src="images/scenery.jpeg" />
+                    <div class="bg">&nbsp;赞数：<br/>&nbsp;地点：</div></div>
+                    <div class="grid"><img class="pic" src="images/scenery.jpeg" />
+                    <div class="bg">&nbsp;赞数：<br/>&nbsp;地点：</div></div>
+                    <div class="grid"><img class="pic" src="images/scenery.jpeg" />
+                    <div class="bg">&nbsp;赞数：<br/>&nbsp;地点：</div></div>
+                    <div class="grid"><img class="pic" src="images/scenery.jpeg" />
+                    <div class="bg">&nbsp;赞数：<br/>&nbsp;地点：</div></div>
+                    </div>            
+                </div>
+            </div>
+
+            <div class="strategy">
+                <div class="recommend_left">
+                    <h1 style="color:#fa8e00;">攻略</h1><br/>
+                    <button type="button" class="am-btn am-radius btn" style="background-color:#f28d0a;">游<br/>记</button><br/><br/><br/>
+                    <button type="button" class="am-btn am-radius btn" style="background-color:#f2b00a;line-height:1.3em;">你<br/>问<br/>我<br/>答</button><br/>
+                </div>
+                <div class="recommend_right">
+                    <div style="margin-bottom:40px;">
+                        <div class="strategy_left"><img src="images/head.jpg"  class="am-img-thumbnail am-circle head"></div>
+                        <div class="strategy_right">  
+                            <div class="article">        
+                                <span class="am-article-title">这是我此篇游记的题目  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+                                <span class="am-article-meta">迷途用户 发布时间：2016-10-10 <i class="am-icon-map-marker"></i>地点</span>
+                            </div>
+                            <div class="grid"><img class="pic" src="images/scenery.jpeg" /></div>
+                            <div class="grid"><img class="pic" src="images/scenery.jpeg" /></div>
+                            <div class="grid"><img class="pic" src="images/scenery.jpeg" /></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="strategy_left"><img src="images/head.jpg"  class="am-img-thumbnail am-circle head"></div>
+                        <div class="strategy_right">  
+                            <div class="article">        
+                                <span class="am-article-title">这是我此篇游记的题目 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> 
+                                <span class="am-article-meta">迷途用户 发布时间：2016-10-10 <i class="am-icon-map-marker"></i>地点</span>
+                            </div>
+                            <div class="grid"><img class="pic" src="images/scenery.jpeg" /></div>
+                            <div class="grid"><img class="pic" src="images/scenery.jpeg" /></div>
+                            <div class="grid"><img class="pic" src="images/scenery.jpeg" /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="recommend_left">
+                    <h1 style="color:#f2c530;">迷途动态</h1><br/>
+                    <button type="button" class="am-btn am-radius btn" style="background-color:#f28d0a;">至<br/>美<br/>一<br/>拍</button><br/><br/><br/>
+                    <button type="button" class="am-btn am-radius btn" style="background-color:#f7d031;">猜<br/>猜<br/>看</button><br/>
+                </div>
+                <div class="recommend_right" style="padding-top:7%;">
+                    <div class="recommend_top"> 
+                    <div class="box">123</div>
+                    <div class="b"><img class="pic" src="images/scenery.jpeg"/></div>
+                    <div class="box">123</div>          
+                    <div class="b"><img class="pic" src="images/scenery.jpeg"/></div>
+                    </div>
+                </div>
+                <div class="recommend_right">
+                    <div class="recommend_bottom"> 
+                    <div class="box">123</div>
+                    <div class="b"><img class="pic" src="images/scenery.jpeg"/></div>
+                    <div class="box">123</div>          
+                    <div class="b"><img class="pic" src="images/scenery.jpeg"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="footer">
+    </div>
+</body> 
+</html>
