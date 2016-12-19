@@ -1,0 +1,67 @@
+ /* body { background: #ccc;} */
+        div.jHtmlArea .ToolBar ul li a.custom_disk_button 
+        {
+            background: url(images/disk.png) no-repeat;
+            background-position: 0 0;
+        }
+        
+        div.jHtmlArea { border: solid 1px #ccc; }
+    /*</style>
+    
+    <style type="text/css">*/
+        html{padding:0px;margin:0px;border:0px;overflow-x:auto;}
+        body{padding-bottom:0px;padding:0px;margin:0px;border:0px;}
+        a{color:#000;text-decoration:none;}      
+        .content{zoom:1;background-color:#fade98;margin-left: -10px;}
+        .mybody1{zoom:1;width:1024px;}
+        .mybody2{zoom:1;width:100%;background-color:#ffb61e;}
+        .mybody{overflow:hidden;zoom:1;width:1000px;margin-left:10px;background-color:#fade98;}
+        
+.header{zoom:1;background-color:#ffb61e;margin-top:0px;height:70px;padding-left:50px;}
+        .logo{float:left;padding-top:10px;padding-left:20px;height:70px;}
+        .nav{float:left;zoom:1;margin-top:0px;margin-left:50px;width:600px;z-index:1;}
+        .nav ul{zoom:1;padding-left:0px;padding-top:20px;}
+        .nav ul li{width:120px;float:left;text-align:center;list-style-type:none;}
+        .nav ul li a{font-size:20px;text-decoration:none;color:#fff;font-weight:bold;display:block;font-family: '微软雅黑';}
+        .nav ul li a:hover{text-decoration:none;color:#ff7043;}
+        .nav li ul li{width:110px;background-color:#ffb61e ;text-decoration:none; margin-left: 20px;color:white; font-weight:bold; font-size:15px;opacity:0.8;}
+        .nav li ul{width:153px;text-align:left;position:absolute;display:none;z-index: 1;} 
+        .nav li:hover ul{display: block;margin-left: -22px;}
+        .nav li ul a{font-family: '微软雅黑';margin-top:6px;font-size: 15px;height:23px;width:108px;padding:0px 20px 0px 20px;display: block;}
+        .b_nav{float:left;width:100px;height:60px;margin-top:15px;margin-right:15px;}
+        .b_nav a{color:#FFF;text-decoration:none;font-size: 14px;}
+        .register{float:left;width:50px;border-right:1px solid #FFF;margin-left: 50px }
+        .login{width:40px;margin-left: 110px;} 
+          h1{
+            color: #555555;
+            text-align:center;
+            margin-top: 40px;
+        }
+       
+        .tiao1{width: 100%;margin-top: 20px;}
+        .bread{position:relative;margin-left:10px;margin-top: 20px;}
+        .bread a{text-decoration:none;font-size: 14px;color:#607d8b;font-weight:bold;font-family: '微软雅黑';}
+        .alb{zoom:1;overflow: hidden;}
+        .left{float: left; margin-top:20px; }
+        .right{float: left;margin-left: 55px;zoom:1;}
+        .nf{float: left;margin-left: 15px;margin-top: -1050px;}
+        .nff{float: left;margin-left: 15px;margin-top: -730px;}
+        .nfff{float: left;margin-left: 15px;margin-top: -410px;}
+        .nf1{float:left;margin-right:15px;width:300px;height:200px;background-color:#fae5af;}
+        .text{background-color: white;color: #607d8b;font-size:16px;padding-left: 30px;padding-top: 20px;opacity:0.7;height: 60px;}
+        .text a{text-decoration: none;font-size:13px;padding-left: 60px;}
+        .pag{float:left;position:relative;margin-top:-80px;margin-left:330px;}
+        .pages {float:right;padding:10px 0 10px;font-family:'微软雅黑';text-decoration: none;}
+        .pages a {display:inline-block;height:30px; width: 50px;line-height:10px; background:white; border:0px; text-align:center; color:#ff7043; padding:10 10px;opacity:0.6;text-decoration: none;border-radius:6px;}
+        .pages a.a1 {display:inline-block; height:30px; width: 80px;line-height:10px; background:white; border:0px; color:#ff7043; text-align:center;padding:10 10px;opacity:0.6;border-radius:6px; }
+        .pages a:hover {background:#ff7043; color:white; text-decoration:none;}
+        .pages span {display:inline-block; height:30px; width: 50px;line-height:10px; background:#ff7043; border:0px; color:white; text-align:center;padding:10 10px;opacity:0.6;border-radius:6px;}
+        .page .noPage {display:inline-block; height:30px; width: 50px;line-height:10px; background:white; border:0px; color:#ff7043; text-align:center;padding:8 8px;opacity:0.6;border-radius:6px; }
+        .footer{background-color:#ffb61e; padding-left:80px;margin-top:-15px;margin-bottom:0px;} 
+        .footer p{	
+        	color: white;
+        	font-family: '微软雅黑';
+        	font-size: 15px;
+        	text-align: center;
+        }
+        .btn{color:#fff;background-color: #ff7043;width:110px;border-radius:6px;height: 40px;font-size: 16px;font-weight: bold;margin-left: 950px;margin-top: -1115px;}

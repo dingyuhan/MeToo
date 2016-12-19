@@ -4,42 +4,48 @@ use Think\Controller;
 
 class StrategyController extends Controller {
     public function question(){
-        $question = M("question")->select();
+        $count1 = M("question")->count();
+        $p1 = getpage($count1,5);
+        $question = M("question")->order('id')->limit($p1->firstRow, $p1->listRows)->select();
+        $this->assign('page1', $p1->show());
         $this->assign('question',$question);
-        $answer = M("answer")->select();
+
+        $count2 = M("answer")->count();
+        $p2 = getpage($count2,5);
+        $answer = M("answer")->order('id')->limit($p2->firstRow, $p2->listRows)->select();
+        $this->assign('page2', $p2->show());
         $this->assign('answer',$answer);
         $this->display();
     }
 
     public function travelnote(){
-        $travelnote = M("travelnote")->select();
+        $count = M("travelnote")->count();
+        $p = getpage($count,5);
+        $travelnote = M("travelnote")->order('id')->limit($p->firstRow, $p->listRows)->select();
+        $this->assign('travelnote',$travelnote);
+        $this->assign('page', $p->show());
         $this->assign('travelnote',$travelnote);
         $this->display();
     }
 
-    // public function record(){
-    //     $record = M("record")->select();
-    //     $this->assign('record',$record);
-    //     $this->display();
-    // }
-
-    public function add(){
+    public function moditravelnote(){
+        $id = $_GET['id'];
+        $travelnote = D("travelnote")->find($id);
+        $this->assign("travelnote",$travelnote);
         $this->display();
     }
 
-    public function doAdd(){
-        if(!IS_POST){
-            exit("bad request");
+    public function doModitravelnote(){
+        if (!IS_POST) {
+            exit("error param");
         }
-        $adminModel = D("AdminUser");
-        if(!$adminModel->create()){
-            $this->error($adminModel->getError());          
-        }
-        if($adminModel->add()){
-            $this->success("添加成功",U("lists"));
+        $travelnote = D('travelnote');
+        if($travelnote->create()&&$travelnote->save())
+        {
+            $this->success("修改成功","travelnote");
         }
         else{
-            $this->error("添加失败");
+            $this->error($travelnote->getError());
         }
     }
 
@@ -91,74 +97,6 @@ class StrategyController extends Controller {
             if(M("travelnote")->delete($id)){
                 $this->success("删除成功！");
             }
-        }
-    }
-
-    public function modi(){
-        $id = $_GET['id'];
-        $adminModel = D("adminUser")->find($id);
-        $this->assign("admin",$adminModel);
-        $this->display();
-    }
-
-    public function doModi(){
-        if (!IS_POST) {
-            exit("error param");
-        }
-        $adminModel = D('adminUser');
-        if($adminModel->create()&&$adminModel->save())
-        {
-            $this->success("修改成功","lists");
-        }
-        else{
-            $this->error($adminModel->getError());
-        }
-    }
-
-    public function edits(){
-        $username = I("Session.username");
-        $user = M("adminUser")->where("username='$username'")->find();
-        $this->assign("users",$user);
-        $this->display();
-    }
-
-    public function doEdit(){
-        if(!IS_POST){
-            exit("error param");
-        }
-        $adminUsersModel = D("adminUser");
-        if($adminUsersModel->create() !==false && $adminUsersModel->save()!==false)
-        {
-            //var_dump(a);exit;
-            $this->success("修改成功",U("lists"));
-        }
-        else{
-            //var_dump(b);exit;
-            $this->error($adminUsersModel->getError());
-        }
-    }
-
-    public function pass(){
-        $username = I("Session.username");
-        $user = M("adminUser")->where("username='$username'")->find();
-        $this->assign("users",$user);
-        $this->display();
-    }
-
-    public function doPass(){
-        if(!IS_POST){
-            exit("error param");
-        }
-        $adminModel = D("adminUser");
-        var_dump($_POST);exit;
-        if($adminModel->create()&&$adminModel->save())
-        {
-            //var_dump(a);exit;
-            $this->success("修改成功",U("lists"));
-        }
-        else{
-            //var_dump(b);exit;
-            $this->error($adminModel->getError());
         }
     }
 }

@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>游记</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/travelnote/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/travelnote/css/default.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/front/travelnote/css/style.css">
+	<link href="__PUBLIC__/front/travelnote/css/mfb.css" rel="stylesheet">
+	<link href="__PUBLIC__/front/travelnote/css/travenote.css" rel="stylesheet">
+    <script src="__PUBLIC__/front/travelnote/js/mfb.js"></script>
+</head>
+<body>
+	<section class="parallax parallax-1">
+		<div class="htmleaf-header">
+			<h1>
+			{$travelnote.title}
+			<span>
+                作者：{$travelnote.userid}&nbsp;&nbsp;&nbsp;&nbsp;
+                发布时间：{$travelnote.time}&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                <script language=JavaScript>
+var caution = false ;
+function setCookie(name, value, expires, path, domain, secure) {
+var curCookie = name + "=" + escape(value) +
+((expires) ? "; expires=" + expires.toGMTString() : "") +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+((secure) ? "; secure" : "")
+if (!caution || (name + "=" + escape(value)).length <= 4000)
+document.cookie = curCookie
+else
+if (confirm("Cookie exceeds 4KB and will be cut!"))
+document.cookie = curCookie
+}
+function getCookie(name) {
+var prefix = name + "="
+var cookieStartIndex = document.cookie.indexOf(prefix)
+if (cookieStartIndex == -1)
+return null
+var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+if (cookieEndIndex == -1)
+cookieEndIndex = document.cookie.length
+return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+}
+function deleteCookie(name, path, domain) {
+if (getCookie(name)) {
+document.cookie = name + "=" +
+((path) ? "; path=" + path : "") +
+((domain) ? "; domain=" + domain : "") +
+"; expires=Thu, 01-Jan-70 00:00:01 GMT"
+}
+}
+function fixDate(date) {
+var base = new Date(0)
+var skew = base.getTime()
+if (skew > 0)
+date.setTime(date.getTime() - skew)
+}
+var now = new Date()
+fixDate(now)
+now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+var visits = getCookie("counter")
+if (!visits){
+visits = 1
+}else{
+visits = parseInt(visits) + 1
+setCookie("counter", visits, now)
+document.write("浏览量" + visits + "次");}
+</script>
+
+			</span>
+			</h1>			
+		</div>
+	</section>
+    <div class="bread">
+	        <a href="#">攻略 > </a><a href="#">游记 > </a><a href="#">看游记</a>
+	 </div>
+	<section class="content">
+		<div class="container">
+			<h2>关于旅行的碎碎念</h2>
+
+			<p>
+				{$travelnote.first}
+			</p>
+
+			
+		</div>
+	</section>
+
+	<section class="parallax parallax-2">
+		<div class="container">
+			<h1><br/><br/><br/><br/></h1>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<h2>出行方式及路线</h2>
+
+			<p>
+				{$travelnote.second}
+			</p>
+
+		</div>
+	</section>
+
+	<section class="parallax parallax-3">
+		<div class="container">
+			<h1>
+				<br/><br/><br/><br/>
+			</h1>
+		</div>
+	</section>
+
+	<section class="content">
+		<div class="container">
+			<h2>写在最后</h2>
+
+			<p>
+				{$travelnote.last}
+			</p>
+
+		</div>
+	</section>
+
+
+	<ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+      <li class="mfb-component__wrap">
+        <a href="#" class="mfb-component__button--main">
+          <i class="mfb-component__main-icon--resting ion-plus-round"></i>
+          <i class="mfb-component__main-icon--active ion-close-round"></i>
+        </a>
+        <ul class="mfb-component__list">
+          <li>
+            <a href="#" data-mfb-label="我要写游记" class="mfb-component__button--child">
+              <i class="mfb-component__child-icon ion-social-github">写游记</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-mfb-label="返回上一页" class="mfb-component__button--child">
+              <i class="mfb-component__child-icon ion-social-octocat">游记</i>
+            </a>
+          </li>   
+        </ul>
+      </li>
+    </ul>     
+	
+	<div class="footer">
+	    
+            <p>Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：冀A2-20050130</p>
+            <p>网备31010502000018号</p>
+            <p>旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨石家庄市旅游网站落实诚信建设主体责任承诺书</p>
+        
+    </div>
+	</body>
+</html>

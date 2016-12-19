@@ -1,0 +1,46 @@
+
+.con4{
+     width: 300px;
+     height: auto;
+     overflow: hidden;
+    padding:0 120px 0 0;
+     color: #FFFFFF;
+	 
+}
+.con4 .btn{
+     width: 100%;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+     background: #d8b49c;
+     display: block;
+     font-size: 16px;
+     border-radius: 5px;
+	 margin-left:35px;
+	 vertical-align:central;
+}
+.login5right{zoom:1;overflow:hidden;padding-left:30px;width:260px;}
+login5left{ float:left;width: 280px; height:200px; font-size:13px;padding-left:30px;}
+.upload{
+     float: left;
+     position: relative;
+	 margin-top:-10px;
+	 color:white;
+}
+.upload_pic{
+     display: block;
+     width: 100%;
+     height: 40px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     opacity: 0;
+     border-radius: 5px;
+	 
+}
+#cvs{
+	border: 2px solid #CCC;
+	margin:20px 0 20px 50px;
+	background-image:url(../img/nopicture.png);
+	background-size:100% 100%;
+}/* CSS Document */

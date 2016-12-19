@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>首页</title>
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/bootstrap.min.css" type="text/css" media="all" />
+<script type="text/javascript" src="__PUBLIC__/front/index/js/jquery.easydrag.handler.beta2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/index/js/jquery.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/popup.css">
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/pop.css">
+<script type="text/javascript" src="__PUBLIC__/front/index/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/front/index/js/easyform.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/front/index/js/popup.js"></script> 
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/upload.css">
+<script type="text/javascript" src="__PUBLIC__/front/index/js/main111.js"></script>
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/main111.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/theme.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/revslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/custom.css" type="text/css" media="all" />
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/popup.css">
+<link rel="stylesheet" href="__PUBLIC__/front/index/css/pop.css">
+<style type="text/css">
+        .mybody1{overflow:hidden;zoom:1;width:1200px;margin-left:-130px;background-color:#fad870;}
+        .header{zoom:1;background-color:#fad870;margin-top:0px;height:70px;padding-left:80px;}
+        .logo{float:left;margin-left:-10px;margin-top:-25px;height:70px;}
+        .nav{float:left;overflow:hidden;zoom:1;margin-top:-36px;margin-left:250px;width:800px;z-index:1;}
+        .nav ul{overflow:hidden;zoom:1;padding-left:0px;padding-top:13px;}
+        .nav ul li{width:148px;float:left;text-align:center;list-style-type:none;}
+        .nav ul li a{font-size:20px;text-decoration:none;color:#fff;font-weight:bold;display:block;font-family: '微软雅黑';}
+        .nav ul li a:hover{text-decoration:none;color:#ff7043;}
+        .nav li ul li{width:110px;background-color:#fad870 ;text-decoration:none; margin-left: 40px;color:white; font-weight:bold; font-size:15px;opacity:0.8;}
+        .nav li ul{width:153px;text-align:left;position:absolute;display:none;z-index: 1;} 
+        .nav li:hover ul{display: block;margin-left: -22px;}
+        .nav li ul a{font-family: '微软雅黑';margin-left:-8px;margin-top:16px;font-size: 14px;height:26px;width:108px;padding:0px 15px 0px 30px;display: block;font-weight: bold;}
+</style>
+</head>
+<body>
+	<div class="main_header type1">
+        <div class="tagline">
+            <div class="container">
+                <div class="fright">                   
+                        <a href="#" class="one" style="opacity:0.6;">注册</a>
+                        <a href="#" class="two" style="opacity:0.6;margin-left:20px;">登录</a>  
+<!-- <a href="#" class="one">点击我查看效果</a> -->
+<div class="box">
+<div class="box2">
+	<div class="login5">
+    	<h2>注册</h2>
+        <a class="close"></a>
+    </div>
+    <div class="login51">
+    	<form name="login5form" id="reg-form" action="__MODULE__/Index/register" method="post" enctype="multipart/form-data">
+        	<div class="login5left">
+                <table class="tab">
+                    <tr>
+                        <td>用 户 名&nbsp;&nbsp;</td>
+                        <td>
+                            <input name="username" type="text" id="uid" easyform="length:4-16;char-normal;real-time;"
+                                message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>密&nbsp;&nbsp;码&nbsp;&nbsp;</td>
+                        <td>
+                            <input name="password" type="password" id="psw1" easyform="length:6-16;" message="密码必须为6—16位"
+                        easytip="disappear:lost-focus;theme:blue;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>确认密码&nbsp;&nbsp;</td>
+                        <td>
+                            <input name="repassword" type="password" id="psw2" easyform="length:6-16;equal:#psw1;"
+                                message="两次密码输入要一致" easytip="disappear:lost-focus;theme:blue;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>手 机 号&nbsp;&nbsp;</td>
+                        <td>
+                            <input name="phonenum" type="text" id="email" easyform="email;real-time;" message="手机号码为11位"
+                                easytip="length:11;disappear:lost-focus;theme:blue;" ajax-message="这个手机号已经被注册过，请换一个吧!">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>家庭住址&nbsp;&nbsp;</td>
+                        <td>
+                            <input name="address" type="text" id="nickname" 
+                            easytip="theme:blue;">
+                        </td>
+                    </tr>
+                </table>
+                <div class="buttons" style="padding-left:15px;">
+                    <input value="注 册" type="submit" style="margin-top:20px; line-height:20px;">
+                    <!-- <input value="我有账号，我要登录" class="two" type="button" style="margin-right:25px; margin-top:20px;"> -->
+                </div>
+            	<span></span>
+            </div>
+            <div class="login5right">
+                   <div class="con4">
+                        <canvas id="cvs" width="150" height="150">还没有上传照片哦</canvas>
+                        <span class="btn upload" style="background-color:#ff5722; color:white;padding:0 0 10px 0">上传头像<input type="file" class="upload_pic" id="upload" style="background-color:black"/></span> 
+                    </div>                    	
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<div class="box1">
+<div class="box3">
+    <div class="login6">
+        <h2>登录</h2>
+        <a class="close"></a>
+    </div>
+    <div class="login61">
+        <form name="login6form" id="reg-form" method="post" action="__MODULE__/Index/login">
+            <div class="login6left">
+                <table class="tab">
+                    <tr>
+                        <td>用 户 名&nbsp;&nbsp;</td>
+                        <td>
+                            <input name="username" type="text" id="uid" easyform="length:4-16;char-normal;real-time;"
+                                message="用户名必须为4—16位的英文字母或数字" easytip="disappear:lost-focus;theme:blue;" ajax-message="用户名已存在!">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>密&nbsp;&nbsp;码&nbsp;&nbsp;</td>
+                        <td>
+                            <input name="password" type="password" id="psw1" easyform="length:6-16;" message="密码必须为6—16位"
+                        easytip="disappear:lost-focus;theme:blue;">
+                        </td>
+                    </tr>                 
+                </table>
+                <div class="buttons">
+                    <input value="登 陆" type="submit" style="margin-top: 20px; line-height:20px;">
+                    <!-- <input value="我有账号，我要登录" type="button" style="margin-right: 25px; margin-top: 20px;"> -->
+                </div>
+                <span></span>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+    <div style="text-align: center; clear: both;">
+        <script src="/scripts/2bc/_gg_980_90.js" type="text/javascript"></script>
+    </div>                   
+    </div>                   
+    </div>
+                <div class="fleft" style="margin-left:20px;">
+                    <div class="phone"><i class="icon-phone"></i> +1 800 245 39 25</div>
+                    <div class="email"><a href="mailto:#"><i class="icon-envelope"></i> MeToo@metoo.com</a></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="header_parent_wrap">
+            <header>
+                <div class="container">
+                    <div class="header">
+        <div class="mybody1">
+        <div class="logo"><img src="__PUBLIC__/front/images/me too.png" height="120px" width="200px" alt="logo"/></div>
+        
+            <div class="nav">
+                <ul>
+                <li><a href="#">首  页</a></li>
+                <li><a href="#">推荐榜</a>
+                    <ul>
+                        <li><a href="#">景&nbsp;&nbsp;&nbsp;&nbsp;点</a></li>
+                        <li><a href="#">旅&nbsp;&nbsp;&nbsp;&nbsp;店</a></li>
+                        <li><a href="#">美&nbsp;&nbsp;&nbsp;&nbsp;食</a></li>
+                        <li><a href="#">购&nbsp;&nbsp;&nbsp;&nbsp;物</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">攻  略</a>
+                    <ul>
+                        <li><a href="#">游&nbsp;&nbsp;&nbsp;&nbsp;记</a></li>
+                        <li><a href="#">你问我答</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">迷途动态</a>
+                    <ul>
+                        <li><a href="#">至美一拍</a></li>
+                        <li><a href="#">猜&nbsp;猜&nbsp;看</a></li>                
+                    </ul>
+                </li>
+                <li><a href="#">个人中心</a>
+                    <ul>
+                        <li><a href="#">积分兑换</a></li>
+                        <li><a href="#">足&nbsp;&nbsp;&nbsp;&nbsp;迹</a></li>
+                        <li><a href="#">我参与的</a></li>               
+                    </ul>
+                </li>
+
+            </ul>
+            </div> 
+        </div>
+    </div>
+
+                    <div class="clear"></div>
+                </div>
+            </header>
+        </div>
+    
+    
+    <div class="wrapper" style="background: #fade98;">
+    	<div class="container">
+        	<div class="content_block row no-sidebar">
+            	<div class="fl-container">
+                	<div class="posts-block">
+                        <div class="contentarea">  
+                        	<!-- Slider -->                                        
+                            <div class="fw_block bg_start wall_wrap" style="height:800px; margin-top:-80px; background-image:url('__PUBLIC__/front/index/img/slider/278616.jpg');">
+                            	<div class="tp-caption lft ltt tp-resizeme slide_title slide_info_center"
+                                    data-easing="Power4.easeOut"
+                                    data-endspeed="300"
+                                    data-endeasing="Power4.easeIn">To The Heart Of The Trip
+                            </div>
+                            <br/>
+                            <div class="tp-caption lft ltt tp-resizeme slide_descr slide_info_center"
+                                 data-easing="Power4.easeOut"
+                                 data-endspeed="600"
+                                 data-endeasing="Power4.easeIn" style="font-family: 'Nothing You Could Do', cursive;">Life can be likened to a journey with an unknown destination.  
+                            </div>
+                            </div>  
+                            <!-- //Slider -->
+                            
+                            <div class="row">
+                             	<div class="col-sm-12 module_cont pb0">
+                                	<div class="bg_title">
+                                    	<h2 style="font-family:'微软雅黑';">推荐榜</h2>
+                                    </div>                                  
+                                </div>
+                             </div>
+                             
+                            <div class="row">
+								<div class="col-sm-6 module_cont pb30">
+                                    <div class="module_content shortcode_iconbox type5 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <a href="javascript:void(0);">			
+                                            <div class="iconbox_wrapper">
+                                            	<div class="icon_title_wrap">
+                                                    <div class="ico">
+                                                    	<h1 style="color:#ff5722; font-family:'微软雅黑';">吃</h1>
+                                                    </div>
+                                                    <h5 class="iconbox_title" style="font-family:'微软雅黑';">美食推荐</h5>
+                                                </div>
+                                                <div class="iconbox_body">						
+                                                    <p style="font-family:'微软雅黑';">时绕麦田求野荠,强为僧舍煮山羹。食为天性，静静地咀嚼，轻轻地回味，非比寻常的韵致。</p>
+                                                </div>					
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="module_content shortcode_iconbox type5 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <a href="javascript:void(0);">			
+                                            <div class="iconbox_wrapper">
+                                            	<div class="icon_title_wrap">
+                                                    <div class="ico">
+                                                    	<h1 style="color:#ff5722; font-family:'微软雅黑';">购</h1>
+                                                    </div>
+                                                    <h5 class="iconbox_title" style="font-family:'微软雅黑';">购物推荐</h5>
+                                                </div>
+                                                <div class="iconbox_body">						
+                                                    <p style="font-family:'微软雅黑';">生活就像是百货市场，你永远不知道心仪的商品何时会意外降临。</p>
+                                                </div>					
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="module_content shortcode_iconbox type5 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <a href="javascript:void(0);">			
+                                            <div class="iconbox_wrapper">
+                                            	<div class="icon_title_wrap">
+                                                    <div class="ico">
+                                                    	<h1 style="color:#ff5722; font-family:'微软雅黑';">景</h1>
+                                                    </div>
+                                                    <h5 class="iconbox_title" style="font-family:'微软雅黑';">景点推荐</h5>
+                                                </div>
+                                                <div class="iconbox_body">						
+                                                    <p style="font-family:'微软雅黑';">风息是温驯的，而且往往因为它是从繁花的山林里吹拂过来，带来一股幽远的澹香，一息滋润的水气，摩挲着你的颜面。</p>
+                                                </div>					
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="module_content shortcode_iconbox type5 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <a href="javascript:void(0);">			
+                                            <div class="iconbox_wrapper">
+                                            	<div class="icon_title_wrap">
+                                                    <div class="ico">
+                                                    	<h1 style="color:#ff5722; font-family:'微软雅黑';">住</h1>
+                                                    </div>
+                                                    <h5 class="iconbox_title" style="font-family:'微软雅黑';">旅店推荐</h5>
+                                                </div>
+                                                <div class="iconbox_body">						
+                                                    <p style="font-family:'微软雅黑';">绿遍山原白满川，子规声里雨如烟。乡村四月闲人少， 才了蚕桑又插田。</p>
+                                                </div>					
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div> 
+                                <div class="col-sm-6 module_cont pb74 animate" data-anim-type="fadeInRight" data-anim-delay="300">
+                                	<div class="mr_220">
+                                		<img src="__PUBLIC__/front/index/img/266521.jpg" alt="" width="400px;" /><img src="__PUBLIC__/front/index/img/295301.jpg" alt="" width="400px;" style="margin-top:30px;"/>
+                                    </div>
+                                </div>        	
+                            </div>
+                             
+                            <div class="row">
+                                <div class="col-sm-12 animate" data-anim-type="fadeInUp" data-anim-delay="300">
+                                	<div class="fw_block bg_start highlighted_colored">
+                                        <div class="shortcode_promoblock">
+                                            <div class="promoblock_wrapper">
+                                                <div class="promo_text_block">
+                                                    <div class="promo_text_block_wrapper">
+                                                        <h2 class="promo_text_main_title">为你们的出行提供最全面的服务</h2>
+                                                        <h6 class="promo_text_additional_title">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitiardo.</h6>
+                                                    </div>
+                                                </div>        
+                                                <div class="promo_button_block"><a class="shortcode_button btn_large btn_type5" href="javascript:void(0);">联系我们</a></div>
+                                                <div class="clear"></div>                                    
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>                             	
+                            </div>
+
+							<div class="row">
+                             	<div class="col-sm-12 module_cont pb5">
+                                	<div class="bg_title">
+                                    	<h2 style="font-family:'微软雅黑';">你问我答 · 常见问题</h2>
+                                    </div>                               
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-sm-12 module_cont pb74 module_price_table items3">
+                                    <div class="price_table_wrapper">
+                                        <div class="price_item animate" data-anim-type="fadeInLeft" data-anim-delay="300">                                        
+                                            <div class="price_item_wrapper">
+                                            	<div class="price_item_wrap">     
+
+                                                    <div class="price_item_title">
+                                                    	<h5>如何获得积分</h5>
+                                                    </div>
+                                                    <div class="item_cost_wrapper">
+                                                        <!-- <div class="price_item_cost">
+                                                            <h1>49<span>$</span></h1>
+                                                        </div> -->                                                        
+                                                    </div>                                                     
+                                                    <div class="price_item_body">                                                        
+                                                        <div class="price_item_text">回答问题</div>
+                                                        <div class="price_item_text">发布游记</div>
+                                                        <div class="price_item_text">参与至美一拍</div>
+                                                        <div class="price_item_text">猜猜看</div>
+                                                        <div class="price_item_btn"><a class="shortcode_button btn_large btn_type1" href="javascript:void(0);">查看更多答案</a></div>
+                                                    </div>                                         
+                                            	</div>   			
+                                            </div>
+                                        </div>
+                                        <div class="price_item most_popular animate" data-anim-type="fadeIn" data-anim-delay="500">                                        
+                                            <div class="price_item_wrapper">
+                                            	<div class="price_item_wrap">     
+
+                                                    <div class="price_item_title">
+                                                    	<h5>如何解决疑问</h5>
+                                                    </div>
+                                                    <div class="item_cost_wrapper">
+                                                        <!-- <div class="price_item_cost">
+                                                            <h1>49<span>$</span></h1>
+                                                        </div> -->
+                                                    </div>                   
+                                                    <div class="price_item_body">
+                                                        <div class="price_item_text">进入你问我答</div>
+                                                        <div class="price_item_text">查看其他人有无有类似问题</div>
+                                                        <div class="price_item_text">自己发布问题</div>
+                                                        <div class="price_item_text">向其他用户提问</div>
+                                                        <div class="price_item_btn"><a class="shortcode_button btn_large btn_type1" href="javascript:void(0);">查看更多答案</a></div>
+                                                    </div>                                         
+                                            	</div>   			
+                                            </div>
+                                        </div>
+                                        <div class="price_item most_popular animate" data-anim-type="fadeIn" data-anim-delay="500">                                        
+                                            <div class="price_item_wrapper">
+                                            	<div class="price_item_wrap">     
+
+                                                    <div class="price_item_title">
+                                                    	<h5>如何参与至美一拍</h5>
+                                                    </div>
+                                                    <div class="item_cost_wrapper">
+                                                        <!-- <div class="price_item_cost">
+                                                            <h1>49<span>$</span></h1>
+                                                        </div> -->               
+                                                    </div>                                                     
+                                                    <div class="price_item_body">
+                                                        <div class="price_item_text">1.注册成为迷途会员</div>
+                                                        <div class="price_item_text">2.查看本期主题</div>
+                                                        <div class="price_item_text">3.准备一张符合主题的照片(可参考往期获奖照片)</div>
+                                                        <div class="price_item_text">4.发布到至美一拍</div>
+                                                        <div class="price_item_btn"><a class="shortcode_button btn_large btn_type1" href="javascript:void(0);">查看更多答案</a></div>
+                                                    </div>                                         
+                                            	</div>   			
+                                            </div>
+                                        </div>                                                                               
+                                    </div>
+                                </div>                                    
+                             </div>    
+                             
+                            <div class="fw_block bg_start pt74 pb30 grey_bg mb0">
+                            	<div class="row">
+                                    <div class="col-sm-12 module_cont pb0">
+                                        <div class="bg_title">
+                                            <h2 style="font-family:'微软雅黑';">如何兑换奖品</h2>
+                                        </div>                                   
+                                    </div>
+                                </div> 
+                                <div class="row step_by_step">
+                                    <div class="col-sm-3 module_cont module_iconboxes pb30 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                        <div class="module_content shortcode_iconbox">
+                                            <a href="javascript:void(0);">			
+                                                <div class="iconbox_wrapper">
+                                                    <div class="icon_title_wrap">
+                                                        <div class="ico"><img src="__PUBLIC__/front/index/img/icons/icon21.png" class="icon_def" width="80" height="80" alt="" /><img src="__PUBLIC__/front/index/img/retina/icons/icon21.png" class="icon_retina" width="80" height="80" alt="" /></div>
+                                                        <h5 class="iconbox_title">1. 注册账号</h5>
+                                                    </div>				
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 module_cont module_iconboxes pb30 animate" data-anim-type="fadeInUp" data-anim-delay="350">
+                                        <div class="module_content shortcode_iconbox">
+                                            <a href="javascript:void(0);">			
+                                                <div class="iconbox_wrapper">
+                                                    <div class="icon_title_wrap">
+                                                        <div class="ico"><img src="__PUBLIC__/front/index/img/icons/icon22.png" class="icon_def" width="80" height="80" alt="" /><img src="__PUBLIC__/front/index/img/retina/icons/icon22.png" class="icon_retina" width="80" height="80" alt="" /></div>
+                                                        <h5 class="iconbox_title">2. 登录账号</h5>
+                                                    </div>				
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 module_cont module_iconboxes pb30 animate" data-anim-type="fadeInUp" data-anim-delay="350">
+                                        <div class="module_content shortcode_iconbox">
+                                            <a href="javascript:void(0);">			
+                                                <div class="iconbox_wrapper">
+                                                    <div class="icon_title_wrap">
+                                                        <div class="ico"><img src="__PUBLIC__/front/index/img/icons/icon23.png" class="icon_def" width="80" height="80" alt="" /><img src="__PUBLIC__/front/index/img/retina/icons/icon23.png" class="icon_retina" width="80" height="80" alt="" /></div>
+                                                        <h5 class="iconbox_title">3. 打开个人中心</h5>
+                                                    </div>				
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 module_cont module_iconboxes pb30 animate" data-anim-type="fadeInRight" data-anim-delay="300">
+                                        <div class="module_content shortcode_iconbox">
+                                            <a href="javascript:void(0);">			
+                                                <div class="iconbox_wrapper">
+                                                    <div class="icon_title_wrap">
+                                                        <div class="ico"><img src="__PUBLIC__/front/index/img/icons/icon24.png" class="icon_def" width="80" height="80" alt="" /><img src="__PUBLIC__/front/index/img/retina/icons/icon24.png" class="icon_retina" width="80" height="80" alt="" /></div>
+                                                        <h5 class="iconbox_title">4. 积分兑换奖品</h5>
+                                                    </div>				
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>                             	
+                                 </div>
+							</div>       
+                            
+                            <div class="fw_block bg_start block_plus type2">
+                                <div class="item bg_color1 animate" data-anim-type="fadeInLeft" data-anim-delay="300">
+                                    <volist name="guess1" id="guess1">
+                                    <h2 class="item_title">{$guess1.question}</h2>
+                                    <p><img src="__PUBLIC__/{$guess1.picture}"></p>
+                                    <a href="javascript:void(0);" class="shortcode_button btn_normal btn_type5">猜答案</a>
+                                    </volist>
+                                </div>
+                                <div class="item bg_color2 animate" data-anim-type="fadeIn" data-anim-delay="500">
+                                    <volist name="guess2" id="guess2">
+                                    <h2 class="item_title">{$guess2.question}</h2>
+                                    <p><img src="__PUBLIC__/{$guess2.picture}"></p>
+                                    <a href="javascript:void(0);" class="shortcode_button btn_normal btn_type5">猜答案</a>
+                                    </volist>
+                                </div>
+                                <div class="item bg_color3 animate" data-anim-type="fadeInRight" data-anim-delay="300">
+                                <volist name="guess3" id="guess3">
+                                    <h2 class="item_title">{$guess3.question}</h2>
+                                    <p><img src="__PUBLIC__/{$guess3.picture}"></p>
+                                    <a href="javascript:void(0);" class="shortcode_button btn_normal btn_type5">猜答案</a>
+                                    </volist>
+                                </div>
+                            </div>  
+                            
+                            <div class="row">
+                             	<div class="col-sm-12 module_cont pb0">
+                                	<div class="bg_title">
+                                    	<h2 style="font-family:'微软雅黑';">游   记</h2>
+                                    </div>                                  
+                                </div>
+                             </div>
+                             <div class="row">
+                                <div class="col-sm-12 module_cont pb60 module_feature_posts">
+                                    <div class="featured_items">
+                                        <div class="items4 featured_posts">
+                                            <ul class="item_list">    
+                                            <volist name="travelnote" id="travelnote">
+                                                <li class="animate" data-anim-type="fadeInUp" data-anim-delay="300">
+                                                    <div class="item">
+                                                        <div class="item_wrapper">        
+                                                            <div class="img_block wrapped_img">
+                                                                <img alt="" src="__PUBLIC__/front/index/img/266521.jpg" />
+                                                                <span class="block_fade"></span>
+                                                                <div class="post_hover_info">
+                                                                	<a class="featured_ico_link view_link" href="post_fullwidth.html">点此查看更多<!-- <i class="icon-link"></i> --></a>
+                                                                </div>   
+                                                            </div>                   
+                                                            <div class="featured_items_body">
+                                                                <div class="featured_items_title">
+                                                                    <h5><a href="post_fullwidth.html">{$travelnote.title}</a></h5>
+                                                                </div>
+                                                                <div class="featured_item_content">{$travelnote.first}</div>
+
+                                                                <div class="featured_meta">
+                                                                    <div class="date">
+                                                                    	<i class="icon-calendar"></i>{$travelnote.time}
+                                                                    </div>
+                                                                    <div class="comments">
+                                                                    	<a href="javascript:void(0);">
+                                                                        	<i class="icon-comments"></i>15
+                                                                        </a>
+                                                                    </div>
+                                                                </div>      
+                                                            </div>         
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </volist>
+                                                <!-- <li class="animate" data-anim-type="fadeInUp" data-anim-delay="350">
+                                                    <div class="item">
+                                                        <div class="item_wrapper">
+                                                            <div class="img_block wrapped_img">
+                                                                <img alt="" src="__PUBLIC__/front/index/img/266521.jpg" />
+                                                                <span class="block_fade"></span>
+                                                                <div class="post_hover_info">
+                                                                	<a class="featured_ico_link view_link" href="post_fullwidth.html">点此查看更多<!-- <i class="icon-link"></i> --><!--  -->                                      
+                                            </ul>
+                                        </div>
+                                    </div> 
+                                    <div class="text-center mt40"><a class="shortcode_button btn_normal btn_type5" href="blog_fullwidth.html">更多游记</a></div>
+                             	</div>   
+                             </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div class="footer">
+    	<div class="container">
+        	<div class="pre_footer">
+            	<div class="row">
+                	<div class="col-sm-3">
+                    	<div class="sidepanel widget_text">
+                        	<h4 class="title">联系我们</h4>
+                        	<p>Maecenas etos sit amet, consectetur adipiscing elit. Terminal volutpat rutrum metro amet sollicitudin interdum.</p>
+                            <p><span>Phone:</span> +1 (800) 456 37 96</p>
+                            <p><span>Office:</span>河北师范大学新校区软件学院</p>
+                            <p><span>Email:</span> <a href="mailto:#">MeToo@gmetoo.com</a></p>
+                            <div class="footer_socials">
+                            	<ul>
+                                	<li><a href="javascript:void(0);" class="soc_fb"><i class="icon-facebook"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="soc_tweet"><i class="icon-twitter"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="soc_google"><i class="icon-google-plus"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="soc_dribbble"><i class="icon-dribbble"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="soc_pinterest"><i class="icon-pinterest"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>	
+                    </div>
+                    <div class="col-sm-3">
+                    	<div class="sidepanel widget_posts">
+                        	<h4 class="title">最新成就</h4>
+                            <ul class="recent_posts">                                    
+                                <li class="with_img">
+                                    <div class="recent_posts_content">
+                                    	<img src="__PUBLIC__/front/index/img/head.jpg" alt="" />
+                                        <a href="javascript:void(0);" class="title">Business Cards Design Trends</a>
+                                        <div class="recent_posts_info">Dec 02, 2020  /  <a href="javascript:void(0);">2 comments</a></div>
+                                    </div>                                    
+                                </li>                                
+                                <li class="with_img">
+                                    <div class="recent_posts_content">
+                                    	<img src="__PUBLIC__/front/index/img/head.jpg" alt="" />
+                                        <a href="javascript:void(0);" class="title">This Maravelous App</a>
+                                        <div class="recent_posts_info">Nov 18, 2020  /  <a href="javascript:void(0);">9 comments</a></div>
+                                    </div>                                    
+                                </li>
+                                <li class="with_img">
+                                    <div class="recent_posts_content">
+                                    	<img src="__PUBLIC__/front/index/img/head.jpg" alt="" />
+                                        <a href="javascript:void(0);" class="title">Brand Paper Niceties</a>
+                                        <div class="recent_posts_info">Nov 10, 2020  /  <a href="javascript:void(0);">0 comments</a></div>
+                                    </div>                                    
+                                </li>                            
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                    	<div class="sidepanel widget_twitter">
+                        	<h4 class="title">啦啦啦</h4>
+                            <div class="tweet_module"></div>                          
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                    	<div class="sidepanel widget_review">
+                        	<h4 class="title">致用户</h4>
+                            <div class="last_review">
+                            	<p class="review_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                                <div class="clear"></div>
+                                <div class="last_review_author">
+                                	<h5>Me Too</h5>
+                                    <h6>开发人员</h6>
+                                    <img src="__PUBLIC__/front/index/img/head.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+            	<div class="copyright">Copyright 2016. All Rights Reserved by Groutek, Premium HTML Template.</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>   
+    
+    <div class="fixed-menu"></div>
+    
+    <script type="text/javascript" src="__PUBLIC__/front/index/js/jquery.min.js"></script>	   
+    <script type="text/javascript" charset="UTF-8" src="__PUBLIC__/front/index/js/check.js"></script>
+
+    <script type="text/javascript" src="__PUBLIC__/front/index/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/index/js/modules.js"></script>	
+	<script type="text/javascript" src="__PUBLIC__/front/index/js/theme.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/index/js/color_panel.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/index/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/front/index/js/jquery.themepunch.revolution.min.js"></script>    
+    <script type="text/javascript" src="__PUBLIC__/front/index/js/upload.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function() {
+		   "use strict";			   						
+		   jQuery('.fullscreen_slider').show().revolution({
+				delay: 5000,
+				startwidth: 1170,
+				startheight: 765,
+				fullWidth:"off",
+				fullScreen:"on",
+				navigationType:"bullet",
+				fullScreenOffsetContainer: ".main_header",
+				fullScreenOffset: ""
+			});							
+		});
+	</script> 
+</body>
+</html>
