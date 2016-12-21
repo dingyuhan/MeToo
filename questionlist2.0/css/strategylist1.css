@@ -1,0 +1,293 @@
+         html{padding:0px;margin:0px;border:0px;overflow-x:hidden;}
+        body{padding-bottom:0px;padding:0px;margin:0px;border:0px;}
+        a{color:#000;text-decoration:none;}      
+        .content{zoom:1;background-color:#fade98;margin-left: -10px;height:1550px;}
+        .mybody1{zoom:1;width:1024px;}
+        .mybody2{zoom:1;width:100%;background-color:#ffb61e;}
+        .mybody{overflow:hidden;zoom:1;width:1000px;margin-left:10px;background-color:#fade98;}
+        
+.header{zoom:1;background-color:#ffb61e;margin-top:0px;height:70px;padding-left:50px;}
+        .logo{float:left;padding-top:10px;padding-left:20px;height:70px;}
+        .nav{float:left;zoom:1;margin-top:-5px;margin-left:50px;width:600px;z-index:1;}
+        .nav ul{zoom:1;padding-left:0px;padding-top:14px;}
+        .nav ul li{width:120px;float:left;text-align:center;list-style-type:none;}
+        .nav ul li a{font-size:20px;text-decoration:none;color:#fff;font-weight:bold;display:block;font-family: 'Î¢ÈíÑÅºÚ';margin-left:-18px;}
+        .nav ul li a:hover{text-decoration:none;color:#ff7043;}
+        .nav li ul li{width:110px;background-color:#ffb61e ;text-decoration:none; margin-left: 20px;color:white; font-weight:bold; font-size:15px;opacity:0.8;}
+        .nav li ul{width:153px;text-align:left;position:absolute;display:none;z-index: 1;} 
+        .nav li:hover ul{display: block;margin-left: -22px;}
+        .nav li ul a{font-family: 'Î¢ÈíÑÅºÚ';margin-top:6px;font-size: 15px;height:23px;width:108px;padding:0px 20px 0px 20px;display: block;}
+        .b_nav{float:left;width:100px;height:60px;margin-top:15px;margin-right:15px;}
+        .b_nav a{color:#FFF;text-decoration:none;font-size: 14px;}
+        .register{float:left;width:50px;border-right:1px solid #FFF;margin-left: 50px }
+        .login{width:40px;margin-left: 110px;} 
+
+
+
+
+
+        .tiao4{width: 100%;margin-top:40px;text-align:center;}
+        .more{margin-left:1000px; margin-top:20px;}
+        .more a{text-decoration:none; color:#ff5722; font-weight:bold;}
+        .bread{position:relative;margin-left:10px;margin-top: 8px;}
+        .bread a{text-decoration:none;font-size:14px;color:#607d8b;font-weight:bold;font-family: 'Î¢ÈíÑÅºÚ';}
+        .container{margin-left:140px; z-index:-1; margin-top:25px;}
+        .row{margin-left:80px;}
+        .question{width:400px; float:left;margin-top:20px;}
+        .qu{font-size:20px; color:#e51c23;}
+        .row_two{margin-left:80px; margin-top:55px;}
+        .question_right{margin-left:30px;}
+        .pic10{height:60px; width: 1050px;}
+
+        .pag{float:left;position:relative;margin-top:30px;margin-left:450px;}
+        .pages {float:right;padding:10px 0 10px;font-family:'Î¢ÈíÑÅºÚ';text-decoration: none;}
+        .pages a {display:inline-block;height:35px; width: 60px;line-height:20px; background:white; border:0px; text-align:center; color:#ff7043; padding:10 10px;opacity:0.6;text-decoration: none;border-radius:6px;}
+        .pages a.a1 {display:inline-block; height:35px; width: 70px;line-height:20px; background:white; border:0px; color:#ff7043; text-align:center;padding:10 10px;opacity:0.6;border-radius:6px; }
+        .pages a:hover {background:#ff7043; color:white; text-decoration:none;}
+        .pages span {display:inline-block; height:35px; width: 50px;line-height:20px; background:#ff7043; border:0px; color:white; text-align:center; padding:10 10px;opacity:0.6;border-radius:6px;}
+        .page .noPage {display:inline-block; height:20px; width: 50px;line-height:20px; background:white; border:0px; color:#ff7043; text-align:center;padding:8 8px;opacity:0.6;border-radius:6px; }
+        
+  .pricingTable{
+      text-align: center;
+     
+  }
+  .pricingTable .pricingTable-header{
+      padding: 30px 0;
+      background: #fb8c00;
+      position: relative;
+      transition: all 0.3s ease 0s;
+  }
+  .pricingTable:hover .pricingTable-header{
+      background: #ff7043;
+  }
+  .pricingTable .pricingTable-header:before,
+  .pricingTable .pricingTable-header:after{
+      content: "";
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid #ff7043;
+      position: absolute;
+      bottom: 12px;
+  }
+  .pricingTable .pricingTable-header:before{
+      left: 40px;
+  }
+  .pricingTable .pricingTable-header:after{
+      right: 40px;
+  }
+  .pricingTable .heading{
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 0;
+  }
+  .pricingTable .price-value{
+      display: inline-block;
+      position: relative;
+      font-size: 55px;
+      font-weight: bold;
+      color: #09b1c5;
+      transition: all 0.3s ease 0s;
+  }
+  .pricingTable:hover .price-value{
+      color: #fff;
+  }
+  .pricingTable .currency{
+      font-size: 30px;
+      font-weight: bold;
+      position: absolute;
+      top: 6px;
+      left: -19px;
+  }
+  .pricingTable .month{
+      font-size: 16px;
+      color: #fff;
+      position: absolute;
+      bottom: 15px;
+      right: -30px;
+      text-transform: uppercase;
+  }
+  .pricingTable .pricing-content{
+      padding-top: 50px;
+      background: #fff;
+      position: relative;
+  }
+  .pricingTable .pricing-content:before,
+  .pricingTable .pricing-content:after{
+      content: "";
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid #7c7c7c;
+      position: absolute;
+      top: 12px;
+  }
+  .pricingTable .pricing-content:before{
+      left: 40px;
+  }
+  .pricingTable .pricing-content:after{
+      right: 40px;
+  }
+  .pricingTable .pricing-content ul{
+      padding: 0 20px;
+      margin: 0;
+      list-style: none;
+  }
+  .pricingTable .pricing-content ul:before,
+  .pricingTable .pricing-content ul:after{
+      content: "";
+      width: 8px;
+      height: 46px;
+      border-radius: 3px;
+      background: linear-gradient(to bottom,#ff7043 50%,#ff7043 50%);
+      position: absolute;
+      top: -22px;
+      z-index: 1;
+      box-shadow: 0 0 5px #707070;
+      transition: all 0.3s ease 0s;
+  }
+  .pricingTable:hover .pricing-content ul:before,
+  .pricingTable:hover .pricing-content ul:after{
+      background: linear-gradient(to bottom, #ffa726 50%, #ffa726 50%);
+  }
+  .pricingTable .pricing-content ul:before{
+      left: 44px;
+  }
+  .pricingTable .pricing-content ul:after{
+      right: 44px;
+  }
+  .pricingTable .pricing-content ul li{
+      font-size: 15px;
+      font-weight: bold;
+      color: #777473;
+      padding: 10px 0;
+      border-bottom: 1px solid #d9d9d8;
+  }
+  .pricingTable .pricing-content ul li:last-child{
+      border-bottom: none;
+  }
+  .pricingTable .read{
+      display: inline-block;
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      background: #ff7043;
+      padding: 8px 25px;
+      margin: 30px 0;
+      transition: all 0.3s ease 0s;
+  }
+  .pricingTable .read:hover{
+      text-decoration: none;
+  }
+  .pricingTable:hover .read{
+      background: #fb8c00;
+  }
+
+
+
+
+.footer{background-color:#ffb61e; padding-left:0px;margin-top:0px;margin-bottom:0px;}
+        .mybody2{overflow:hidden;zoom:1;width:1024px;background-color:#ffb61e;}
+        .introduction{
+            width:1200px;
+        } 
+        .int1{
+              float: left;
+              margin-left: -20px;
+              width:200px;
+              height:200px;
+              border-right: 1px dotted white;
+              text-align: center;
+              color: white;
+        }
+        .int1 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int1 p a{
+            color: white;
+        }
+        .int1 a:hover{
+            color: red;
+        }
+        .int2{
+            float: left;
+            width:200px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int2 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int2 p a{
+            color: white;
+        }
+        .int2 a:hover{
+            color: red;
+        }
+        .int3{
+            float: left;
+            width: 200px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int3 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int3 p a{
+            color: white;
+        }
+        .int3 a:hover{
+            color: red;
+        }
+        .int4{
+            float: left;
+            width: 200px;
+            height:200px;
+            text-align: center;
+            border-right: 1px dotted white;
+            color: white;
+        }
+        .int4 p{
+            font-size: 16px;
+            font-family: '微软雅黑';
+        }
+        .int4 p a{
+            color: white;
+        }
+        .int4 a:hover{
+            color: red;
+        }
+        .weixin{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .friend{
+            padding:30px;
+            border-top: 1px solid white;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            border-bottom:1px solid white;
+            font-size: 14px;
+        }
+        .friend a{
+            color: white;
+            line-height: 25px;
+        }
+        .friend a:hover{
+            color: red;
+        }
+
+
+
+  @media screen and (max-width: 990px){
+      .pricingTable{ margin-bottom: 25px; }
+  }
