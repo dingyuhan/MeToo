@@ -1,0 +1,257 @@
+.per{margin-top:-200px;
+  background-image:url(../images/qiandao1.png);
+  background-repeat: no-repeat;
+  width:1024px;
+  height:600px;margin-top:25px;padding:30 0 30 20;}
+.per h1{margin-left: 65px;padding-left: 25px;}
+.per1{width:480px;float:left;padding-top:20px;padding-left:30px;}
+#wrong-message{
+  color:#9e702b;
+  margin-left: 60px;
+}
+.per2{float:left;margin-top:30px;margin-left:80px;width:300px;}
+.personal{margin-top:60px;}
+.personal1{
+  padding-top: 10px;
+}
+.per2 h1{color:#faa628;}
+.btn1{
+  margin-left: 70px;
+  margin-top: 30px;
+  width:150px;
+  height:50px;
+  border-radius: 6px;
+  background-color:#ff7043;
+  color:white;
+}
+.mark{margin-left: 160px;width:200px;}
+.mark p{
+      font-size: 25px;
+      margin-left: 100px;
+}
+.nav{width: 70px;}
+.personal{margin-left: 160px;width: 280px;}
+.photo{
+        margin-left:-170px;
+        margin-top:-50px;
+     }
+    .container{margin-top: 30px;margin-left: -190px;}
+    .col1{
+     	float: left;
+        width:350px;
+    	height:450px;
+    	/*background:#fad74d;*/   		
+    } 
+    .col2{
+    	float: left;
+        width:350px;
+    	height:450px;
+    	/*background:#fad74d;*/
+    	margin-left: 50px;
+    }
+    .youjicontent{
+    	/*width:1100px;
+    	height:500px;*/
+    	width:800px;
+    	margin-left: 100px;
+    	margin-top:30px;
+    }
+	.travelnote{margin-left:100px;margin-top:-200px;padding-top: -50px;}
+    .youjicontent1{ 	
+    	margin-top: 30px;
+    	background:lightyellow;
+
+    	padding:10px 10px 10px 10px;
+    	border-radius: 15px;
+    }
+    .pic3{   
+    	float: left;
+    	width:250px;
+    	height:160px;
+    }
+    .youjicontent1 p{
+    	font-family: 'Î¢ÈíÑÅºÚ';
+    	width:600px;
+    	margin-left: 280px;
+    	font-size: 1.1em;
+    }
+    .pic4{
+    	margin-top: 20px;
+    	margin-left: 350px;
+    }
+    .pic5{
+        margin-left: 20px;
+    }
+    .pic6{
+        margin-left: 20px;
+    }
+    
+    .youjicontent2{
+		background:lightyellow;
+		padding:10px 10px 10px 10px;
+    	border-radius: 15px;
+    	margin-top: 30px;
+    	/*margin-left: 30px;*/
+    }
+     .youjicontent2 p{
+     	font-family: 'Î¢ÈíÑÅºÚ';
+     	font-size: 1.1em;
+    	width:600px;
+    	margin-left: 280px;
+    }
+    .pic7{
+    	float: left;
+    	width:250px;
+    	height:160px;
+    }
+
+    .pag{margin-top:560px;margin-left:-430px;}
+    .pages {padding:10px 0 10px;font-family:'Î¢ÈíÑÅºÚ';text-decoration: none;}
+    .pages a {display:inline-block;height:26px; width: 50px;line-height:26px; background:white; border:0px; text-align:center; color:#ff7043; padding:10 10px;opacity:0.6;text-decoration: none;border-radius:6px;}
+    .pages a.a1 {display:inline-block; height:26px; width: 70px;line-height:26px; background:white; border:0px; color:#ff7043; text-align:center;padding:10 10px;opacity:0.6;border-radius:6px; }
+    .pages a:hover {background:#ff7043; color:white; text-decoration:none;}
+    .pages span {display:inline-block; height:26px; width: 50px;line-height:26px; background:#ff7043; border:0px; color:white; text-align:center;padding:10 10px;opacity:0.6;border-radius:6px;}
+    .page .noPage {display:inline-block; height:26px; width: 50px;line-height:26px; background:white; border:0px; color:#ff7043; text-align:center;padding:8 8px;opacity:0.6;border-radius:6px; }
+    .pag1{margin-top:570px;margin-left:410px;}
+    .pag2{margin-top:40px;margin-left:410px;}
+    .pricingTable{
+      float: left;
+      width: 410px;
+      padding-left: 80px;
+      text-align: center;
+  }
+  .pricingTable .pricingTable-header{
+      padding: 30px 0;
+      background: #fb8c00;
+      position: relative;
+      transition: all 0.3s ease 0s;
+  }
+  .pricingTable:hover .pricingTable-header{
+      background: #ff7043;
+  }
+  .pricingTable .pricingTable-header:before,
+  .pricingTable .pricingTable-header:after{
+      content: "";
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid #ff7043;
+      position: absolute;
+      bottom: 12px;
+  }
+  .pricingTable .pricingTable-header:before{
+      left: 40px;
+  }
+  .pricingTable .pricingTable-header:after{
+      right: 40px;
+  }
+  .pricingTable .heading{
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 0;
+  }
+  .pricingTable .price-value{
+      display: inline-block;
+      position: relative;
+      font-size: 35px;
+      font-weight: bold;
+      color: #f4511e;
+      transition: all 0.3s ease 0s;
+  }
+  .pricingTable:hover .price-value{
+      color: #fff;
+  }
+  .pricingTable .currency{
+      font-size: 30px;
+      font-weight: bold;
+      position: absolute;
+      top: 6px;
+      left: -19px;
+  }
+  .pricingTable .month{
+      font-size: 16px;
+      color: #fff;
+      position: absolute;
+      bottom: 15px;
+      right: -30px;
+      text-transform: uppercase;
+  }
+  .pricingTable .pricing-content{
+      padding-top: 50px;
+      background: #fff;
+      position: relative;
+  }
+  .pricingTable .pricing-content:before,
+  .pricingTable .pricing-content:after{
+      content: "";
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid #7c7c7c;
+      position: absolute;
+      top: 12px;
+  }
+  .pricingTable .pricing-content:before{
+      left: 40px;
+  }
+  .pricingTable .pricing-content:after{
+      right: 40px;
+  }
+  .pricingTable .pricing-content ul{
+      padding: 0 20px;
+      margin: 0;
+      list-style: none;
+  }
+  .pricingTable .pricing-content ul:before,
+  .pricingTable .pricing-content ul:after{
+      content: "";
+      width: 8px;
+      height: 46px;
+      border-radius: 3px;
+      background: linear-gradient(to bottom,#ff7043 50%,#ff7043 50%);
+      position: absolute;
+      top: -22px;
+      z-index: 1;
+      box-shadow: 0 0 5px #707070;
+      transition: all 0.3s ease 0s;
+  }
+  .pricingTable:hover .pricing-content ul:before,
+  .pricingTable:hover .pricing-content ul:after{
+      background: linear-gradient(to bottom, #ffa726 50%, #ffa726 50%);
+  }
+  .pricingTable .pricing-content ul:before{
+      left: 44px;
+  }
+  .pricingTable .pricing-content ul:after{
+      right: 44px;
+  }
+  .pricingTable .pricing-content ul li{
+      font-size: 15px;
+      font-weight: bold;
+      color: #777473;
+      padding: 10px 0;
+      border-bottom: 1px solid #d9d9d8;
+  }
+  .pricingTable .pricing-content ul li:last-child{
+      border-bottom: none;
+  }
+  .pricingTable .read{
+      display: inline-block;
+      font-size: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      background: #ff7043;
+      padding: 8px 25px;
+      margin: 30px 0;
+      transition: all 0.3s ease 0s;
+  }
+  .pricingTable .read:hover{
+      text-decoration: none;
+  }
+  .pricingTable:hover .read{
+      background: #fb8c00;
+  }
+  .container{width: 900px; margin-left: 40px;}
+  .panel__content h1{margin-left: 40px;margin-top: 20px;}

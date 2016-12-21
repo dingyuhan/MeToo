@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>个人中心</title>
+	<script src="js/jquery.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+	<link href='http://fonts.useso.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize1.css"> 
+	<link rel="stylesheet" href="css/styles1.css">
+	<link rel="stylesheet" type="text/css" href="css/default1.css">
+  
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 600px) and (max-device-width: 1200px)" href="css/personal1.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-width: 1240px) and (max-device-width: 2000px)" href="css/personal.css" />
+  
+	<script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.post-module').hover(function () {
+                $(this).find('.description').stop().animate({
+                    height: 'toggle',
+                    opacity: 'toggle'
+                }, 300);
+            });
+        });
+    </script>
+
+</head>
+<body>
+	<nav class="nav">
+	  <div class="burger">
+	    <div class="burger__patty"></div>
+	  </div>
+
+	  <ul class="nav__list">
+	    <li class="nav__item">
+	      <a href="#1" class="nav__link" style="color:#fae09d;"><i class="fa fa-user"></i></a>
+	    </li>
+	    <li class="nav__item">
+	      <a href="#2" class="nav__link scrolly" style="color:#fad74d;"><i class="fa fa-book"></i></a>
+	    </li>
+	    <li class="nav__item">
+	      <a href="#3" class="nav__link" style="color:#faa628;"><i class="fa fa-question-circle"></i></a>
+	    </li>
+	    <li class="nav__item">
+	      <a href="#4" class="nav__link" style="color:#f57f5b;"><i class="fa fa-camera-retro"></i></a>
+	    </li>
+	  </ul>
+	</nav>
+    <!-- <div class="bg1"> -->
+	<section class="panel" id="1" style="background-color:#fae09d;">
+	    <div class="panel__content">
+        <div class="per">
+            <div class="per1">
+                <h1>我的足迹</h1>
+                <div id="main" style="height:400px; width:600px; z-index:-1;"></div>
+    	        <span id="wrong-message" style="color:#9e702b;">我的足迹：广东 </span>
+            </div>
+	        <div class="per2">  
+                <div class="mark"> 
+                    <h2>当前积分</h2> 
+                    <p><a href="#">1000</a>分</p>
+                </div>
+                <div class="personal">
+			    	<h2 class="personal1">个人中心</h2> 
+			        <p>用户名：<a href="#">李思思</a></p>
+  					<p>手机号：<a href="#">13373323456</a></p>
+  					<p>收件地址:<a href="#">河北师范大学</a></p>
+                    <button class="btn1">修改个人信息</button>
+                </div>
+			</div>	
+	    </div>
+
+		    <!-- <div class="per">
+		    	<div class="per1">
+			    	<h1 class="personal">个人中心</h1> 
+			      <p>用户名：123</p>
+  					<p>注册时间：2016年1月1日</p>
+  					<p>手机号：13373323456</p>
+  					<p>收件地址：河北师范大学</p>
+					  <h1 class="personal">我的足迹</h1> 
+	        	<p>
+	        	<ul style="color:black; font-family:'微软雅黑';">
+	        		<li>2016.1.17 呼伦贝尔</li>
+	        		<li>2016.1.17 呼伦贝尔</li>
+	        		<li>2016.1.17 呼伦贝尔</li>
+	        	</ul>
+	        	</p>        
+				</div>
+				<div class="per2">
+			    	<div class="mark">
+			    		 <h1>当前积分</h1> 
+			         <p>1000分</p>
+			      </div>
+			      <div class="mark_use" style="padding-top:60px;margin-left:0px;">
+			    		<h1>用户须知</h1>
+			    		<p>发布游记 ，回答他人的提问以及参与迷途动态就可以获得积分。获得的积分可参与积分兑换获取丰厚奖品。</p>
+					  </div>
+				</div>
+			</div> -->   
+	    </div>
+	</section>
+
+
+	<section class="panel" id="2" style="background-color:#fad74d">
+	    <div class="panel__content">
+	      	<h1 class="travelnote">我发布的游记</h1>
+	        <div class="youjicontent">
+	         	<div class="youjicontent1">
+                    <img src="images/6.jpg" class="pic3">
+                    <p>题目：<a href="#">雅典之旅</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间：<a href="#">2016-11-11</a></p>
+                    <p>
+                    这是这次游记的内容,这是这次游记的内容这是这次...
+                    </p>
+                    <img src="images/1.png" class="pic4">
+                    <img src="images/2.png" class="pic5">
+                    <img src="images/3.png" class="pic6">
+                </div>
+           
+	            <div class="youjicontent2">
+	                <img src="images/7.jpg" class="pic7">
+                    <p>题目：<a href="#">北京之旅</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;时间：<a href="#">2016-11-11</a></p>
+                    <p>
+                    这是这次游记的内容,这是这次游记的内容这是这次...
+                    </p>
+                    <img src="images/10.png" class="pic4">
+                    <img src="images/2.png" class="pic5">
+                    <img src="images/3.png" class="pic6">
+                </div>
+            </div>
+	    </div>
+	 	<div class="pag">   
+        <div class="pages">
+            <a href="#" class="a1">上一页</a> 
+            <span>1</span> 
+            <a href="#">2</a> 
+            <a href="#">3</a> 
+            <a href="#">4</a> 
+            <a href="#">...</a>
+            <a href="#" class="a1">下一页</a>
+        </div>   
+        </div>
+	</section>
+
+	<section class="panel b-red" id="3" style="background-color:#faa628;">
+	<article class="panel__wrapper">
+	    <div class="panel__content ">
+	      <h1 class="ask">我发布的问答</h1>
+	      <div class="row">
+          <div class="col-md-3 col-sm-6 question">
+            <div class="pricingTable">
+                <div class="pricingTable-header">
+                    <h3 class="heading">问题</h3>
+                    <span class="price-value">
+                        <span class="qu">如何获得积分？</span>
+                    </span>
+                </div>
+                <div class="pricing-content">
+                    <ul>
+                        <li>从哪哪哪可以获得积分</li>
+                        <li>从哪哪哪可以获得积分</li>
+                        <li>从哪哪哪可以获得积分</li>
+                        <li>从哪哪哪可以获得积分</li>
+                    </ul>
+                    <a href="#" class="read">查看更多答案</a>
+                </div>
+            </div>
+        </div>
+  
+        <div class="col-md-3 col-sm-6 question question_right">
+            <div class="pricingTable">
+                <div class="pricingTable-header">
+                    <h3 class="heading">问题</h3>
+                    <span class="price-value">
+                        <span class="qu">如何获得积分？</span>
+                    </span>
+                </div>
+                <div class="pricing-content">
+                    <ul>
+                        <li>从哪哪哪可以获得积分</li>
+                        <li>从哪哪哪可以获得积分</li>
+                        <li>从哪哪哪可以获得积分</li>
+                        <li>从哪哪哪可以获得积分</li>
+                    </ul>
+                    <a href="#" class="read">查看更多答案</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+
+	    <div class="pag1">   
+        <div class="pages text-b">
+            <a href="#" class="a1">上一页</a> 
+            <span>1</span> 
+            <a href="#">2</a> 
+            <a href="#">3</a> 
+            <a href="#">4</a> 
+            <a href="#">...</a>
+            <a href="#" class="a1">下一页</a>
+        </div>   
+        </div>
+    </article>
+	</section>
+
+	<section class="panel b-green" id="4" style="background-color:#f57f5b;">
+	  <article class="panel__wrapper">
+	    <div class="panel__content">
+	      <h1 class="photo">我发布的至美一拍</h1>               
+	      <div class='container' class="container">
+          <div class='column' id="col1">       
+            <div class='post-module'>
+              <div class='thumbnail'>
+                <img src='images/10.jpg' style="height:100%;">
+              </div>
+              <div class='post-content'>
+                <div class='category'>最美风景</div>
+                <h1 class='title'>荷兰之旅</h1>
+                <h2 class='sub_title'>在行走中诉说那些迷途风景</h2>
+                <p class='description'>童话中丰富的想象和夸张可以活跃你的思维；那生动的形象、美妙的故事可以帮你认识社会、理解人生，引导你做一个通达事理、明辨是非的人。</p>
+                <div class='post-meta'>
+                  <span class='timestamp'>
+                    <i class='fa fa-clock-o'></i>
+                    6 分钟前
+                  </span>
+                  <span class='comments'>
+                    <i class='fa fa-comments'></i>
+                    <a href='#'>39 点赞</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+        </div>  
+
+        <div class='column' id="col2">
+            <div class='post-module'>
+              <div class='thumbnail'>
+                <img src='images/9.jpg' style="height:100%;">
+              </div>
+              <div class='post-content'>
+                <div class='category'>最美人物</div>
+                <h1 class='title'>荷兰之旅</h1>
+                <h2 class='sub_title'>在行走中诉说那些迷途风景</h2>
+                <p class='description'>童话中丰富的想象和夸张可以活跃你的思维；那生动的形象、美妙的故事可以帮你认识社会、理解人生，引导你做一个通达事理、明辨是非的人。</p>
+                <div class='post-meta'>
+                  <span class='timestamp'>
+                    <i class='fa fa-clock-o'></i>
+                    6 分钟前
+                  </span>
+                  <span class='comments'>
+                    <i class='fa fa-comments'></i>
+                    <a href='#'>39 点赞</a>
+                  </span>
+                </div>
+              </div>
+            </div>
+        </div>        
+        </div>
+         
+	    </div>
+        <div class="pag2">   
+        <div class="pages text-c">
+            <a href="#" class="a1">上一页</a> 
+            <span>1</span> 
+            <a href="#">2</a> 
+            <a href="#">3</a> 
+            <a href="#">4</a> 
+            <a href="#">...</a>
+            <a href="#" class="a1">下一页</a>
+        </div>   
+        </div>
+	  </article>
+	</section>
+	
+	 <!--  -->
+	<script src='js/stopExecutionOnTimeout.js?t=1'></script>
+	<script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+	<script>
+	var menu = document.querySelector('.nav__list');
+	var burger = document.querySelector('.burger');
+	var doc = $(document);
+	var l = $('.scrolly');
+	var panel = $('.panel');
+	var vh = $(window).height();
+	var openMenu = function () {
+	    burger.classList.toggle('burger--active');
+	    menu.classList.toggle('nav__list--active');
+	};
+	panel.eq(0).find('.panel__content').addClass('panel__content--active');
+	var scrollFx = function () {
+	    var ds = doc.scrollTop();
+	    var of = vh / 4;
+	    for (var i = 0; i < panel.length; i++) {
+	        if (window.CP.shouldStopExecution(1)) {
+	            break;
+	        }
+	        if (panel.eq(i).offset().top < ds + of) {
+	            panel.eq(i).find('.panel__content').addClass('panel__content--active');
+	        } else {
+	            panel.eq(i).find('.panel__content').removeClass('panel__content--active');
+	        }
+	    }
+	    window.CP.exitedLoop(1);
+	};
+	var scrolly = function (e) {
+	    e.preventDefault();
+	    var target = this.hash;
+	    var $target = $(target);
+	    $('html, body').stop().animate({ 'scrollTop': $target.offset().top }, 300, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	};
+	var init = function () {
+	    burger.addEventListener('click', openMenu, false);
+	    window.addEventListener('scroll', scrollFx, false);
+	    window.addEventListener('load', scrollFx, false);
+	    $('a[href^="#"]').on('click', scrolly);
+	};
+	doc.on('ready', init);
+	</script>
+
+
+
+
+	<script src="js/echarts.js"></script>
+	<script type="text/javascript">
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+        
+        // 使用
+        require(
+            [
+                'echarts',
+                'echarts/chart/map' // 使用柱状图就加载bar模块，按需加载
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main')); 
+                
+               option = {
+				    tooltip : {
+				        trigger: 'item',
+				        formatter: '{b}'
+				    },
+				    series : [
+				        {
+				            name: '中国',
+				            type: 'map',
+				            mapType: 'china',
+				            selectedMode : 'multiple',
+				            itemStyle:{
+				                normal:{label:{show:true}},
+				                emphasis:{label:{show:true}}
+				            },
+				            data:[
+				                {name:'广东',selected:true}
+				            ]
+				        }
+				    ]
+				};
+				var ecConfig = require('echarts/config');
+				myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param){
+				    var selected = param.selected;
+				    var str = '当前选择： ';
+				    for (var p in selected) {
+				        if (selected[p]) {
+				            str += p + ' ';
+				        }
+				    }
+				    document.getElementById('wrong-message').innerHTML = str;
+				})
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+    </script>
+</body>
+</html>
